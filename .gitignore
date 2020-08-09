@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+SavedSettingsVST.qxt
+# make sure to copy the Icon line with the two newlines following it
+Icon
