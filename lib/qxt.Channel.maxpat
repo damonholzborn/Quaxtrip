@@ -72,7 +72,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 79.0, 450.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 76.0, 100.0, 43.999999821186066, 22.0 ],
+					"presentation_rect" : [ 76.0, 98.0, 43.999999821186066, 22.0 ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ]
 				}
 
@@ -162,54 +162,6 @@
 					"patching_rect" : [ 454.0, 10.0, 127.0, 22.0 ],
 					"text" : "qxt.Repattr #2_FXBus",
 					"varname" : "mp.Repattr"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 520.0, 290.0, 61.0, 22.0 ],
-					"text" : "sel 0 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 320.0, 29.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 560.0, 320.0, 29.5, 22.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 354.0, 61.0, 22.0 ],
-					"text" : "hidden $1"
 				}
 
 			}
@@ -673,7 +625,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 224.0, 162.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 100.0, 50.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 99.0, 50.0, 20.0 ],
 					"text" : "FX Bus",
 					"textjustification" : 2
 				}
@@ -690,7 +642,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 278.0, 160.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 50.0, 100.0, 22.0, 22.0 ],
+					"presentation_rect" : [ 50.0, 98.0, 22.0, 22.0 ],
 					"varname" : "#2_FXBus"
 				}
 
@@ -916,41 +868,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-27", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
@@ -996,16 +913,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"order" : 0,
-					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -1013,7 +922,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -1231,7 +1140,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

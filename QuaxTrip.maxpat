@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1.0, 45.0, 619.0, 242.0 ],
+		"rect" : [ 2.0, 45.0, 572.0, 200.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 560.0, 200.0, 72.0, 22.0 ],
+					"patching_rect" : [ 501.75, 411.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -58,9 +58,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 230.0, 50.0, 22.0 ],
+					"patching_rect" : [ 501.75, 441.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 550.0, 188.0, 41.0, 22.0 ],
+					"presentation_rect" : [ 510.0, 158.0, 41.0, 22.0 ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ]
 				}
 
@@ -74,8 +74,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 330.0, 12.0, 119.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 370.0, 10.0, 119.0, 22.0 ],
-					"text" : "Open Latency Tester"
+					"presentation_rect" : [ 320.0, 10.0, 129.0, 22.0 ],
+					"text" : "Open Latency Tester",
+					"textjustification" : 1
 				}
 
 			}
@@ -93,26 +94,6 @@
 			}
 , 			{
 				"box" : 				{
-					"angle" : 270.0,
-					"border" : 1,
-					"bordercolor" : [ 0.151045173406601, 0.151188120245934, 0.151061803102493, 1.0 ],
-					"grad1" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"grad2" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"id" : "obj-18",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1120.5, 9.0, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 90.0, 230.0, 130.0 ],
-					"proportion" : 0.5,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -120,8 +101,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.5, 496.0, 96.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 510.0, 10.0, 96.0, 22.0 ],
-					"text" : "Open QuackTrip"
+					"presentation_rect" : [ 460.0, 10.0, 100.0, 22.0 ],
+					"text" : "Open QuackTrip",
+					"textjustification" : 1
 				}
 
 			}
@@ -133,9 +115,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 445.0, 100.0, 103.0, 22.0 ],
+					"patching_rect" : [ 420.0, 310.0, 103.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 488.0, 45.0, 64.0, 22.0 ],
+					"presentation_rect" : [ 443.0, 40.0, 64.0, 22.0 ],
 					"text" : " Output",
 					"textjustification" : 1
 				}
@@ -198,7 +180,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 156.5, 259.0, 33.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 45.0, 170.0, 40.0, 40.0 ]
+					"presentation_rect" : [ 35.0, 140.0, 40.0, 40.0 ]
 				}
 
 			}
@@ -209,7 +191,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 129.0, 132.0, 22.0 ],
+					"patching_rect" : [ 570.0, 135.0, 132.0, 22.0 ],
 					"text" : "qxt.Repattr OutputGain",
 					"varname" : "mp.Repattr[4]"
 				}
@@ -219,7 +201,7 @@
 				"box" : 				{
 					"args" : [ "remote", 2, 1 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -233,7 +215,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 151.5, 616.0, 140.0, 130.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 90.0, 130.0, 130.0 ],
+					"presentation_rect" : [ 250.0, 60.0, 130.0, 130.0 ],
 					"varname" : "qxt.Channel[1]",
 					"viewvisibility" : 1
 				}
@@ -259,7 +241,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 159.0, 123.0, 22.0 ],
+					"patching_rect" : [ 570.0, 165.0, 123.0, 22.0 ],
 					"text" : "qxt.Repattr MixSelect",
 					"varname" : "mp.Repattr[3]"
 				}
@@ -275,7 +257,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 720.0, 197.0, 20.0, 60.0 ],
+					"patching_rect" : [ 607.75, 408.0, 20.0, 60.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 127 ],
@@ -299,9 +281,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 771.0, 197.0, 18.5, 60.0 ],
+					"patching_rect" : [ 658.75, 408.0, 18.5, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 579.0, 100.0, 12.0, 90.333332747220993 ]
+					"presentation_rect" : [ 539.0, 70.0, 12.0, 90.333332747220993 ]
 				}
 
 			}
@@ -315,9 +297,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 640.0, 197.0, 20.0, 60.0 ],
+					"patching_rect" : [ 581.75, 408.0, 20.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 550.0, 100.0, 20.0, 90.333332747220993 ],
+					"presentation_rect" : [ 510.0, 70.0, 20.0, 90.333332747220993 ],
 					"varname" : "OutputGain"
 				}
 
@@ -329,61 +311,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 752.25, 197.0, 18.5, 60.0 ],
+					"patching_rect" : [ 640.0, 408.0, 18.5, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 569.75, 100.0, 12.0, 90.333332747220993 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 640.0, 117.0, 29.5, 22.0 ],
-					"text" : "+ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-52",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 720.0, 157.0, 68.0, 22.0 ],
-					"text" : "selector~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "tab",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 640.0, 10.0, 200.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 440.0, 68.0, 160.0, 20.0 ],
-					"tabs" : [ "Live Mix", "Monitor Mix" ],
-					"varname" : "MixSelect"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 640.0, 157.0, 68.0, 22.0 ],
-					"text" : "selector~ 2"
+					"presentation_rect" : [ 529.75, 70.0, 12.0, 90.333332747220993 ]
 				}
 
 			}
@@ -395,10 +325,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 445.0, 134.5, 105.0, 33.0 ],
+					"patching_rect" : [ 419.0, 345.5, 105.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 440.0, 100.0, 105.0, 33.0 ],
+					"presentation_rect" : [ 400.0, 70.0, 105.0, 33.0 ],
 					"text" : "Output Starting Channel",
 					"textjustification" : 1
 				}
@@ -411,7 +341,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 245.0, 34.0, 22.0 ],
+					"patching_rect" : [ 441.75, 456.0, 34.0, 22.0 ],
 					"text" : "pack"
 				}
 
@@ -423,7 +353,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 515.0, 211.0, 29.5, 22.0 ],
+					"patching_rect" : [ 456.75, 422.0, 29.5, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -435,7 +365,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 99.0, 193.0, 22.0 ],
+					"patching_rect" : [ 570.0, 105.0, 193.0, 22.0 ],
 					"text" : "qxt.Repattr OutputStartingChannel",
 					"varname" : "mp.Repattr[2]"
 				}
@@ -449,24 +379,11 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 500.0, 171.0, 50.0, 22.0 ],
+					"patching_rect" : [ 441.75, 382.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 462.5, 140.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 432.5, 110.0, 40.0, 22.0 ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
 					"varname" : "OutputStartingChannel"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 769.0, 127.0, 148.0, 22.0 ],
-					"text" : "receive~ qxt.post_mute_R"
 				}
 
 			}
@@ -478,21 +395,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 689.0, 70.0, 146.0, 22.0 ],
+					"patching_rect" : [ 612.25, 361.0, 146.0, 22.0 ],
 					"text" : "receive~ qxt.post_mute_L"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-					"id" : "obj-87",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 744.5, 100.0, 143.0, 22.0 ],
-					"text" : "receive~ qxt.pre_mute_R"
 				}
 
 			}
@@ -504,7 +408,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 663.5, 40.0, 141.0, 22.0 ],
+					"patching_rect" : [ 581.75, 331.0, 141.0, 22.0 ],
 					"text" : "receive~ qxt.pre_mute_L"
 				}
 
@@ -601,7 +505,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 156.5, 350.0, 140.0, 130.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 90.0, 140.0, 130.0 ],
+					"presentation_rect" : [ 100.0, 60.0, 140.0, 130.0 ],
 					"varname" : "qxt.Channel",
 					"viewvisibility" : 1
 				}
@@ -682,7 +586,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 122.5, 70.0, 70.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 141.0, 70.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 111.0, 70.0, 22.0 ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
 					"varname" : "LocalStartingChannel"
 				}
@@ -695,7 +599,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 69.0, 185.0, 22.0 ],
+					"patching_rect" : [ 570.0, 75.0, 185.0, 22.0 ],
 					"text" : "qxt.Repattr LocalStartingChannel",
 					"varname" : "mp.Repattr[1]"
 				}
@@ -735,7 +639,7 @@
 					"patching_rect" : [ 89.0, 48.0, 137.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 20.0, 100.0, 90.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 70.0, 90.0, 33.0 ],
 					"text" : "Input Starting Channel",
 					"textjustification" : 1
 				}
@@ -751,7 +655,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 256.5, 536.0, 103.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 312.5, 45.0, 64.0, 22.0 ],
+					"presentation_rect" : [ 283.0, 40.0, 64.0, 22.0 ],
 					"text" : " Remote",
 					"textjustification" : 1
 				}
@@ -767,7 +671,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.5, 6.0, 83.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 93.5, 45.0, 83.0, 22.0 ],
+					"presentation_rect" : [ 83.5, 40.0, 83.0, 22.0 ],
 					"text" : "Local",
 					"textjustification" : 1
 				}
@@ -779,9 +683,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 670.5, 272.5, 45.0, 45.0 ],
+					"patching_rect" : [ 580.25, 491.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 468.25, 171.5, 38.5, 38.5 ]
+					"presentation_rect" : [ 432.5, 140.0, 40.0, 40.0 ]
 				}
 
 			}
@@ -793,7 +697,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 980.0, 9.0, 20.0, 20.0 ]
+					"patching_rect" : [ 570.0, 15.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -804,7 +708,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 39.0, 87.0, 22.0 ],
+					"patching_rect" : [ 570.0, 45.0, 87.0, 22.0 ],
 					"text" : "qxt.Repattrhub"
 				}
 
@@ -912,9 +816,9 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1073.0, 9.0, 20.0, 20.0 ],
+					"patching_rect" : [ 663.0, 15.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 40.0, 150.0, 190.0 ],
+					"presentation_rect" : [ 250.0, 40.0, 130.0, 150.0 ],
 					"proportion" : 0.5
 				}
 
@@ -931,30 +835,10 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1047.0, 9.0, 20.0, 20.0 ],
+					"patching_rect" : [ 637.0, 15.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 40.0, 250.0, 190.0 ],
+					"presentation_rect" : [ 10.0, 40.0, 230.0, 150.0 ],
 					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"border" : 1,
-					"bordercolor" : [ 0.151045173406601, 0.151188120245934, 0.151061803102493, 1.0 ],
-					"grad1" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"grad2" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"id" : "obj-13",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1145.0, 9.0, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 440.0, 90.0, 160.0, 130.0 ],
-					"proportion" : 0.5,
-					"rounded" : 0
 				}
 
 			}
@@ -970,9 +854,9 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1097.0, 9.0, 20.0, 20.0 ],
+					"patching_rect" : [ 687.0, 15.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 430.0, 40.0, 180.0, 190.0 ],
+					"presentation_rect" : [ 390.0, 40.0, 170.0, 150.5 ],
 					"proportion" : 0.5
 				}
 
@@ -1176,13 +1060,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 2 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-30", 1 ]
 				}
@@ -1269,7 +1146,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 2 ],
+					"destination" : [ "obj-67", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -1301,43 +1178,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-46", 1 ],
 					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-129", 0 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"order" : 1,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"order" : 0,
-					"source" : [ "obj-53", 0 ]
 				}
 
 			}
@@ -1380,14 +1220,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 1 ],
-					"source" : [ "obj-87", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-50", 1 ],
+					"destination" : [ "obj-129", 0 ],
 					"source" : [ "obj-88", 0 ]
 				}
 
@@ -1415,35 +1248,35 @@
 			}
 , 			{
 				"name" : "qxt.Repattrhub.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SavedSettings.sat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"name" : "SavedSettingsVST.qxt",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Channel.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.LatencyTester.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
