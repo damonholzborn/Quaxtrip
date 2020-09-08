@@ -1,0 +1,76 @@
+0_Gain_qxt, 110;
+0_Mono_qxt, 0;
+0_LocalBus_qxt, 0;
+0_StartingChannel_qxt, 0;
+
+1_Gain_qxt, 111;
+1_CallName_qxt, goo1;
+1_Server_qxt, 192.168.0.111;
+1_FIFOSize_qxt, 50;
+1_Channels_qxt, 0;
+1_BlockSize_qxt, 0;
+1_2x_qxt, 0;
+1_LocalBus_qxt, 0;
+1_Mono_qxt, 0;
+
+2_Gain_qxt, 112;
+2_CallName_qxt, goo2;
+2_Server_qxt, 192.168.0.112;
+2_FIFOSize_qxt, 50;
+2_Channels_qxt, 0;
+2_BlockSize_qxt, 0;
+2_2x_qxt, 0;
+2_LocalBus_qxt, 0;
+2_Mono_qxt, 0;
+
+3_Gain_qxt, 113;
+3_CallName_qxt, goo3;
+3_Server_qxt, 192.168.0.113;
+3_FIFOSize_qxt, 50;
+3_Channels_qxt, 0;
+3_BlockSize_qxt, 0;
+3_2x_qxt, 0;
+3_LocalBus_qxt, 0;
+3_Mono_qxt, 0;
+
+4_Gain_qxt, 114;
+4_CallName_qxt, goo4;
+4_Server_qxt, 192.168.0.114;
+4_FIFOSize_qxt, 50;
+4_Channels_qxt, 0;
+4_BlockSize_qxt, 0;
+4_2x_qxt, 0;
+4_LocalBus_qxt, 0;
+4_Mono_qxt, 0;
+
+5_Gain_qxt, 115;
+5_CallName_qxt, goo5;
+5_Server_qxt, 192.168.0.115;
+5_FIFOSize_qxt, 50;
+5_Channels_qxt, 0;
+5_BlockSize_qxt, 0;
+5_2x_qxt, 0;
+5_LocalBus_qxt, 0;
+5_Mono_qxt, 0;
+
+6_Gain_qxt, 116;
+6_CallName_qxt, goo6;
+6_Server_qxt, 192.168.0.116;
+6_FIFOSize_qxt, 50;
+6_Channels_qxt, 0;
+6_BlockSize_qxt, 0;
+6_2x_qxt, 0;
+6_LocalBus_qxt, 0;
+6_Mono_qxt, 0;
+
+7_Gain_qxt, 117;
+7_CallName_qxt, goo7;
+7_Server_qxt, 192.168.0.117;
+7_FIFOSize_qxt, 50;
+7_Channels_qxt, 0;
+7_BlockSize_qxt, 0;
+7_2x_qxt, 0;
+7_LocalBus_qxt, 0;
+7_Mono_qxt, 0;
+
+Output_StartingChannel_qxt, 0;

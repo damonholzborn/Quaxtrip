@@ -1,0 +1,85 @@
+#N canvas 349 88 893 565 12;
+#X obj 65 376 env~ 8192, f 4;
+#X floatatom 65 416 5 0 0 0 - - -;
+#X obj 190 307 quacktrip~;
+#X obj 108 376 env~ 8192, f 4;
+#X floatatom 108 416 5 0 0 0 - - -;
+#X obj 191 378 out2~;
+#X msg 274 75 server 4477;
+#X msg 287 154 off;
+#X obj 74 160 *~;
+#X obj 179 116 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 179 136 * 0.03;
+#X obj 161 164 *~;
+#X obj 91 116 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 91 136 * 0.03;
+#X obj 74 91 osc~ 770;
+#X obj 162 91 osc~ 990;
+#X floatatom 297 443 5 0 0 0 - - -;
+#X obj 297 379 route got-packet;
+#X floatatom 341 444 5 0 0 0 - - -;
+#X obj 297 404 unpack 0 0 0 0 0;
+#X floatatom 387 445 5 0 0 0 - - -;
+#X msg 294 192 block 64;
+#X floatatom 440 448 5 0 0 0 - - -;
+#X floatatom 504 448 5 0 0 0 - - -;
+#X text 60 6 quacktrip - jacktrip peer \, client \, or server;
+#X msg 264 46 peer foo.ucsd.edu 3840 poodle;
+#X text 488 34 make a call vis conniption server foo (port 3840) \,
+call name "poodle", f 35;
+#X msg 282 127 client localhost 4477;
+#X text 453 126 connect to a quacktrip server;
+#X text 316 154 shut down;
+#X text 361 184 set network packet block size - 64 \, 128 \, or 256
+Affects outgoing packets and need not agree with incoming packet size.
+, f 62;
+#X text 364 231 number of audio channels to send (0 \, 1 \, or 2).
+;
+#X msg 297 229 nchan 2;
+#X msg 303 256 repeat 0;
+#X text 373 257 if nonzero \, each outgoing packet is sent twice.;
+#X msg 305 286 nbuf 50;
+#X text 372 287 FIFO size for incoming packets in 64-sample increments
+;
+#X text 291 465 valid;
+#X text 341 470 fifo fill, f 4;
+#X text 383 466 sample rate, f 6;
+#X text 436 465 channels;
+#X text 504 467 block size, f 5;
+#X text 425 368 status messages. "got-packet" is sent every 64 samples
+and describe incoming packets. If "valid" is 0 the audio output is
+zero for this block of 64 samples.;
+#X text 363 71 start up as jacktrip server (not a conniption server)
+to receive a call directly from a client. Your IP address must be visible
+to the client., f 49;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 2 0 5 0;
+#X connect 2 1 3 0;
+#X connect 2 1 5 1;
+#X connect 2 2 17 0;
+#X connect 3 0 4 0;
+#X connect 6 0 2 2;
+#X connect 7 0 2 2;
+#X connect 8 0 2 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 1;
+#X connect 11 0 2 1;
+#X connect 12 0 13 0;
+#X connect 13 0 8 1;
+#X connect 14 0 8 0;
+#X connect 15 0 11 0;
+#X connect 17 0 19 0;
+#X connect 19 0 16 0;
+#X connect 19 1 18 0;
+#X connect 19 2 20 0;
+#X connect 19 3 22 0;
+#X connect 19 4 23 0;
+#X connect 21 0 2 2;
+#X connect 25 0 2 2;
+#X connect 27 0 2 2;
+#X connect 32 0 2 2;
+#X connect 33 0 2 2;
+#X connect 35 0 2 2;

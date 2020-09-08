@@ -1,0 +1,75 @@
+#N canvas 410 165 937 642 12;
+#X obj 60 506 list;
+#X msg 61 581 packet 81;
+#X obj 60 531 list prepend set;
+#X obj 60 556 list trim;
+#X obj 56 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 56 308 metro 500;
+#X obj 56 333 f;
+#X obj 56 358 + 1;
+#X obj 56 383 mod 100;
+#X obj 127 387 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 329 272 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 325 514 route running;
+#X obj 34 532 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 329 295 sel 1 0;
+#X msg 329 323 start poodle;
+#X msg 359 346 stop;
+#X obj 340 458 spigot;
+#X obj 403 460 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 341 483 print status;
+#X msg 58 410 send packet \$1;
+#X obj 60 441 conniption-client -u 192.168.1.92 4300;
+#X text 33 11 conniption-client - place a network call with help from
+a conniption server;
+#X text 31 57 the conniption-client object can make a UDP network connection
+with another coniption-client on a different machine \, with the help
+of a conniption server on a third machine. The server must have an
+IP address that is visible to both clients. This works in two configurations:
+the one for which it's intended \, in which the two clients are each
+behind a different NAT router ("firewall") \, or \, if all three machines
+are on the same LAN. (It doesn't work for two machines behind the same
+NAT router unless the server is also behind it.);
+#X text 486 65 You can provide your own server or use the one at foo.ucsd.edu
+\, port 3840 ("f00" in hex). The two clients have to be on different
+machines \, but the server can be on the same machine as one of the
+clients.;
+#X msg 371 381 server foo.ucsd.edu;
+#X msg 372 409 port 3840;
+#X text 53 254 first inlet: messages to send;
+#X text 326 228 second inlet: control;
+#X text 324 251 start/stop a call:;
+#X text 523 379 change server address;
+#X text 457 411 change server port number;
+#X text 68 464 first outlet: messages received, f 18;
+#X text 441 463 second outlet: status;
+#X connect 0 0 2 0;
+#X connect 0 0 12 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 19 0;
+#X connect 8 0 9 0;
+#X connect 8 0 6 1;
+#X connect 10 0 13 0;
+#X connect 11 0 4 0;
+#X connect 13 0 14 0;
+#X connect 13 1 15 0;
+#X connect 14 0 20 1;
+#X connect 15 0 20 1;
+#X connect 16 0 18 0;
+#X connect 17 0 16 1;
+#X connect 19 0 20 0;
+#X connect 20 0 0 0;
+#X connect 20 1 11 0;
+#X connect 20 1 16 0;
+#X connect 24 0 20 1;
+#X connect 25 0 20 1;

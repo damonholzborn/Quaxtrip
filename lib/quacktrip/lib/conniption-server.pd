@@ -1,0 +1,453 @@
+#N canvas 164 123 934 630 12;
+#X obj 52 120 netreceive -u -f;
+#X obj 731 81 text define connections;
+#X obj 52 151 route call;
+#X obj 52 202 list append;
+#X obj 52 176 list;
+#X obj 70 268 text search connections 0;
+#X obj 70 294 sel -1;
+#X obj 479 45 loadbang;
+#X obj 479 99 metro 1000;
+#X obj 479 129 f;
+#X obj 480 78 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 479 154 + 1;
+#X obj 479 179 mod 1e+06;
+#X msg 422 76 30;
+#X obj 422 101 until;
+#X obj 731 106 text define this-msg;
+#X obj 177 181 text set this-msg;
+#X obj 164 235 print got-call;
+#X obj 211 515 text set connections 1e+09;
+#X obj 197 460 text get this-msg;
+#X msg 198 434 0;
+#X obj 168 151 list append;
+#X obj 253 152 r secs;
+#X floatatom 507 208 5 0 0 0 - - -;
+#X obj 484 250 s secs;
+#X msg 731 55 clear;
+#X obj 197 576 print add-new-line;
+#N canvas 32 106 585 498 prune-connections 0;
+#X msg 288 39 \; prune-connections bang;
+#X obj 87 34 r prune-connections;
+#X obj 341 229 r secs;
+#X msg 158 229 \$4 \$7;
+#X obj 160 337 sel 1;
+#X obj 54 410 text delete connections;
+#X obj 160 262 expr ($f1 < 0 || (($f3-$f1+1000000)%1000000) > 30) &&
+($f2 < 0 || (($f3-$f2+1000000)%1000000) > 30), f 33;
+#X obj 88 87 text size connections;
+#X obj 87 59 t b b;
+#X obj 88 113 until;
+#X obj 159 202 text get connections;
+#X obj 88 138 f;
+#X obj 167 164 + 1;
+#X obj 114 163 t f f;
+#X msg 160 60 0;
+#X obj 55 380 f;
+#X connect 1 0 8 0;
+#X connect 2 0 6 2;
+#X connect 3 0 6 0;
+#X connect 4 0 15 0;
+#X connect 6 0 4 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 8 1 14 0;
+#X connect 9 0 11 0;
+#X connect 10 0 3 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 1;
+#X connect 13 0 10 0;
+#X connect 13 1 15 1;
+#X connect 13 1 12 0;
+#X connect 14 0 11 1;
+#X connect 15 0 5 0;
+#X connect 15 0 11 1;
+#X restore 725 201 pd prune-connections;
+#X obj 50 228 t b s l b;
+#X msg 51 94 listen \$1;
+#X floatatom 58 67 5 0 0 0 - - -;
+#X msg 115 43 0;
+#X obj 483 358 r reply;
+#X obj 479 554 netsend -u;
+#X obj 559 207 mod 30;
+#X obj 559 232 sel 0;
+#X obj 559 285 s prune-connections;
+#X obj 559 257 spigot;
+#X obj 620 231 loadbang;
+#X obj 620 255 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 164 211 spigot;
+#X obj 224 210 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 25 193 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 484 390 unpack s 0 0 s 0 0;
+#X obj 567 420 addrmunger;
+#X obj 484 419 addrmunger;
+#X obj 484 451 pack s 0 0 s 0 0;
+#X msg 197 485 list \$1 \$2 \$3 \$4 - 0 -1;
+#X obj 749 495 spigot;
+#X obj 809 497 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 588 552 spigot;
+#X obj 650 553 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 34 17 loadbang;
+#X msg 35 40 3840;
+#X msg 479 502 disconnect \, connect \$1 \$2 3840 \, send peer-addr
+\$4 \$5 \$2 \, disconnect, f 35;
+#X obj 591 580 print to-netsend;
+#N canvas 592 323 557 245 tests 0;
+#X obj 90 158 netsend -u;
+#X msg 89 45 disconnect \, connect localhost 3840 4478 \, send call
+foo;
+#X msg 102 74 disconnect \, connect localhost 3840 4479 \, send call
+bar;
+#X msg 110 99 disconnect \, connect localhost 3840 4480 \, send call
+bar;
+#X msg 123 121 disconnect \, connect localhost 3840 4481 \, send call
+bar;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X restore 728 140 pd tests;
+#X obj 247 209 loadbang;
+#N canvas 516 123 653 517 simulate-calls 0;
+#X obj 87 183 outlet;
+#X obj 425 468 text define -k test1;
+#A set zzz ::ffff:104.186.255.171 52350 178290 \; zzz ::ffff:104.186.255.171
+52350 178291 \; zzz ::ffff:104.186.255.171 52350 178292 \; zzz ::ffff:76.126.215.138
+62351 178292 \; zzz ::ffff:104.186.255.171 52350 178293 \; zzz ::ffff:76.126.215.138
+51247 179536 \; zzz ::ffff:104.186.255.171 61535 177698 \; zzz ::ffff:76.126.215.138
+61129 177698 \; zzz ::ffff:104.186.255.171 61535 177699 \; zzz ::ffff:76.126.215.138
+65301 177806 \; zzz ::ffff:104.186.255.171 60864 177807 \; zzz ::ffff:76.126.215.138
+65301 177807 \; zzz ::ffff:104.186.255.171 64174 177906 \; zzz ::ffff:104.186.255.171
+64174 177907 \; zzz ::ffff:104.186.255.171 64174 177908 \; zzz ::ffff:104.186.255.171
+64174 177909 \; zzz ::ffff:104.186.255.171 64174 177911 \; zzz ::ffff:104.186.255.171
+64174 177912 \; zzz ::ffff:104.186.255.171 64174 177913 \; zzz ::ffff:104.186.255.171
+64174 177915 \; zzz ::ffff:104.186.255.171 64174 177916 \; zzz ::ffff:104.186.255.171
+64174 177917 \; zzz ::ffff:104.186.255.171 64174 177918 \; zzz ::ffff:104.186.255.171
+64174 177920 \; zzz ::ffff:104.186.255.171 64174 177921 \; zzz ::ffff:104.186.255.171
+64174 177922 \; zzz ::ffff:104.186.255.171 64174 177923 \; zzz ::ffff:104.186.255.171
+64174 177925 \; zzz ::ffff:104.186.255.171 64174 177926 \; zzz ::ffff:104.186.255.171
+64174 177927 \; zzz ::ffff:104.186.255.171 64174 177928 \; zzz ::ffff:76.126.215.138
+60782 177929 \; zzz ::ffff:104.186.255.171 64174 177930 \; zzz ::ffff:104.186.255.171
+53741 178258 \; zzz ::ffff:104.186.255.171 53741 178259 \; zzz ::ffff:104.186.255.171
+53741 178260 \; zzz ::ffff:76.126.215.138 62709 178260 \; zzz ::ffff:104.186.255.171
+53741 178261 \; zzz ::ffff:104.186.255.171 52350 178286 \; zzz ::ffff:104.186.255.171
+52350 178287 \; zzz ::ffff:104.186.255.171 52350 178288 \; zzz ::ffff:104.186.255.171
+52350 178289 \; zzz ::ffff:104.186.255.171 52350 178290 \; zzz ::ffff:104.186.255.171
+52350 178291 \; zzz ::ffff:104.186.255.171 52350 178292 \; zzz ::ffff:76.126.215.138
+62351 178292 \; zzz ::ffff:104.186.255.171 52350 178293 \; zzz ::ffff:76.126.215.138
+51247 179536 \;;
+#X msg 423 423 read -c /tmp/foo.txt;
+#X obj 90 101 text sequence test1;
+#X msg 87 70 line 0 \, auto;
+#X obj 91 137 list split 3;
+#X obj 174 180 s secs;
+#X obj 239 114 text get test1;
+#X msg 246 84 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 5 1 6 0;
+#X connect 7 0 5 0;
+#X connect 8 0 7 0;
+#X restore 187 117 pd simulate-calls;
+#X obj 486 475 t l l;
+#X obj 70 323 s add-new-line;
+#X obj 26 387 r add-new-line;
+#X obj 123 295 s matched-line;
+#N canvas 98 33 1072 707 matched-line 0;
+#X obj 335 123 text get this-msg;
+#X obj 389 68 v matched-line;
+#X obj 335 236 sel -;
+#X obj 337 69 t b f;
+#X obj 521 127 text get connections;
+#X obj 564 236 sel -;
+#X msg 383 235 symbol \$2;
+#X msg 613 237 symbol \$5;
+#X obj 321 460 text get this-msg;
+#X obj 568 456 text get this-msg;
+#X msg 335 96 0 1;
+#X msg 321 434 0;
+#X msg 568 430 0;
+#X msg 322 485 list \$2 \$3 \$4;
+#X obj 616 533 v matched-line;
+#X obj 586 562 text set connections;
+#X msg 567 480 list \$2 \$3 \$4;
+#X obj 335 288 text get this-msg;
+#X obj 564 287 text get this-msg;
+#X msg 335 261 0 2;
+#X msg 564 261 0 2;
+#X obj 365 321 sel;
+#X obj 587 320 sel;
+#X obj 693 287 route float;
+#X obj 464 288 route float;
+#X obj 314 41 t b f b;
+#X obj 19 404 spigot;
+#X obj 66 456 text delete connections;
+#X obj 19 429 v matched-line;
+#X msg 461 235 \$3;
+#X msg 697 237 \$6;
+#X obj 584 681 s reply;
+#X obj 20 136 t b b;
+#X obj 52 163 v matched-line;
+#X obj 52 188 text get connections;
+#X obj 157 321 sel -1;
+#X obj 37 320 sel -1;
+#X msg 37 295 \$4;
+#X msg 156 297 \$7;
+#X obj 20 109 spigot;
+#X obj 19 454 t b f;
+#X obj 71 486 print delete-line;
+#X msg 565 653 list \$5 \$6 \$7 \$2 \$3 \$4;
+#X obj 565 682 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 335 150 t s s, f 16;
+#X obj 335 210 spigot;
+#X obj 37 269 spigot;
+#X obj 52 213 t l l;
+#X obj 567 505 t b l b;
+#X obj 564 601 v matched-line;
+#X obj 564 627 text get connections;
+#X obj 371 539 v matched-line;
+#X obj 341 568 text set connections;
+#X obj 322 511 t b l b;
+#X obj 318 601 v matched-line;
+#X obj 318 627 text get connections;
+#X msg 319 653 list \$2 \$3 \$4 \$5 \$6 \$7;
+#X msg 723 534 4;
+#X msg 479 540 1;
+#X obj 315 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 541 237 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 812 459 text get this-msg;
+#X msg 812 433 0;
+#X msg 811 483 list \$2 \$3 \$4 - 0 -1;
+#X obj 864 548 v matched-line;
+#X obj 834 577 text set connections;
+#X obj 814 514 t b l b;
+#X msg 972 549 1;
+#X obj 18 512 s add-new-line;
+#X obj 340 678 s reply;
+#X obj 321 679 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 314 15 r matched-line;
+#X msg 450 20 \; need-reply 1;
+#X obj 73 111 r need-reply;
+#X obj 353 182 r need-reply;
+#X obj 101 216 r need-reply;
+#X obj 66 403 r need-reply;
+#X obj 812 407 r replace-whole-line;
+#X obj 815 603 v matched-line;
+#X obj 815 629 text get connections;
+#X msg 816 655 list \$2 \$3 \$4 \$5 \$6 \$7;
+#X obj 837 680 s reply;
+#X obj 818 681 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 623 320 s replace-whole-line;
+#X obj 398 324 s replace-whole-line;
+#X obj 590 347 s replace-peer-2;
+#X obj 157 345 s replace-peer-2;
+#X obj 566 405 r replace-peer-2;
+#X obj 322 410 r replace-peer-1;
+#X obj 37 345 s replace-peer-1;
+#X obj 365 351 s replace-peer-1;
+#X connect 0 0 44 0;
+#X connect 2 0 19 0;
+#X connect 2 0 59 0;
+#X connect 3 0 10 0;
+#X connect 3 1 1 0;
+#X connect 3 1 4 0;
+#X connect 4 0 6 0;
+#X connect 4 0 7 0;
+#X connect 4 0 29 0;
+#X connect 4 0 30 0;
+#X connect 5 0 20 0;
+#X connect 5 0 60 0;
+#X connect 6 0 2 1;
+#X connect 7 0 5 1;
+#X connect 8 0 13 0;
+#X connect 9 0 16 0;
+#X connect 10 0 0 0;
+#X connect 11 0 8 0;
+#X connect 12 0 9 0;
+#X connect 13 0 53 0;
+#X connect 14 0 15 1;
+#X connect 16 0 48 0;
+#X connect 17 0 21 0;
+#X connect 18 0 22 0;
+#X connect 19 0 17 0;
+#X connect 20 0 18 0;
+#X connect 21 0 90 0;
+#X connect 21 1 84 0;
+#X connect 22 0 85 0;
+#X connect 22 1 83 0;
+#X connect 23 0 22 1;
+#X connect 24 0 21 1;
+#X connect 25 0 39 0;
+#X connect 25 1 3 0;
+#X connect 25 2 72 0;
+#X connect 26 0 28 0;
+#X connect 28 0 40 0;
+#X connect 29 0 24 0;
+#X connect 30 0 23 0;
+#X connect 32 0 26 0;
+#X connect 32 1 33 0;
+#X connect 33 0 34 0;
+#X connect 34 0 47 0;
+#X connect 35 0 86 0;
+#X connect 36 0 89 0;
+#X connect 37 0 36 0;
+#X connect 38 0 35 0;
+#X connect 39 0 32 0;
+#X connect 40 0 68 0;
+#X connect 40 1 27 0;
+#X connect 40 1 41 0;
+#X connect 42 0 31 0;
+#X connect 42 0 43 0;
+#X connect 44 0 45 0;
+#X connect 44 1 5 0;
+#X connect 45 0 2 0;
+#X connect 46 0 37 0;
+#X connect 47 0 46 0;
+#X connect 47 1 38 0;
+#X connect 48 0 49 0;
+#X connect 48 1 15 0;
+#X connect 48 2 57 0;
+#X connect 48 2 14 0;
+#X connect 49 0 50 0;
+#X connect 50 0 42 0;
+#X connect 51 0 52 1;
+#X connect 53 0 54 0;
+#X connect 53 1 52 0;
+#X connect 53 2 58 0;
+#X connect 53 2 51 0;
+#X connect 54 0 55 0;
+#X connect 55 0 56 0;
+#X connect 56 0 70 0;
+#X connect 56 0 69 0;
+#X connect 57 0 15 2;
+#X connect 58 0 52 2;
+#X connect 61 0 63 0;
+#X connect 62 0 61 0;
+#X connect 63 0 66 0;
+#X connect 64 0 65 1;
+#X connect 66 0 78 0;
+#X connect 66 1 65 0;
+#X connect 66 2 67 0;
+#X connect 66 2 64 0;
+#X connect 67 0 65 2;
+#X connect 71 0 25 0;
+#X connect 73 0 39 1;
+#X connect 74 0 45 1;
+#X connect 75 0 46 1;
+#X connect 76 0 26 1;
+#X connect 77 0 62 0;
+#X connect 78 0 79 0;
+#X connect 79 0 80 0;
+#X connect 80 0 82 0;
+#X connect 80 0 81 0;
+#X connect 87 0 12 0;
+#X connect 88 0 11 0;
+#X restore 726 173 pd matched-line;
+#X msg 619 454 \; need-reply 0;
+#X obj 26 414 t b b;
+#X obj 27 443 text size connections;
+#X obj 27 468 - 1;
+#X obj 26 496 text get connections;
+#X msg 27 522 list \$2 \$3 \$4 \$5 \$6 \$7;
+#X obj 48 547 s reply;
+#X obj 29 548 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 809 468 loadbang;
+#X obj 752 523 print replying;
+#X obj 197 549 spigot;
+#X obj 257 551 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 283 549 loadbang;
+#X obj 164 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 2 0;
+#X connect 0 0 77 0;
+#X connect 0 1 3 1;
+#X connect 2 0 4 0;
+#X connect 3 0 28 0;
+#X connect 4 0 3 0;
+#X connect 4 0 42 0;
+#X connect 5 0 6 0;
+#X connect 6 0 60 0;
+#X connect 6 1 62 0;
+#X connect 7 0 10 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 10 0 8 0;
+#X connect 11 0 12 0;
+#X connect 12 0 9 1;
+#X connect 12 0 23 0;
+#X connect 12 0 24 0;
+#X connect 12 0 34 0;
+#X connect 13 0 14 0;
+#X connect 14 0 9 0;
+#X connect 19 0 47 0;
+#X connect 20 0 19 0;
+#X connect 21 0 16 0;
+#X connect 21 0 40 0;
+#X connect 22 0 21 1;
+#X connect 25 0 1 0;
+#X connect 28 0 53 0;
+#X connect 28 1 5 0;
+#X connect 28 2 21 0;
+#X connect 28 3 31 0;
+#X connect 29 0 0 0;
+#X connect 30 0 29 0;
+#X connect 31 0 30 0;
+#X connect 32 0 43 0;
+#X connect 34 0 35 0;
+#X connect 35 0 37 0;
+#X connect 37 0 36 0;
+#X connect 38 0 39 0;
+#X connect 39 0 37 1;
+#X connect 40 0 17 0;
+#X connect 41 0 40 1;
+#X connect 43 0 45 0;
+#X connect 43 1 46 1;
+#X connect 43 2 46 2;
+#X connect 43 3 44 0;
+#X connect 43 4 46 4;
+#X connect 43 5 46 5;
+#X connect 44 0 46 3;
+#X connect 45 0 46 0;
+#X connect 46 0 59 0;
+#X connect 47 0 18 0;
+#X connect 47 0 74 0;
+#X connect 48 0 73 0;
+#X connect 49 0 48 1;
+#X connect 50 0 55 0;
+#X connect 51 0 50 1;
+#X connect 52 0 53 0;
+#X connect 53 0 30 0;
+#X connect 54 0 33 0;
+#X connect 54 0 50 0;
+#X connect 57 0 41 0;
+#X connect 58 0 4 0;
+#X connect 59 0 54 0;
+#X connect 59 1 48 0;
+#X connect 59 1 64 0;
+#X connect 61 0 65 0;
+#X connect 65 0 66 0;
+#X connect 65 1 20 0;
+#X connect 66 0 67 0;
+#X connect 67 0 68 0;
+#X connect 68 0 69 0;
+#X connect 69 0 71 0;
+#X connect 69 0 70 0;
+#X connect 72 0 49 0;
+#X connect 74 0 26 0;
+#X connect 75 0 74 1;
+#X connect 76 0 75 0;

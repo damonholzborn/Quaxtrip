@@ -1,0 +1,31 @@
+#N canvas 476 177 660 373 12;
+#X obj 84 61 inlet;
+#X obj 84 86 t s s;
+#X obj 161 87 list fromsymbol;
+#X obj 161 112 t l l;
+#X obj 67 293 outlet;
+#X floatatom 255 205 5 0 0 0 - - -;
+#X obj 235 163 expr $f1==58 && $f2==58 && $f3==102 && $f4==102 &&$f5==102
+&& $f6==102 && $f7==58;
+#X obj 237 233 == 0;
+#X obj 27 175 spigot;
+#X obj 130 161 spigot;
+#X obj 130 193 list split 7;
+#X obj 166 265 list tosymbol;
+#X text 188 22 old systems (Mac 10.7 \, maybe Windowses) don't recognize
+ipv6 names for ipv4 addresses - if it's ipv4 \, munge it back to ipv4
+lingo;
+#X connect 0 0 1 0;
+#X connect 1 0 8 0;
+#X connect 1 1 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 9 0;
+#X connect 3 1 6 0;
+#X connect 6 0 5 0;
+#X connect 6 0 7 0;
+#X connect 6 0 9 1;
+#X connect 7 0 8 1;
+#X connect 8 0 4 0;
+#X connect 9 0 10 0;
+#X connect 10 1 11 0;
+#X connect 11 0 4 0;
