@@ -1162,7 +1162,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 754.5, 431.0, 53.0, 22.0 ],
-					"text" : "route #1"
+					"text" : "route #2"
 				}
 
 			}

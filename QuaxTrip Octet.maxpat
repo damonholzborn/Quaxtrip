@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1122.0, 976.0 ],
+		"rect" : [ 2.0, 45.0, 1122.0, 641.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -468,7 +468,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 751.0, 45.0, 686.0, 960.0 ],
+						"rect" : [ 751.0, 45.0, 670.0, 964.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -832,8 +832,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 66.5, 787.0, 197.0, 22.0 ],
-									"text" : "sprintf %slib/quack/qxt.quacktrip.pd"
+									"patching_rect" : [ 66.5, 787.0, 213.0, 22.0 ],
+									"text" : "sprintf %slib/quacktrip/qxt.quacktrip.pd"
 								}
 
 							}
