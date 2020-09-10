@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 745.0, 380.0, 282.0, 234.0 ],
+		"rect" : [ 745.0, 380.0, 282.0, 263.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 200.0, 92.0, 22.0 ],
+					"patching_rect" : [ 25.0, 230.0, 92.0, 22.0 ],
 					"text" : "s qxt.repattrhub"
 				}
 
@@ -70,7 +70,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 100.0, 52.0, 22.0 ],
+					"patching_rect" : [ 25.0, 100.0, 245.0, 22.0 ],
 					"text" : "r #1_qxt"
 				}
 
@@ -82,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 70.0, 143.0, 22.0 ],
+					"patching_rect" : [ 10.0, 70.0, 140.0, 22.0 ],
 					"text" : "sprintf bindto parent::%s"
 				}
 
@@ -107,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 40.0, 34.5, 22.0 ],
+					"patching_rect" : [ 10.0, 40.0, 260.5, 22.0 ],
 					"text" : "#1"
 				}
 
@@ -127,7 +127,7 @@
 					}
 ,
 					"text" : "pattr",
-					"varname" : "u457010896"
+					"varname" : "u506001326"
 				}
 
 			}

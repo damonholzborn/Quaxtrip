@@ -118,8 +118,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 414.0, 120.0, 124.0, 22.0 ],
-					"text" : "receive~ 1_remote_R"
+					"patching_rect" : [ 414.0, 120.0, 130.0, 22.0 ],
+					"text" : "receive~ #2_remote_R"
 				}
 
 			}
@@ -131,8 +131,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 330.0, 90.0, 122.0, 22.0 ],
-					"text" : "receive~ 1_remote_L"
+					"patching_rect" : [ 330.0, 90.0, 128.0, 22.0 ],
+					"text" : "receive~ #2_remote_L"
 				}
 
 			}

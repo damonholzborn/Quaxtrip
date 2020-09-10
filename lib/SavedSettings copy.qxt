@@ -1,0 +1,1 @@
+0_Gain_qxt, 110;0_Mono_qxt, 0;0_LocalBus_qxt, 0;0_StartingChannel_qxt, 0;1_Gain_qxt, 114;1_CallName_qxt, foo;1_Server_qxt, 192.168.0.114;1_FIFOSize_qxt, 50;1_Channels_qxt, 0;1_BlockSize_qxt, 0;1_2x_qxt, 0;1_LocalBus_qxt, 0;1_Mono_qxt, 0;Output_StartingChannel_qxt, 0;

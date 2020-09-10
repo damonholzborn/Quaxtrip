@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 995.0, 584.0, 462.0, 306.0 ],
+		"rect" : [ 992.0, 584.0, 462.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -73,8 +73,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 111.75, 175.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 100.0, 48.0, 40.0, 22.0 ],
-					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
+					"presentation_rect" : [ 100.0, 48.0, 40.0, 22.0 ]
 				}
 
 			}
@@ -121,7 +120,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"knobcolor" : [ 0.807843, 0.898039, 0.909804, 1.0 ],
 					"maxclass" : "gain~",
 					"multichannelvariant" : 0,
 					"numinlets" : 1,
@@ -207,6 +205,7 @@
 				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "number",
+					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
