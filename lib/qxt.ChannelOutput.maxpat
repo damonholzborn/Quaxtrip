@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 992.0, 584.0, 462.0, 306.0 ],
+		"rect" : [ 1093.0, 153.0, 462.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -90,8 +90,7 @@
 					"patching_rect" : [ 261.75, 145.5, 20.0, 60.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 127 ],
-							"parameter_initial_enable" : 1,
+							"parameter_initial" : [ 0 ],
 							"parameter_longname" : "gain~[9]",
 							"parameter_mmax" : 157.0,
 							"parameter_shortname" : "gain~",
@@ -226,8 +225,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 261.75, 105.5, 146.0, 22.0 ],
-					"text" : "receive~ qxt.post_mute_L"
+					"patching_rect" : [ 261.75, 105.5, 148.0, 22.0 ],
+					"text" : "receive~ qxt.post_mute_R"
 				}
 
 			}

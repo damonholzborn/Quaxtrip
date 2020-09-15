@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 753.0, 185.0, 602.0, 803.0 ],
+		"rect" : [ 598.0, 74.0, 602.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -370,10 +370,24 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 91.0, 390.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 33.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 8.0, 33.0, 20.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "toggle",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "toggle"
 				}
 
 			}
@@ -997,6 +1011,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-59" : [ "toggle", "toggle", 0 ],
 			"obj-67" : [ "gain~[9]", "gain~", 0 ],
 			"parameterbanks" : 			{
 
