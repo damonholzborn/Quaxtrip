@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1111.0, 1025.0 ],
+		"rect" : [ 0.0, 45.0, 1362.0, 1025.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -479,7 +479,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 791.600000023841858, 10.0, 310.399999976158142, 77.999999731779099 ],
+					"patching_rect" : [ 760.0, 10.0, 310.399999976158142, 77.999999731779099 ],
 					"varname" : "qxt.QuackChannel[9]",
 					"viewvisibility" : 1
 				}
@@ -545,7 +545,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 548.999999642372131, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 554.999999821186066, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[4]",
 					"viewvisibility" : 1
 				}
@@ -566,7 +566,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 471.999999642372131, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 476.999999821186066, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[5]",
 					"viewvisibility" : 1
 				}
@@ -587,7 +587,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 394.999999642372131, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 398.999999821186066, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[6]",
 					"viewvisibility" : 1
 				}
@@ -608,7 +608,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 317.999999642372131, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 320.999999821186066, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[7]",
 					"viewvisibility" : 1
 				}
@@ -629,7 +629,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 240.999999821186066, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 243.0, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[2]",
 					"viewvisibility" : 1
 				}
@@ -650,7 +650,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 163.999999821186066, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 165.0, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[3]",
 					"viewvisibility" : 1
 				}
@@ -671,7 +671,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 86.999999821186066, 1091.600000023841858, 77.999999821186066 ],
+					"patching_rect" : [ 10.0, 87.000000000000014, 1060.0, 78.999999642372117 ],
 					"varname" : "qxt.QuackChannel[1]",
 					"viewvisibility" : 1
 				}
