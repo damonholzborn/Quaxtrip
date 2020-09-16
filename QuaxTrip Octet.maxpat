@@ -2784,8 +2784,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.0, 757.0, 213.0, 22.0 ],
-									"text" : "sprintf %slib/quacktrip/qxt.quacktrip.pd"
+									"patching_rect" : [ 132.0, 757.0, 221.0, 22.0 ],
+									"text" : "sprintf %slib/quacktrip/quaxtrip_octet.pd"
 								}
 
 							}
