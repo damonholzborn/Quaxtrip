@@ -125,6 +125,7 @@
 						"style" : "",
 						"subpatcher_template" : "--Template",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
