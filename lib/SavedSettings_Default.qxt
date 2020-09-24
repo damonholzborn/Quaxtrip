@@ -43,34 +43,4 @@
 4_LocalBus_qxt, 0;
 4_Mono_qxt, 0;
 
-5_Gain_qxt, 115;
-5_CallName_qxt, callname5;
-5_Server_qxt, foo.ucsd.edu;
-5_FIFOSize_qxt, 50;
-5_Channels_qxt, 1;
-5_BlockSize_qxt, 0;
-5_2x_qxt, 0;
-5_LocalBus_qxt, 0;
-5_Mono_qxt, 0;
-
-6_Gain_qxt, 116;
-6_CallName_qxt, callname6;
-6_Server_qxt, foo.ucsd.edu;
-6_FIFOSize_qxt, 50;
-6_Channels_qxt, 1;
-6_BlockSize_qxt, 0;
-6_2x_qxt, 0;
-6_LocalBus_qxt, 0;
-6_Mono_qxt, 0;
-
-7_Gain_qxt, 117;
-7_CallName_qxt, callname7;
-7_Server_qxt, foo.ucsd.edu;
-7_FIFOSize_qxt, 50;
-7_Channels_qxt, 1;
-7_BlockSize_qxt, 0;
-7_2x_qxt, 0;
-7_LocalBus_qxt, 0;
-7_Mono_qxt, 0;
-
 Output_StartingChannel_qxt, 0;

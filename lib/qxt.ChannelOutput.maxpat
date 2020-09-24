@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 435.0, 203.0, 462.0, 306.0 ],
+		"rect" : [ 1.0, 742.0, 462.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -251,8 +251,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 261.75, 105.5, 148.0, 22.0 ],
-					"text" : "receive~ qxt.post_mute_R"
+					"patching_rect" : [ 261.75, 105.5, 152.0, 22.0 ],
+					"text" : "receive~ qxt_post_mute_R"
 				}
 
 			}
@@ -264,8 +264,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 202.75, 81.5, 146.0, 22.0 ],
-					"text" : "receive~ qxt.post_mute_L"
+					"patching_rect" : [ 202.75, 81.5, 150.0, 22.0 ],
+					"text" : "receive~ qxt_post_mute_L"
 				}
 
 			}

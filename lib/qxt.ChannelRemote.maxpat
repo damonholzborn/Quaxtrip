@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1.0, 45.0, 1731.0, 596.0 ],
+		"rect" : [ 143.0, 492.0, 1731.0, 596.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -179,8 +179,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1378.035714285714448, 93.399999648332596, 130.0, 22.0 ],
-					"text" : "receive~ #2_remote_R"
+					"patching_rect" : [ 1378.035714285714448, 93.399999648332596, 153.0, 22.0 ],
+					"text" : "receive~ #2_qxt_remote_R"
 				}
 
 			}
@@ -192,8 +192,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1300.928571428571558, 63.399999648332596, 128.0, 22.0 ],
-					"text" : "receive~ #2_remote_L"
+					"patching_rect" : [ 1300.928571428571558, 63.399999648332596, 151.0, 22.0 ],
+					"text" : "receive~ #2_qxt_remote_L"
 				}
 
 			}
@@ -246,7 +246,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1104.857142857143117, 211.0, 108.0, 31.0 ],
-					"text" : "sdff",
+					"text" : "symbol sdff",
 					"varname" : "#2_Server"
 				}
 
@@ -273,6 +273,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 922.0, 211.0, 108.0, 31.0 ],
+					"text" : "symbol <empty>",
 					"varname" : "#2_CallName"
 				}
 
@@ -1288,8 +1289,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 754.5, 401.0, 95.0, 22.0 ],
-					"text" : "r from_quacktrip"
+					"patching_rect" : [ 754.5, 401.0, 118.0, 22.0 ],
+					"text" : "r qxt_from_quacktrip"
 				}
 
 			}
@@ -1423,8 +1424,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 754.5, 370.0, 83.0, 22.0 ],
-					"text" : "s to_quacktrip"
+					"patching_rect" : [ 754.5, 370.0, 106.0, 22.0 ],
+					"text" : "s qxt_to_quacktrip"
 				}
 
 			}
@@ -1484,6 +1485,7 @@
 					"patching_rect" : [ 1079.5, 19.0, 108.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 300.0, 48.0, 140.0, 22.0 ],
+					"text" : "sdff",
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ]
 				}
 
@@ -1556,6 +1558,7 @@
 					"patching_rect" : [ 900.0, 19.0, 108.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 190.0, 48.0, 100.0, 22.0 ],
+					"text" : "<empty>",
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ]
 				}
 

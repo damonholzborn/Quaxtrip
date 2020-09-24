@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1082.0, 647.0 ],
+		"rect" : [ 0.0, 45.0, 1082.0, 674.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 100.0, 420.0, 104.0, 22.0 ],
-					"text" : "r qtx_mainbuttons"
+					"text" : "r qxt_mainbuttons"
 				}
 
 			}
@@ -595,7 +595,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 500.0, 20.0, 126.0, 22.0 ],
-					"text" : "r qtx_loadingmessage"
+					"text" : "r qxt_loadingmessage"
 				}
 
 			}
@@ -612,8 +612,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 178.0, 24.0 ],
 					"text" : "Loading, please wait...",
-					"textcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"varname" : "qtx_loadingmessage"
+					"textcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ]
 				}
 
 			}
@@ -635,7 +634,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1079.0, 46.0, 829.0, 216.0 ],
+						"rect" : [ 1080.0, 45.0, 829.0, 216.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -695,7 +694,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 530.0, 80.0, 106.0, 22.0 ],
-									"text" : "s qtx_mainbuttons"
+									"text" : "s qxt_mainbuttons"
 								}
 
 							}
@@ -719,7 +718,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 390.0, 80.0, 128.0, 22.0 ],
-									"text" : "s qtx_loadingmessage"
+									"text" : "s qxt_loadingmessage"
 								}
 
 							}
@@ -918,7 +917,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 110.0, 83.0, 22.0 ],
-									"text" : "s qtx_load_pd"
+									"text" : "s qxt_load_pd"
 								}
 
 							}
@@ -1146,8 +1145,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 714.345793545246124, 440.0, 102.0, 22.0 ],
-					"text" : "receive~ pd_in_R"
+					"patching_rect" : [ 731.285714285714221, 440.0, 125.0, 22.0 ],
+					"text" : "receive~ qxt_pd_in_R"
 				}
 
 			}
@@ -1159,8 +1158,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.448597848415375, 440.0, 100.0, 22.0 ],
-					"text" : "receive~ pd_in_L"
+					"patching_rect" : [ 596.448597848415375, 440.0, 123.0, 22.0 ],
+					"text" : "receive~ qxt_pd_in_L"
 				}
 
 			}
@@ -1357,7 +1356,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 105.0, 280.0, 123.0, 22.0 ],
-									"text" : "r qtx_load_repattrhub"
+									"text" : "r qxt_load_repattrhub"
 								}
 
 							}
@@ -2674,8 +2673,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 766.5, 600.0, 111.0, 22.0 ],
-					"text" : "send~ 4_remote_R"
+					"patching_rect" : [ 766.5, 600.0, 134.0, 22.0 ],
+					"text" : "send~ 4_qxt_remote_R"
 				}
 
 			}
@@ -2686,8 +2685,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 731.285714285714221, 570.0, 109.0, 22.0 ],
-					"text" : "send~ 4_remote_L"
+					"patching_rect" : [ 731.285714285714221, 570.0, 132.0, 22.0 ],
+					"text" : "send~ 4_qxt_remote_L"
 				}
 
 			}
@@ -2698,8 +2697,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 696.071428571428555, 540.0, 111.0, 22.0 ],
-					"text" : "send~ 3_remote_R"
+					"patching_rect" : [ 696.071428571428555, 540.0, 134.0, 22.0 ],
+					"text" : "send~ 3_qxt_remote_R"
 				}
 
 			}
@@ -2710,8 +2709,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.85714285714289, 510.0, 109.0, 22.0 ],
-					"text" : "send~ 3_remote_L"
+					"patching_rect" : [ 660.85714285714289, 510.0, 132.0, 22.0 ],
+					"text" : "send~ 3_qxt_remote_L"
 				}
 
 			}
@@ -2722,8 +2721,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 625.64285714285711, 600.0, 111.0, 22.0 ],
-					"text" : "send~ 2_remote_R"
+					"patching_rect" : [ 625.64285714285711, 600.0, 134.0, 22.0 ],
+					"text" : "send~ 2_qxt_remote_R"
 				}
 
 			}
@@ -2734,8 +2733,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 590.428571428571445, 570.0, 109.0, 22.0 ],
-					"text" : "send~ 2_remote_L"
+					"patching_rect" : [ 590.428571428571445, 570.0, 132.0, 22.0 ],
+					"text" : "send~ 2_qxt_remote_L"
 				}
 
 			}
@@ -2746,8 +2745,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.214285714285666, 540.0, 111.0, 22.0 ],
-					"text" : "send~ 1_remote_R"
+					"patching_rect" : [ 555.214285714285666, 540.0, 134.0, 22.0 ],
+					"text" : "send~ 1_qxt_remote_R"
 				}
 
 			}
@@ -2758,8 +2757,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.0, 510.0, 109.0, 22.0 ],
-					"text" : "send~ 1_remote_L"
+					"patching_rect" : [ 520.0, 510.0, 132.0, 22.0 ],
+					"text" : "send~ 1_qxt_remote_L"
 				}
 
 			}
@@ -2770,8 +2769,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 801.714285714285666, 510.0, 97.0, 22.0 ],
-					"text" : "s from_quacktrip"
+					"patching_rect" : [ 801.714285714285666, 510.0, 120.0, 22.0 ],
+					"text" : "s qxt_from_quacktrip"
 				}
 
 			}
@@ -2806,7 +2805,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 383.0, 45.0, 1007.0, 1007.0 ],
+						"rect" : [ 860.0, 45.0, 1007.0, 1007.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2866,7 +2865,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 201.5, 960.0, 106.0, 22.0 ],
-									"text" : "s qtx_mainbuttons"
+									"text" : "s qxt_mainbuttons"
 								}
 
 							}
@@ -2940,7 +2939,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 261.5, 930.0, 128.0, 22.0 ],
-									"text" : "s qtx_loadingmessage"
+									"text" : "s qxt_loadingmessage"
 								}
 
 							}
@@ -2988,7 +2987,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 327.0, 900.0, 125.0, 22.0 ],
-									"text" : "s qtx_load_repattrhub"
+									"text" : "s qxt_load_repattrhub"
 								}
 
 							}
@@ -3001,7 +3000,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 537.0, 10.0, 81.0, 22.0 ],
-									"text" : "r qtx_load_pd"
+									"text" : "r qxt_load_pd"
 								}
 
 							}
@@ -3013,8 +3012,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 651.5, 910.0, 81.0, 22.0 ],
-									"text" : "r to_quacktrip"
+									"patching_rect" : [ 651.5, 910.0, 104.0, 22.0 ],
+									"text" : "r qxt_to_quacktrip"
 								}
 
 							}
