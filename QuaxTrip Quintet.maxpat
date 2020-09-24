@@ -60,7 +60,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 280.0, 460.0, 82.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 720.0, 10.0, 33.0, 22.0 ],
+					"presentation_rect" : [ 640.0, 10.0, 33.0, 22.0 ],
 					"text" : "Help"
 				}
 
@@ -1180,7 +1180,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 760.0, 10.0, 310.399999976158142, 77.999999731779099 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 760.0, 10.0, 310.399999976158142, 77.999999731779099 ],
+					"presentation_rect" : [ 680.0, 10.0, 390.399999976158142, 77.999999731779099 ],
 					"varname" : "qxt.QuackChannel[9]",
 					"viewvisibility" : 1
 				}
@@ -4301,13 +4301,6 @@
 			}
 , 			{
 				"name" : "SavedSettings.qxt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SavedSettings_Default.qxt",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
