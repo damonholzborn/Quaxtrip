@@ -433,7 +433,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 475.0, 45.0, 221.0, 71.0 ],
+						"rect" : [ 1084.0, 258.0, 199.0, 70.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -634,7 +634,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 77.0, 230.0, 50.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 160.0, 11.0, 50.0, 22.0 ],
+									"presentation_rect" : [ 150.0, 11.0, 40.0, 22.0 ],
 									"triangle" : 0
 								}
 
@@ -666,7 +666,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 10.0, 40.0, 200.0, 24.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 9.928571428571445, 40.0, 200.071428571428555, 20.0 ],
+									"presentation_rect" : [ 9.928571428571445, 40.0, 180.071428571428555, 20.0 ],
 									"tabs" : [ "Off", "Measure", "Loop-back" ],
 									"varname" : "tab"
 								}
