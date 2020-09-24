@@ -433,7 +433,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1084.0, 258.0, 199.0, 70.0 ],
+						"rect" : [ 1083.0, 386.0, 199.0, 70.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1381,10 +1381,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 190.0, 290.0, 63.0, 20.0 ],
+					"patching_rect" : [ 190.0, 290.0, 73.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.5, 29.0, 63.0, 20.0 ],
-					"text" : "FIFO Size",
+					"presentation_rect" : [ 438.5, 29.0, 73.0, 20.0 ],
+					"text" : "Input Delay",
 					"textjustification" : 1
 				}
 
@@ -1641,6 +1641,8 @@
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "number",
+					"maximum" : 100,
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],

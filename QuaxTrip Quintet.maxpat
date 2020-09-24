@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1.0, 45.0, 1082.0, 410.0 ],
+		"rect" : [ 0.0, 45.0, 1082.0, 411.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -97,7 +97,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1084.0, 45.0, 197.0, 190.0 ],
+						"rect" : [ 1083.0, 45.0, 208.0, 184.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -233,7 +233,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 198.0, 70.0, 240.0, 49.0 ],
-									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib/quacktrip/lib/quax-conniption-server.pd\""
+									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib/quack.conniption-server.pd\""
 								}
 
 							}
@@ -1646,8 +1646,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 740.0, 282.0, 22.0 ],
-									"text" : "sprintf %slib/quacktrip/lib/quax-conniption-server.pd"
+									"patching_rect" : [ 10.0, 740.0, 220.0, 22.0 ],
+									"text" : "sprintf %slib/quack.conniption-server.pd"
 								}
 
 							}
@@ -1854,13 +1854,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-45",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 707.0, 530.0, 150.000001490116119, 49.0 ],
-									"text" : "symbol /Applications/Pd-0.51-0.app"
+									"patching_rect" : [ 707.0, 530.0, 150.000001490116119, 22.0 ]
 								}
 
 							}
@@ -1920,7 +1918,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 383.5, 770.0, 57.0, 22.0 ],
+									"patching_rect" : [ 327.0, 770.0, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1934,7 +1932,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 383.5, 800.0, 109.0, 22.0 ],
+									"patching_rect" : [ 327.0, 800.0, 109.0, 22.0 ],
 									"text" : "pd~ start -nogui $1"
 								}
 
@@ -1948,7 +1946,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 625.5, 740.0, 88.0, 22.0 ],
+									"patching_rect" : [ 625.5, 770.0, 88.0, 22.0 ],
 									"text" : "pd~ pddir $1"
 								}
 
@@ -2059,8 +2057,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 383.5, 740.0, 221.0, 22.0 ],
-									"text" : "sprintf %slib/quacktrip/quaxtrip_octet.pd"
+									"patching_rect" : [ 327.0, 740.0, 220.0, 22.0 ],
+									"text" : "sprintf %slib/quack.quacktrip_quintet.pd"
 								}
 
 							}
@@ -2072,7 +2070,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 431.5, 667.0, 189.0, 22.0 ],
+									"patching_rect" : [ 375.0, 667.0, 189.0, 22.0 ],
 									"text" : "pathstyle slash, pathtype boot, $1"
 								}
 
@@ -2085,7 +2083,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 383.5, 697.0, 77.0, 22.0 ],
+									"patching_rect" : [ 327.0, 697.0, 77.0, 22.0 ],
 									"text" : "conformpath"
 								}
 
@@ -2097,7 +2095,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 383.5, 640.0, 67.0, 22.0 ],
+									"patching_rect" : [ 327.0, 640.0, 67.0, 22.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -2478,7 +2476,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-61", 0 ],
-									"midpoints" : [ 546.0, 630.0, 393.0, 630.0 ],
+									"midpoints" : [ 546.0, 630.0, 336.5, 630.0 ],
 									"source" : [ "obj-25", 0 ]
 								}
 

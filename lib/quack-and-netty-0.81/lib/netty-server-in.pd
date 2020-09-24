@@ -1,5 +1,5 @@
-#N canvas 145 108 666 731 12;
-#X floatatom 105 122 5 0 0 0 - - -;
+#N canvas 287 78 666 731 12;
+#X floatatom 102 137 5 0 0 0 - - -;
 #X obj 31 13 r \$1-port;
 #X obj 31 38 expr $f1 + \$2;
 #X obj 301 322 netreceive -u -b -f;
@@ -21,7 +21,7 @@
 #X obj 387 45 b;
 #X obj 387 70 del 2000;
 #X obj 151 74 r \$0-connected;
-#X obj 152 126 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 142 139 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 344 157 0;
 #X obj 344 182 s \$0-connected;
@@ -103,4 +103,4 @@
 #X connect 49 0 44 0;
 #X connect 50 0 12 0;
 #X connect 50 0 44 0;
-#X coords 0 -1 1 1 100 60 1 100 100;
+#X coords 0 -1 1 1 60 60 1 100 100;

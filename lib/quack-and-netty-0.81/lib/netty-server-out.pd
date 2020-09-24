@@ -1,5 +1,5 @@
 #N canvas 873 158 747 751 12;
-#X floatatom 105 122 5 0 0 0 - - -;
+#X floatatom 103 128 5 0 0 0 - - -;
 #X obj 30 18 r \$1-port;
 #X obj 30 43 expr $f1 + 10*\$2 + \$3;
 #X obj 262 470 r in-packet-\$2;
@@ -20,7 +20,7 @@
 #X obj 386 48 b;
 #X obj 386 73 del 2000;
 #X obj 150 77 r \$0-connected;
-#X obj 151 129 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 143 131 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 343 160 0;
 #X obj 343 185 s \$0-connected;
@@ -120,4 +120,4 @@
 #X connect 56 0 55 1;
 #X connect 57 0 58 0;
 #X connect 58 0 59 0;
-#X coords 0 -1 1 1 100 60 1 100 100;
+#X coords 0 -1 1 1 100 50 1 100 100;
