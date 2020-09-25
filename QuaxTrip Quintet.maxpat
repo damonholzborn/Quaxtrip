@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1082.0, 1035.0 ],
+		"rect" : [ 0.0, 45.0, 1082.0, 413.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -59,8 +59,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 280.0, 460.0, 82.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 640.0, 10.0, 33.0, 22.0 ],
 					"text" : "Help"
 				}
 
@@ -3106,13 +3104,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pdpath.coll",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "qxt.Repattrhub.maxpat",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
@@ -3127,9 +3118,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "5_qxt.SavedSettings_Default.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
+				"name" : "ffsfsda.txt",
+				"bootpath" : "~/Desktop",
+				"patcherrelativepath" : "../../../../../Desktop",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
