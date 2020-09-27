@@ -433,7 +433,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1083.0, 386.0, 199.0, 70.0 ],
+						"rect" : [ 1083.0, 252.0, 199.0, 70.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1319,7 +1319,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1097.5, 49.0, 46.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 354.0, 30.0, 46.0, 20.0 ],
+					"presentation_rect" : [ 347.0, 30.0, 46.0, 20.0 ],
 					"text" : "Server",
 					"textjustification" : 1
 				}
@@ -1394,13 +1394,14 @@
 					"fontface" : 1,
 					"fontsize" : 12.0,
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 290.0, 44.0, 20.0 ],
+					"patching_rect" : [ 30.0, 290.0, 44.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 216.0, 7.0, 44.0, 20.0 ],
-					"text" : "On/off",
+					"presentation_rect" : [ 216.0, 7.0, 46.0, 20.0 ],
+					"text" : "On/Off",
 					"textjustification" : 1
 				}
 
@@ -1744,7 +1745,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 130.0, 150.0, 30.0, 26.799999296665192 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 727.0, 0.249655663657364, 333.0, 76.751033038830229 ],
+					"presentation_rect" : [ 727.0, 0.249655663657364, 333.0, 79.750344336342636 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -2244,14 +2245,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxt.Channel.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1082.0, 413.0 ],
+		"rect" : [ 0.0, 45.0, 1082.0, 411.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -173,6 +173,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 1
 									}
 ,
@@ -231,7 +233,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 198.0, 70.0, 240.0, 49.0 ],
-									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib/quack.conniption-server.pd\""
+									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib/quack.conniption-server.pd\""
 								}
 
 							}
@@ -1345,7 +1347,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 690.0, 10.0, 380.399999976158142, 77.999999731779099 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 10.0, 390.399999976158142, 77.999999731779099 ],
+					"presentation_rect" : [ 690.0, 10.0, 380.399999976158142, 77.999999731779099 ],
 					"varname" : "qxt.QuackChannel[9]",
 					"viewvisibility" : 1
 				}
@@ -1391,7 +1393,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 10.0, 320.999999821186066, 1060.0, 78.999999642372131 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 320.999999821186066, 1060.0, 78.999999642372131 ],
+					"presentation_rect" : [ 10.0, 321.0, 1060.0, 78.999999642372131 ],
 					"varname" : "qxt.QuackChannel[7]",
 					"viewvisibility" : 1
 				}
@@ -1617,7 +1619,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 729.0, 45.0, 1007.0, 1007.0 ],
+						"rect" : [ 729.0, 45.0, 1001.0, 998.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1861,13 +1863,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 889.0, 700.0, 88.0, 22.0 ],
+									"patching_rect" : [ 889.0, 700.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
 									}
 ,
-									"text" : "coll pdpath.coll"
+									"text" : "coll pdpath.txt"
 								}
 
 							}
@@ -1926,7 +1928,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 707.0, 530.0, 197.0, 22.0 ],
+									"patching_rect" : [ 707.0, 530.0, 232.0, 22.0 ],
 									"text" : "symbol /Applications/Pd-0.51-0.app"
 								}
 
@@ -2055,8 +2057,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 375.0, 530.0, 138.0, 22.0 ],
-									"text" : "sprintf %s/lib/pdpath.coll"
+									"patching_rect" : [ 375.0, 530.0, 133.0, 22.0 ],
+									"text" : "sprintf %s/lib/pdpath.txt"
 								}
 
 							}
@@ -2107,13 +2109,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 367.0, 470.0, 88.0, 22.0 ],
+									"patching_rect" : [ 367.0, 470.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
 									}
 ,
-									"text" : "coll pdpath.coll"
+									"text" : "coll pdpath.txt"
 								}
 
 							}
@@ -2190,13 +2192,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 783.0, 427.0, 88.0, 22.0 ],
+									"patching_rect" : [ 783.0, 427.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
 									}
 ,
-									"text" : "coll pdpath.coll"
+									"text" : "coll pdpath.txt"
 								}
 
 							}
@@ -2232,13 +2234,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 537.0, 70.0, 88.0, 22.0 ],
+									"patching_rect" : [ 537.0, 70.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
 									}
 ,
-									"text" : "coll pdpath.coll"
+									"text" : "coll pdpath.txt"
 								}
 
 							}
@@ -3104,64 +3106,64 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "pdpath.txt",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "qxt.Repattrhub.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "5_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ffsfsda.txt",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../../Desktop",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "qxt.ChannelRemote.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Channel.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ChannelLocal.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ChannelOutput.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.GetIP.js",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1

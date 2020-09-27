@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1920.0, 1035.0 ],
+		"rect" : [ 1287.0, 539.0, 577.0, 405.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,8 +58,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 384.5, 220.0, 168.0, 22.0 ],
-					"text" : "send~ qxt_main_bus_send_R"
+					"patching_rect" : [ 384.5, 220.0, 175.0, 22.0 ],
+					"text" : "send~ qxt_output_bus_send_R"
 				}
 
 			}
@@ -70,8 +70,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 313.5, 250.0, 166.0, 22.0 ],
-					"text" : "send~ qxt_main_bus_send_L"
+					"patching_rect" : [ 313.5, 250.0, 173.0, 22.0 ],
+					"text" : "send~ qxt_output_bus_send_L"
 				}
 
 			}
@@ -107,8 +107,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 249.0, 40.0, 193.0, 22.0 ],
-					"text" : "receive~ qxt_main_bus_receive_R"
+					"patching_rect" : [ 249.0, 40.0, 200.0, 22.0 ],
+					"text" : "receive~ qxt_output_bus_receive_R"
 				}
 
 			}
@@ -120,8 +120,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 190.0, 10.0, 191.0, 22.0 ],
-					"text" : "receive~ qxt_main_bus_receive_L"
+					"patching_rect" : [ 190.0, 10.0, 198.0, 22.0 ],
+					"text" : "receive~ qxt_output_bus_receive_L"
 				}
 
 			}
@@ -656,7 +656,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
