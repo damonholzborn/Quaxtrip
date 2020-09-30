@@ -1,1 +1,1 @@
-quackpath, /Applications/Pd-0.51-0.app;
+quackpath, /Applications/Pd-0.51-2.app;
