@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1079.0, 410.0 ],
+		"rect" : [ 0.0, 45.0, 1079.0, 177.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 550.0, 29.5, 22.0 ],
+					"patching_rect" : [ 240.0, 280.0, 29.5, 22.0 ],
 					"text" : "set"
 				}
 
@@ -57,7 +57,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 160.0, 580.0, 111.0, 22.0 ],
+					"patching_rect" : [ 240.0, 310.0, 111.0, 22.0 ],
 					"text" : "s qxt_zero_me_out"
 				}
 
@@ -70,7 +70,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 420.0, 104.0, 22.0 ],
+					"patching_rect" : [ 100.0, 190.0, 104.0, 22.0 ],
 					"text" : "r qxt_mainbuttons"
 				}
 
@@ -82,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 460.0, 82.0, 22.0 ],
+					"patching_rect" : [ 280.0, 230.0, 82.0, 22.0 ],
 					"text" : "Help"
 				}
 
@@ -94,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 402.0, 460.0, 105.0, 22.0 ],
+					"patching_rect" : [ 402.0, 230.0, 105.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 450.0, 60.0, 105.0, 22.0 ],
 					"text" : "Conniption Server"
@@ -200,12 +200,15 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-18",
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 56.0, 480.0, 186.0, 20.0 ],
+									"patching_rect" : [ 56.0, 480.0, 122.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 130.0, 130.0, 20.0 ]
+									"presentation_linecount" : 6,
+									"presentation_rect" : [ 10.0, 130.0, 122.0, 20.0 ],
+									"text" : "Local IP Address(es):\n   192.168.0.119\n   192.168.0.108\n\nPublic IP Address:\n   24.185.123.48"
 								}
 
 							}
@@ -220,6 +223,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -272,11 +277,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 198.0, 80.0, 240.0, 22.0 ]
+									"patching_rect" : [ 198.0, 80.0, 240.0, 22.0 ],
+									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib/quack.conniption-server.pd\""
 								}
 
 							}
@@ -687,7 +694,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 370.0, 500.0, 115.0, 22.0 ],
+					"patching_rect" : [ 370.0, 270.0, 115.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -706,7 +713,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 190.0, 460.0, 82.0, 22.0 ],
+					"patching_rect" : [ 190.0, 230.0, 82.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 540.0, 10.0, 82.0, 22.0 ],
 					"text" : "Load Settings"
@@ -720,7 +727,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 460.0, 83.0, 22.0 ],
+					"patching_rect" : [ 100.0, 230.0, 83.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 450.0, 10.0, 83.0, 22.0 ],
 					"text" : "Save Settings"
@@ -734,7 +741,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 460.0, 42.0, 22.0 ],
+					"patching_rect" : [ 50.0, 230.0, 42.0, 22.0 ],
 					"text" : "reload"
 				}
 
@@ -1349,7 +1356,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 714.345793545246124, 410.0, 56.0, 22.0 ],
+					"patching_rect" : [ 714.345793545246124, 180.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1369,7 +1376,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 731.285714285714221, 440.0, 125.0, 22.0 ],
+					"patching_rect" : [ 731.285714285714221, 210.0, 125.0, 22.0 ],
 					"text" : "receive~ qxt_pd_in_R"
 				}
 
@@ -1382,7 +1389,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.448597848415375, 440.0, 123.0, 22.0 ],
+					"patching_rect" : [ 596.448597848415375, 210.0, 123.0, 22.0 ],
 					"text" : "receive~ qxt_pd_in_L"
 				}
 
@@ -1435,75 +1442,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 4 ],
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-33",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "qxt.ChannelRemote.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 320.999999821186066, 1060.0, 78.999999642372131 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 321.0, 1060.0, 78.999999642372131 ],
-					"varname" : "qxt.QuackChannel[7]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "remote", 3 ],
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-14",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "qxt.ChannelRemote.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 243.0, 1060.0, 78.999999642372131 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 243.0, 1060.0, 78.999999642372131 ],
-					"varname" : "qxt.QuackChannel[2]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "remote", 2 ],
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-29",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "qxt.ChannelRemote.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 165.0, 1060.0, 78.999999642372131 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 165.0, 1060.0, 78.999999642372131 ],
-					"varname" : "qxt.QuackChannel[3]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"args" : [ "remote", 1 ],
 					"bgmode" : 0,
 					"border" : 1,
@@ -1532,80 +1470,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 490.0, 159.0, 22.0 ],
-					"text" : "qxt.Repattrhub 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 766.5, 600.0, 134.0, 22.0 ],
-					"text" : "send~ 4_qxt_remote_R"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 731.285714285714221, 570.0, 132.0, 22.0 ],
-					"text" : "send~ 4_qxt_remote_L"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"id" : "obj-23",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 696.071428571428555, 540.0, 134.0, 22.0 ],
-					"text" : "send~ 3_qxt_remote_R"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 660.85714285714289, 510.0, 132.0, 22.0 ],
-					"text" : "send~ 3_qxt_remote_L"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 625.64285714285711, 600.0, 134.0, 22.0 ],
-					"text" : "send~ 2_qxt_remote_R"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 590.428571428571445, 570.0, 132.0, 22.0 ],
-					"text" : "send~ 2_qxt_remote_L"
+					"patching_rect" : [ 50.0, 260.0, 97.0, 22.0 ],
+					"text" : "qxt.Repattrhub 2"
 				}
 
 			}
@@ -1616,7 +1482,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.214285714285666, 540.0, 134.0, 22.0 ],
+					"patching_rect" : [ 590.948597848415488, 310.0, 134.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_R"
 				}
 
@@ -1628,7 +1494,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.0, 510.0, 132.0, 22.0 ],
+					"patching_rect" : [ 520.0, 280.0, 132.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_L"
 				}
 
@@ -1640,7 +1506,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 801.714285714285666, 510.0, 120.0, 22.0 ],
+					"patching_rect" : [ 660.0, 280.0, 120.0, 22.0 ],
 					"text" : "s qxt_from_quacktrip"
 				}
 
@@ -1652,7 +1518,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 410.0, 55.0, 22.0 ],
+					"patching_rect" : [ 550.0, 180.0, 55.0, 22.0 ],
 					"text" : "pd~ stop"
 				}
 
@@ -2109,7 +1975,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 687.0, 390.0, 232.0, 22.0 ]
+									"patching_rect" : [ 687.0, 390.0, 232.0, 22.0 ],
+									"text" : "symbol /Applications/Pd-0.51-2.app"
 								}
 
 							}
@@ -3115,7 +2982,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 370.0, 410.0, 169.0, 22.0 ],
+					"patching_rect" : [ 370.0, 180.0, 169.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3134,10 +3001,10 @@
 					"id" : "obj-40",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 9,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 520.0, 480.0, 300.714285714285666, 22.0 ],
-					"text" : "pd~ -ninsig 2 -noutsig 8"
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 520.0, 250.0, 159.0, 22.0 ],
+					"text" : "pd~ -ninsig 2 -noutsig 2"
 				}
 
 			}
@@ -3239,50 +3106,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-40", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-40", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-40", 7 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-40", 6 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-40", 5 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-40", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-40", 8 ]
+					"source" : [ "obj-40", 2 ]
 				}
 
 			}
@@ -3319,12 +3144,6 @@
 		"parameters" : 		{
 			"obj-13::obj-120::obj-59" : [ "toggle", "toggle", 0 ],
 			"obj-13::obj-120::obj-67" : [ "gain~[5]", "gain~", 0 ],
-			"obj-14::obj-120::obj-59" : [ "toggle[2]", "toggle", 0 ],
-			"obj-14::obj-120::obj-67" : [ "gain~[7]", "gain~", 0 ],
-			"obj-29::obj-120::obj-59" : [ "toggle[1]", "toggle", 0 ],
-			"obj-29::obj-120::obj-67" : [ "gain~[8]", "gain~", 0 ],
-			"obj-33::obj-120::obj-59" : [ "toggle[3]", "toggle", 0 ],
-			"obj-33::obj-120::obj-67" : [ "gain~[12]", "gain~", 0 ],
 			"obj-55::obj-120::obj-59" : [ "toggle[7]", "toggle", 0 ],
 			"obj-55::obj-120::obj-67" : [ "gain~[9]", "gain~", 0 ],
 			"obj-55::obj-33" : [ "tab", "tab", 0 ],
@@ -3351,14 +3170,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "5_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "5_qxt.SavedSettings_Default.txt",
+				"name" : "2_qxt.SavedSettings.txt",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
