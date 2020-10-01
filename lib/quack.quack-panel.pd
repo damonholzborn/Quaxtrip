@@ -66,7 +66,7 @@
 #X floatatom 71 330 5 0 0 0 - #0-remote-sr-set #0-remote-sr;
 #X floatatom 71 309 5 0 0 0 - #0-local-sr-set #0-local-sr;
 #X obj 609 316 route 0;
-#N canvas 126 330 826 670 latency-testing 0;
+#N canvas 1001 224 826 670 latency-testing 0;
 #N canvas 0 22 450 300 (subpatch) 0;
 #X array \$0-pulse 120 float 3;
 #A 0 0 0 0 0 0 0 0 0 0 0 -0 -6.19458e-05 -0.000494103 -0.00165937 -0.00390618
@@ -150,8 +150,8 @@
 #X obj 581 277 outlet~;
 #X obj 659 130 switch~;
 #X obj 444 30 r~ \$0-loopback;
-#X obj 659 44 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144 -1
--1 1;
+#X obj 659 44 vradio 15 1 0 3 empty \$0-measure-latency empty 0 -8
+0 10 -262144 -1 -1 1;
 #X floatatom 673 98 5 0 0 0 - - -;
 #X text 680 41 off;
 #X obj 504 153 == 1;
@@ -166,6 +166,7 @@
 #X msg 584 39 stop;
 #X obj 618 207 * 0.03;
 #X obj 368 188 tabread4~ \$0-pulse;
+#X obj 384 630 s \$0-latency;
 #X connect 1 0 4 0;
 #X connect 1 1 9 0;
 #X connect 1 1 8 0;
@@ -221,6 +222,7 @@
 #X connect 46 0 48 0;
 #X connect 48 0 47 0;
 #X connect 48 0 49 0;
+#X connect 48 0 76 0;
 #X connect 51 0 52 0;
 #X connect 52 0 53 0;
 #X connect 53 0 54 0;
@@ -268,7 +270,7 @@
 #X floatatom 184 309 3 0 0 0 - #0-local-blk-set #0-local-blk;
 #X floatatom 184 330 3 0 0 0 - #0-remote-blk-set #0-remote-blk;
 #X obj 189 87 vradio 15 1 0 3 \$0-nchan \$0-nchan-set empty 0 -8 0
-10 -262144 -1 -1 2;
+10 -262144 -1 -1 1;
 #X text 206 84 0;
 #X text 207 99 1;
 #X text 207 114 2;
@@ -548,6 +550,7 @@ reset-dropouts measure-latency;
 #X obj 576 617 declare -path quack-and-netty-0.81/lib;
 #X text 34 991 (don't forget to set latency switch property to \$0-measure-latency)
 , f 67;
+#X floatatom 869 662 5 0 0 0 - - -;
 #X connect 0 0 60 0;
 #X connect 0 0 70 0;
 #X connect 0 1 64 0;
@@ -646,6 +649,7 @@ reset-dropouts measure-latency;
 #X connect 152 0 150 0;
 #X connect 154 0 156 0;
 #X connect 155 0 187 0;
+#X connect 155 0 211 0;
 #X connect 158 0 159 0;
 #X connect 159 0 157 0;
 #X connect 161 0 207 0;

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1082.0, 410.0 ],
+		"rect" : [ 0.0, 45.0, 1079.0, 410.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -95,7 +95,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1083.0, 45.0, 212.0, 160.0 ],
+						"rect" : [ 1080.0, 45.0, 150.0, 243.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -125,12 +125,14 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-17",
+									"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
+									"id" : "obj-21",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 430.0, 580.0, 32.0, 22.0 ],
-									"text" : "print"
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 300.0, 40.0, 109.0, 22.0 ],
+									"text" : "r qxt_zero_me_out"
 								}
 
 							}
@@ -141,7 +143,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 200.0, 520.0, 72.0, 22.0 ],
+									"patching_rect" : [ 56.0, 440.0, 72.0, 22.0 ],
 									"text" : "prepend set"
 								}
 
@@ -153,7 +155,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 206.0, 440.0, 64.0, 22.0 ],
+									"patching_rect" : [ 56.0, 360.0, 64.0, 22.0 ],
 									"text" : "script start"
 								}
 
@@ -161,12 +163,15 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-18",
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 200.0, 550.0, 190.0, 20.0 ],
+									"patching_rect" : [ 56.0, 470.0, 186.0, 87.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 130.0, 190.0, 20.0 ]
+									"presentation_linecount" : 6,
+									"presentation_rect" : [ 10.0, 130.0, 130.0, 87.0 ],
+									"text" : "Local IP Address(es):\n   192.168.0.119\n   192.168.0.108\n\nPublic IP Address:\n   24.185.123.48"
 								}
 
 							}
@@ -177,11 +182,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 200.0, 480.0, 203.0, 22.0 ],
+									"patching_rect" : [ 56.0, 400.0, 203.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
-										"watch" : 1
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
+										"watch" : 0
 									}
 ,
 									"text" : "node.script qxt.GetIP.js @autostart 1"
@@ -238,7 +245,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 198.0, 70.0, 240.0, 49.0 ],
+									"patching_rect" : [ 198.0, 80.0, 240.0, 49.0 ],
 									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib/quack.conniption-server.pd\""
 								}
 
@@ -459,7 +466,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 320.0, 440.0, 150.0, 22.0 ]
+									"patching_rect" : [ 176.0, 360.0, 150.0, 22.0 ]
 								}
 
 							}
@@ -515,17 +522,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"order" : 0,
+									"destination" : [ "obj-18", 0 ],
 									"source" : [ "obj-20", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"order" : 1,
-									"source" : [ "obj-20", 0 ]
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-21", 0 ]
 								}
 
 							}
