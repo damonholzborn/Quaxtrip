@@ -8,7 +8,7 @@ Max patch encapsulating Miller Puckette's [QuackTrip](http://msp.ucsd.edu/tools/
 2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.51-2 or later).
 3. If Max is running, quit Max.
 4. [Download](http://msp.ucsd.edu/software.html) PdMax (version 0.54 or later), unzip, and place in the ~/Documents/Max 8/library directory.
-5. [Download](https://github.com/damonholzborn/QuaxTrip/releases/tag/quaxtrip-2020-1004) the latest release of QuaxTrip, unzip, and place in the ~/Documents/Max 8/library directory.
+5. [Download](https://github.com/damonholzborn/QuaxTrip/releases/download/quaxtrip-2020-1004/QuaxTrip.2020-1004.zip) the latest release of QuaxTrip, unzip, and place in the ~/Documents/Max 8/library directory.
 
 # Quick Start
 
