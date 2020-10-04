@@ -200,15 +200,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-18",
-									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 56.0, 480.0, 122.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 6,
-									"presentation_rect" : [ 10.0, 130.0, 122.0, 20.0 ],
-									"text" : "Local IP Address(es):\n   192.168.0.119\n   192.168.0.108\n\nPublic IP Address:\n   24.185.123.48"
+									"presentation_rect" : [ 10.0, 130.0, 122.0, 20.0 ]
 								}
 
 							}
@@ -223,8 +220,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 1,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -277,13 +272,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 198.0, 80.0, 240.0, 22.0 ],
-									"text" : "\"/Users/damon/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib/quack.conniption-server.pd\""
+									"patching_rect" : [ 198.0, 80.0, 240.0, 22.0 ]
 								}
 
 							}
@@ -1975,8 +1968,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 687.0, 390.0, 232.0, 22.0 ],
-									"text" : "symbol /Applications/Pd-0.51-2.app"
+									"patching_rect" : [ 687.0, 390.0, 232.0, 22.0 ]
 								}
 
 							}
@@ -3171,6 +3163,13 @@
 			}
 , 			{
 				"name" : "2_qxt.SavedSettings.txt",
+				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "2_qxt.SavedSettings_Default.txt",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",

@@ -4,11 +4,11 @@ Max patch encapsulating Miller Puckette's [QuackTrip](http://msp.ucsd.edu/tools/
 
 # Installation
 
-1. If you don’t already have Max, [download](https://cycling74.com/downloads) and install it. Note that you do not need to purchase Max to use QuaxTrip, it will run in the unregistered version.
-2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.51-2 or greater).
+1. If you don’t already have Max 8, [download](https://cycling74.com/downloads) and install it. Note that you do not need to purchase Max to use QuaxTrip, it will run in the unregistered version.
+2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.51-2 or later).
 3. If Max is running, quit Max.
-4. [Download](http://msp.ucsd.edu/software.html) PdMax, unzip, and place in the ~/Documents/Max 8/library directory.
-5. [Download](https://github.com/damonholzborn/QuaxTrip/releases/tag/quaxtrip-2020-1001) the latest release of QuaxTrip, unzip, and place in the ~/Documents/Max 8/library directory.
+4. [Download](http://msp.ucsd.edu/software.html) PdMax (version 0.54 or later), unzip, and place in the ~/Documents/Max 8/library directory.
+5. [Download](https://github.com/damonholzborn/QuaxTrip/releases/tag/quaxtrip-2020-1004) the latest release of QuaxTrip, unzip, and place in the ~/Documents/Max 8/library directory.
 
 # Quick Start
 
@@ -20,8 +20,8 @@ How to play with a remote partner:
 
 1. Both you and your partner launch **QuaxTrip Duet.maxpat**.
 2. If this is the first time you’ve launched QuaxTrip, you will be presented with a dialog box instructing you to locate and select the Pd app (binary) on your computer. You will only need to do this the first time you run the patch.
-	1. macOS: The PD app is typically in the /Applications directory.
-	2 Windows: The PD app is typically in the /Program Files/Pd/bin  directory.
+	1. macOS: The Pd app is typically in the /Applications directory.
+	2 Windows: The Pd app is typically in the /Program Files/Pd/bin  directory.
 3. In the **Local** channel (top left corner of the patch):
 	1. The **Input Starting Channel** to reflect the first channel (or only channel, if mono) of incoming audio from your audio interface.
 	2. Set volume as appropriate.
