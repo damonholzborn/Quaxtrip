@@ -1,5 +1,5 @@
-#N canvas 521 23 986 858 12;
-#X declare -path quack-and-netty-0.81/lib;
+#N canvas 2602 32 986 858 12;
+#X declare -path quacktrip/lib;
 #X obj 53 144 netreceive -u -f;
 #X obj 731 81 text define connections;
 #X obj 53 175 route call;
@@ -446,7 +446,7 @@ time, f 28;
 #X obj 581 720 list prepend to-netsend:;
 #X obj 392 722 list prepend add-new-line:;
 #X obj 229 721 list prepend got-call:;
-#X obj 582 785 declare -path quack-and-netty-0.81/lib;
+#X obj 582 784 declare -path quacktrip/lib;
 #X connect 0 0 2 0;
 #X connect 0 0 72 0;
 #X connect 0 1 3 1;
