@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1081.0, 178.0 ],
+		"rect" : [ 0.0, 45.0, 1081.0, 179.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -61,8 +61,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 250.0, 140.0, 22.0 ],
-					"text" : "qxt.ConniptionMessages"
+					"patching_rect" : [ 390.0, 250.0, 83.0, 22.0 ],
+					"text" : "qxt.Messages"
 				}
 
 			}
@@ -894,7 +894,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 87.0, 1060.0, 80.0 ],
+					"patching_rect" : [ 10.0, 89.0, 1060.0, 80.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 89.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[1]",
@@ -1228,7 +1228,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "qxt.ConniptionMessages.maxpat",
+				"name" : "qxt.Messages.maxpat",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",

@@ -1,7 +1,0 @@
-#N canvas 546 44 224 187 12;
-#X declare -path quacktrip/lib;
-#X obj 17 20 quack.conniption-panel 1;
-#X obj 13 148 declare -path quacktrip/lib;
-#X obj 18 47 quack.conniption-panel 2;
-#X obj 17 75 quack.conniption-panel 3;
-#X obj 18 102 quack.conniption-panel 4;

@@ -61,8 +61,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 490.0, 140.0, 22.0 ],
-					"text" : "qxt.ConniptionMessages"
+					"patching_rect" : [ 380.0, 490.0, 83.0, 22.0 ],
+					"text" : "qxt.Messages"
 				}
 
 			}
@@ -1398,7 +1398,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "qxt.ConniptionMessages.maxpat",
+				"name" : "qxt.Messages.maxpat",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",

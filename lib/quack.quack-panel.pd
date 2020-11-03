@@ -1,6 +1,6 @@
 #N canvas 410 23 1246 1018 12;
 #X declare -path quacktrip~ -path lib -path conniption;
-#X declare -path quack-and-netty-0.81/lib;
+#X declare -path quacktrip/lib;
 #X obj 368 203 quacktrip~;
 #X obj 423 287 change;
 #X obj 334 470 outlet~;
@@ -100,7 +100,7 @@
 #X obj 141 619 + 10;
 #X obj 33 567 * 0.06283;
 #X obj 505 204 metro 1000;
-#X obj 504 178 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 504 178 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 369 157 vline~;
 #X obj 294 297 *~ 1e+10;
@@ -547,10 +547,10 @@ reset-dropouts measure-latency;
 #X obj 38 877 speedlim 200;
 #X obj 193 872 speedlim 200;
 #X obj 367 877 speedlim 200;
-#X obj 576 617 declare -path quack-and-netty-0.81/lib;
 #X text 34 991 (don't forget to set latency switch property to \$0-measure-latency)
 , f 67;
 #X floatatom 869 662 5 0 0 0 - - -;
+#X obj 576 617 declare -path quacktrip/lib;
 #X connect 0 0 60 0;
 #X connect 0 0 70 0;
 #X connect 0 1 64 0;
@@ -649,7 +649,7 @@ reset-dropouts measure-latency;
 #X connect 152 0 150 0;
 #X connect 154 0 156 0;
 #X connect 155 0 187 0;
-#X connect 155 0 211 0;
+#X connect 155 0 210 0;
 #X connect 158 0 159 0;
 #X connect 159 0 157 0;
 #X connect 161 0 207 0;
