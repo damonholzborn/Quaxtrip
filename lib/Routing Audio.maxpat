@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 479.0, 900.0, 309.0 ],
+		"rect" : [ 0.0, 293.0, 900.0, 309.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 900.0, 283.0 ],
+						"rect" : [ 0.0, 319.0, 900.0, 283.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -94,7 +94,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 364.0, 100.0 ],
+									"patching_rect" : [ 10.0, 40.0, 365.0, 100.0 ],
 									"text" : "The audio that is being sent out to the Output of QuaxTrip is available via send~ objects.\n\nTo set your patch to receive the post-mute Output audio:\n\n    1. Add qxt_post_mute_L and qxt_post_mute_R receive~ objects in your patch."
 								}
 
@@ -200,8 +200,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 470.0, 40.0, 152.0, 22.0 ],
-									"text" : "receive~ qxt_post_mute_R"
+									"patching_rect" : [ 470.0, 40.0, 129.0, 22.0 ],
+									"text" : "receive~ qxt_output_R"
 								}
 
 							}
@@ -213,8 +213,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 10.0, 150.0, 22.0 ],
-									"text" : "receive~ qxt_post_mute_L"
+									"patching_rect" : [ 380.0, 10.0, 127.0, 22.0 ],
+									"text" : "receive~ qxt_output_L"
 								}
 
 							}
@@ -319,8 +319,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 310.0, 140.0, 121.0, 22.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 440.0, 140.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -824,7 +823,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 505.0, 900.0, 283.0 ],
+						"rect" : [ 0.0, 26.0, 900.0, 283.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -860,7 +859,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 362.0, 181.0 ],
+									"patching_rect" : [ 10.0, 40.0, 364.0, 181.0 ],
 									"text" : "In addition to the audio sent to the Output of QuaxTrip, there are send~ objects that route audio before the Mute toggle. This allows you to mute channels locally for monitoring purposes while also sending all channels to another patch (e.g. that uses the un-muted stream to livestream over the internet). \n\nTo set your patch to receive the pre-mute Output audio:\n\n    1. Add qxt_pre_mute_L and qxt_pre_mute_R receive~ \n        objects in your patch.\n\n(Note: You should turn down the Output channel of QuaxTrip to properly hear this.)"
 								}
 
@@ -1085,7 +1084,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 440.0, 140.0, 116.0, 22.0 ],
+					"patching_rect" : [ 310.0, 140.0, 116.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",

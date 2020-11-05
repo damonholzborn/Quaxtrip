@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1287.0, 539.0, 577.0, 405.0 ],
+		"rect" : [ 286.0, 483.0, 577.0, 405.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 321.0, 343.0, 116.0, 22.0 ],
+					"text" : "send~ qxt_output_R"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 250.0, 373.0, 114.0, 22.0 ],
+					"text" : "send~ qxt_output_L"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
 					"id" : "obj-96",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 313.5, 350.0, 134.0, 22.0 ],
+					"patching_rect" : [ 344.5, 314.0, 134.0, 22.0 ],
 					"text" : "qxt.Repattr Output_Bus",
 					"varname" : "mp.Repattr"
 				}
@@ -226,7 +250,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 313.5, 320.0, 199.0, 22.0 ],
+					"patching_rect" : [ 344.5, 284.0, 199.0, 22.0 ],
 					"text" : "qxt.Repattr Output_StartingChannel",
 					"varname" : "mp.Repattr[1]"
 				}
@@ -261,7 +285,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"knobcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
+					"knobcolor" : [ 0.807843, 0.898039, 0.909804, 1.0 ],
 					"maxclass" : "gain~",
 					"multichannelvariant" : 0,
 					"numinlets" : 1,
@@ -459,7 +483,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -467,7 +491,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 1 ],
-					"order" : 1,
+					"order" : 2,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -476,6 +508,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -498,7 +538,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
