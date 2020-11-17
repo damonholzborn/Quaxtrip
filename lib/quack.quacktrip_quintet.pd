@@ -1,4 +1,4 @@
-#N canvas 2370 40 1269 651 12;
+#N canvas 495 23 1269 651 12;
 #X declare -path lib;
 #X declare -path quacktrip/lib;
 #X obj 20 490 s quack-panel-1;
@@ -100,8 +100,8 @@ on-off 1, f 68;
 #X msg 242 720 \; quack-panel-1 call-name fred \, server foo.ucsd.edu
 \, on-off 1;
 #X restore 740 537 pd more-stuff;
-#X obj 1024 508 loadbang;
-#X msg 1024 538 \; pd dsp 1;
+#X obj 748 569 loadbang;
+#X msg 748 599 \; pd dsp 1;
 #X obj 533 456 dac~ 1 2 3 4 5 6 7 8;
 #X obj 20 462 route 1 2 3 4;
 #X obj 18 86 quack.quack-panel 1;

@@ -1,0 +1,12 @@
+chef 0 5
+fred 2 6
+sue 0 6
+bob 0 6
+gaston 0 6
+elise 1 6
+hepzibah 0 6
+fido 2 9
+rhonda 0 9
+blanche 2 4
+buddy 0 4
+elvis 0 4

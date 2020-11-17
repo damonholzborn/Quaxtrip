@@ -1,0 +1,3 @@
+port 10100
+password -
+delay 20

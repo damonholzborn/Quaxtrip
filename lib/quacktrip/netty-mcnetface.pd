@@ -1,27 +1,27 @@
-#N canvas 130 76 1298 428 12;
+#N canvas 691 215 1103 823 12;
 #X declare -path lib/quacktrip~ -path lib;
 #N canvas 518 199 962 670 main-panel 0;
-#X text 114 262 server;
-#X symbolatom 116 283 32 0 0 0 - #0-server-set #0-server;
-#X obj 260 373 tgl 15 0 \$0-onoff \$0-onoff-set empty 17 7 0 10 -262144
+#X text 114 254 server;
+#X symbolatom 116 275 32 0 0 0 - #0-server-set #0-server;
+#X obj 260 365 tgl 15 0 \$0-onoff \$0-onoff-set empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X obj 176 171 vradio 15 1 0 3 \$0-blksel \$0-blksel-set empty 0 -8
+#X obj 176 163 vradio 15 1 0 3 \$0-blksel \$0-blksel-set empty 0 -8
 0 10 -262144 -1 -1 0;
-#X text 195 167 64;
-#X text 193 184 128;
-#X text 194 198 256;
-#X obj 129 168 vradio 15 1 0 3 \$0-nchan \$0-nchan-set empty 0 -8 0
+#X text 195 159 64;
+#X text 193 176 128;
+#X text 194 190 256;
+#X obj 129 160 vradio 15 1 0 3 \$0-nchan \$0-nchan-set empty 0 -8 0
 10 -262144 -1 -1 1;
-#X text 146 165 0;
-#X text 147 180 1;
-#X text 147 195 2;
-#X text 123 147 chnls;
-#X text 173 138 block size, f 5;
-#X obj 228 199 tgl 15 0 \$0-2x \$0-2x-set empty 17 7 0 10 -262144 -1
+#X text 146 157 0;
+#X text 147 172 1;
+#X text 147 187 2;
+#X text 123 139 chnls;
+#X text 173 130 block size, f 5;
+#X obj 228 191 tgl 15 0 \$0-2x \$0-2x-set empty 17 7 0 10 -262144 -1
 -1 0 1;
-#X text 225 178 2X;
-#X floatatom 154 307 6 1000 100000 0 - #0-port-set #0-port;
-#X text 117 307 port;
+#X text 225 170 2X;
+#X floatatom 154 299 6 1000 100000 0 - #0-port-set #0-port;
+#X text 117 299 port;
 #X floatatom 119 509 2 1 8 0 - #0-this-caller-set #0-this-caller;
 #X obj 606 26 declare -path lib/quacktrip~ -path lib;
 #X obj 452 96 setctl \$0-onoff;
@@ -29,16 +29,15 @@
 #X obj 447 222 setctl \$0-blksel;
 #X obj 447 200 setctl \$0-nchan;
 #X obj 446 246 setctl \$0-2x;
-#X floatatom 252 149 3 0 100 0 - #0-lvl-set #0-lvl;
-#X obj 252 170 bng 15 250 50 0 \$0-mute \$0-mute-set empty 0 0 0 12
+#X floatatom 331 106 3 0 100 0 - #0-lvl-set #0-lvl;
+#X obj 253 173 bng 15 250 50 0 \$0-mute \$0-mute-set empty 0 0 0 12
 -262144 -1 -1;
-#X obj 326 134 vu 8 80 \$0-vu1 empty -1 -8 0 10 -66577 -1 0 0;
-#X text 271 167 mute;
-#X obj 338 134 vu 8 80 \$0-vu2 empty -1 -8 0 10 -66577 -1 0 0;
-#X obj 253 199 tgl 15 0 \$0-test empty empty 17 7 0 10 -262144 -1 -1
+#X obj 332 130 vu 8 80 \$0-vu1 empty -1 -8 0 10 -66577 -1 0 0;
+#X text 272 170 mute;
+#X obj 344 130 vu 8 80 \$0-vu2 empty -1 -8 0 10 -66577 -1 0 0;
+#X obj 253 192 tgl 15 0 \$0-test empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X text 269 197 test;
-#X text 278 149 level;
+#X text 269 190 test;
 #N canvas 458 86 681 644 input-audio 0;
 #X obj 489 257 t b;
 #X obj 489 204 f;
@@ -178,8 +177,8 @@
 #X obj 120 198 r \$0-port;
 #X obj 138 229 r \$0-this-caller;
 #X obj 137 255 t b f;
-#X obj 111 291 +;
 #X floatatom 123 316 6 0 0 0 - - -;
+#X obj 111 291 expr $f1 + $f2 + 200*($f2>10);
 #X connect 1 0 14 0;
 #X connect 1 1 2 0;
 #X connect 2 0 0 0;
@@ -195,26 +194,26 @@
 #X connect 12 0 0 0;
 #X connect 13 0 14 1;
 #X connect 14 0 12 0;
-#X connect 15 0 18 0;
+#X connect 15 0 19 0;
 #X connect 16 0 17 0;
-#X connect 17 0 18 0;
-#X connect 17 1 18 1;
-#X connect 18 0 14 2;
-#X connect 18 0 19 0;
+#X connect 17 0 19 0;
+#X connect 17 1 19 1;
+#X connect 19 0 14 2;
+#X connect 19 0 18 0;
 #X restore 548 302 pd to-quacktrip;
 #X obj 494 449 loadbang;
 #X obj 428 449 f \$0;
 #X obj 471 451 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 451 171 setctl \$0-this-caller;
-#X floatatom 118 428 5 0 0 0 - #0-local-sr-set #0-local-sr;
-#X floatatom 180 428 3 0 0 0 - #0-local-ch-set #0-local-ch;
-#X floatatom 231 428 3 0 0 0 - #0-local-blk-set #0-local-blk;
-#X text 115 394 sample rate, f 6;
-#X text 225 395 block size, f 5;
-#X text 163 407 channels;
-#X floatatom 278 428 5 0 0 0 - #0-local-mbits-set #0-local-mbits;
-#X text 272 392 mbits per sec, f 7;
+#X floatatom 118 419 5 0 0 0 - #0-local-sr-set #0-local-sr;
+#X floatatom 180 419 3 0 0 0 - #0-local-ch-set #0-local-ch;
+#X floatatom 231 419 3 0 0 0 - #0-local-blk-set #0-local-blk;
+#X text 115 385 sample rate, f 6;
+#X text 225 386 block size, f 5;
+#X text 163 398 channels;
+#X floatatom 278 419 5 0 0 0 - #0-local-mbits-set #0-local-mbits;
+#X text 272 383 mbits per sec, f 7;
 #X obj 674 229 samplerate~;
 #X obj 674 254 s \$0-local-sr-set;
 #X obj 683 308 s \$0-local-ch-set;
@@ -236,18 +235,17 @@ running bw, f 68;
 #X obj 733 491 s \$0-remote-mbits-set;
 #X floatatom 444 481 5 0 0 0 - - -;
 #X obj 553 335 print to-q;
-#X text 183 111 --- AUDIO TO SEND ---;
 #X obj 242 490 r \$0-server;
 #X msg 242 515 0;
 #X obj 242 540 s \$0-onoff;
-#X symbolatom 243 224 16 0 0 0 - #0-my-name-set #0-my-name;
-#X symbolatom 243 245 16 0 0 0 - #0-session-name-set #0-session-name
+#X symbolatom 242 222 16 0 0 0 - #0-my-name-set #0-my-name;
+#X symbolatom 242 243 16 0 0 0 - #0-session-name-set #0-session-name
 ;
-#X obj 119 115 tgl 15 0 \$0-call \$0-call-set empty 17 7 0 10 -262144
+#X obj 119 107 tgl 15 0 \$0-call \$0-call-set empty 17 7 0 10 -262144
 -1 -1 0 1;
-#X text 138 113 CALL;
+#X text 138 105 CALL;
 #X obj 454 28 setctl \$0-call;
-#N canvas 755 51 863 971 set-up-call 0;
+#N canvas 697 3 870 1057 set-up-call 0;
 #X obj 203 90 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 352 139 0;
@@ -277,19 +275,18 @@ running bw, f 68;
 #X obj 101 378 r \$0-session-name;
 #X obj 120 406 r \$0-my-name;
 #X obj 290 565 print channels;
-#X obj 277 667 unpack 0 s s s s s s s s;
 #X obj 277 643 spigot;
 #X obj 272 614 t l f;
 #X obj 322 617 int;
-#X obj 277 914 s \$0-this-caller;
-#X obj 297 890 s \$0-1-channel-name;
-#X obj 318 863 s \$0-2-channel-name;
-#X obj 338 832 s \$0-3-channel-name;
-#X obj 359 808 s \$0-4-channel-name;
-#X obj 380 781 s \$0-5-channel-name;
-#X obj 400 754 s \$0-6-channel-name;
-#X obj 421 730 s \$0-7-channel-name;
-#X obj 442 703 s \$0-8-channel-name;
+#X obj 276 1007 s \$0-this-caller;
+#X obj 296 983 s \$0-1-channel-name;
+#X obj 317 956 s \$0-2-channel-name;
+#X obj 337 925 s \$0-3-channel-name;
+#X obj 358 901 s \$0-4-channel-name;
+#X obj 379 874 s \$0-5-channel-name;
+#X obj 399 847 s \$0-6-channel-name;
+#X obj 420 823 s \$0-7-channel-name;
+#X obj 441 796 s \$0-8-channel-name;
 #X obj 490 42 r \$0-my-name;
 #X obj 451 77 symbol;
 #X obj 451 102 sel -;
@@ -452,33 +449,38 @@ c s l r m p \; f g k n r t \;;
 #X msg 22 201 symbol off;
 #X msg 57 839 set running;
 #X obj 55 868 s \$0-status-set;
-#X obj 613 753 s \$0-status-set;
+#X obj 627 603 s \$0-status-set;
 #X obj 18 270 s \$0-status-set;
 #X msg 17 237 set calling_server;
-#X msg 581 674 set call_mismatch;
-#X msg 613 708 set no_free_track;
-#X obj 581 641 sel 0 -1 -2;
-#X obj 363 617 expr ($f1 > 0 && $f1 < 9);
+#X msg 595 524 set call_mismatch;
+#X msg 627 558 set no_free_track;
+#X obj 595 491 sel 0 -1 -2;
+#X obj 277 667 unpack 0 s s s s s s s s s s s s;
+#X obj 465 764 s \$0-8-channel-name;
+#X obj 485 737 s \$0-10-channel-name;
+#X obj 506 713 s \$0-11-channel-name;
+#X obj 527 686 s \$0-12-channel-name;
+#X obj 363 617 expr ($f1 > 0 && $f1 < 21);
 #X connect 1 0 2 0;
 #X connect 3 0 4 0;
 #X connect 4 0 0 0;
 #X connect 4 0 5 0;
-#X connect 4 0 47 0;
+#X connect 4 0 46 0;
 #X connect 5 0 7 0;
 #X connect 5 1 6 0;
 #X connect 5 2 1 0;
 #X connect 5 2 20 0;
-#X connect 5 2 41 0;
+#X connect 5 2 40 0;
 #X connect 7 0 8 0;
 #X connect 8 0 9 0;
 #X connect 9 0 16 0;
 #X connect 10 0 18 0;
 #X connect 10 1 14 0;
-#X connect 10 1 64 0;
+#X connect 10 1 63 0;
 #X connect 11 0 12 1;
 #X connect 12 0 17 0;
 #X connect 13 0 12 2;
-#X connect 14 0 29 0;
+#X connect 14 0 28 0;
 #X connect 15 0 12 0;
 #X connect 16 0 23 0;
 #X connect 16 1 19 0;
@@ -487,57 +489,61 @@ c s l r m p \; f g k n r t \;;
 #X connect 20 0 21 0;
 #X connect 21 0 22 0;
 #X connect 22 0 10 0;
-#X connect 23 0 46 0;
+#X connect 23 0 45 0;
 #X connect 24 0 23 1;
 #X connect 25 0 23 2;
-#X connect 27 0 55 0;
-#X connect 27 1 32 0;
-#X connect 27 2 33 0;
-#X connect 27 3 34 0;
-#X connect 27 4 35 0;
-#X connect 27 5 36 0;
-#X connect 27 6 37 0;
-#X connect 27 7 38 0;
-#X connect 27 8 39 0;
+#X connect 27 0 74 0;
 #X connect 28 0 27 0;
-#X connect 29 0 28 0;
-#X connect 29 1 30 0;
-#X connect 30 0 74 0;
-#X connect 30 0 75 0;
-#X connect 40 0 41 1;
-#X connect 41 0 42 0;
-#X connect 42 0 45 0;
-#X connect 43 0 44 0;
-#X connect 45 0 43 0;
-#X connect 46 0 10 0;
+#X connect 28 1 29 0;
+#X connect 29 0 73 0;
+#X connect 29 0 79 0;
+#X connect 39 0 40 1;
+#X connect 40 0 41 0;
+#X connect 41 0 44 0;
+#X connect 42 0 43 0;
+#X connect 44 0 42 0;
+#X connect 45 0 10 0;
+#X connect 46 0 47 0;
+#X connect 46 0 65 0;
+#X connect 46 1 70 0;
 #X connect 47 0 48 0;
-#X connect 47 0 66 0;
-#X connect 47 1 71 0;
-#X connect 48 0 49 0;
-#X connect 50 0 53 0;
-#X connect 51 0 52 0;
-#X connect 52 0 54 1;
-#X connect 53 0 54 1;
-#X connect 54 0 56 0;
-#X connect 55 0 54 0;
-#X connect 55 0 67 0;
-#X connect 55 1 31 0;
-#X connect 56 0 57 0;
-#X connect 58 0 59 1;
-#X connect 59 0 62 0;
-#X connect 60 0 59 0;
-#X connect 61 0 59 0;
-#X connect 62 0 63 0;
-#X connect 64 0 65 0;
-#X connect 66 0 70 0;
-#X connect 67 0 68 0;
-#X connect 71 0 70 0;
-#X connect 72 0 69 0;
-#X connect 73 0 69 0;
-#X connect 74 0 72 0;
-#X connect 74 1 72 0;
-#X connect 74 2 73 0;
-#X connect 75 0 28 1;
+#X connect 49 0 52 0;
+#X connect 50 0 51 0;
+#X connect 51 0 53 1;
+#X connect 52 0 53 1;
+#X connect 53 0 55 0;
+#X connect 54 0 53 0;
+#X connect 54 0 66 0;
+#X connect 54 1 30 0;
+#X connect 55 0 56 0;
+#X connect 57 0 58 1;
+#X connect 58 0 61 0;
+#X connect 59 0 58 0;
+#X connect 60 0 58 0;
+#X connect 61 0 62 0;
+#X connect 63 0 64 0;
+#X connect 65 0 69 0;
+#X connect 66 0 67 0;
+#X connect 70 0 69 0;
+#X connect 71 0 68 0;
+#X connect 72 0 68 0;
+#X connect 73 0 71 0;
+#X connect 73 1 71 0;
+#X connect 73 2 72 0;
+#X connect 74 0 54 0;
+#X connect 74 1 31 0;
+#X connect 74 2 32 0;
+#X connect 74 3 33 0;
+#X connect 74 4 34 0;
+#X connect 74 5 35 0;
+#X connect 74 6 36 0;
+#X connect 74 7 37 0;
+#X connect 74 8 38 0;
+#X connect 74 9 75 0;
+#X connect 74 10 76 0;
+#X connect 74 11 77 0;
+#X connect 74 12 78 0;
+#X connect 79 0 27 1;
 #X restore 298 35 pd set-up-call;
 #X obj 455 51 setctl \$0-my-name;
 #X obj 457 71 setctl \$0-session-name;
@@ -545,68 +551,68 @@ c s l r m p \; f g k n r t \;;
 -1 -1 0 1;
 #X text 113 472 sending;
 #X text 113 488 channel;
-#X text 278 370 running;
-#X obj 115 373 bng 15 250 50 0 empty \$0-server-alive empty 17 7 0
+#X text 278 362 running;
+#X obj 115 365 bng 15 250 50 0 empty \$0-server-alive empty 17 7 0
 10 -262144 -1 -1;
-#X text 132 370 server alive;
-#X text 109 222 this channel name:;
+#X text 132 362 server alive;
+#X text 108 220 this channel name:;
+#X text 162 241 call name:;
+#X symbolatom 114 342 32 0 0 0 - #0-status-set #0-status;
+#X text 103 321 ----- status and output stats -----;
+#X obj 313 108 vsl 15 101 0 100 0 0 \$0-lvl \$0-lvl-set empty 0 -9
+0 10 -262144 -1 -1 0 1;
+#X text 180 101 - SEND AUDIO -;
+#X text 246 136 normal;
+#X text 254 149 gain -->;
 #X msg 430 508 \; \$1-server symbol localhost \; \$1-port 38400 \;
 \$1-this-caller 1 \; \$1-nchan 1 \; \$1-block 64 \; \$1-my-name symbol
 - \; \$1-session-name symbol - \;;
-#X text 163 243 call name:;
-#X symbolatom 114 350 32 0 0 0 - #0-status-set #0-status;
-#X text 103 329 ----- status and output stats -----;
-#X connect 32 0 34 0;
-#X connect 32 1 34 1;
-#X connect 34 2 62 0;
-#X connect 35 0 34 2;
-#X connect 36 0 38 0;
-#X connect 37 0 87 0;
-#X connect 37 0 66 0;
-#X connect 38 0 37 0;
-#X connect 48 0 49 0;
+#X connect 31 0 33 0;
+#X connect 31 1 33 1;
+#X connect 33 2 61 0;
+#X connect 34 0 33 2;
+#X connect 35 0 37 0;
+#X connect 36 0 92 0;
+#X connect 36 0 65 0;
+#X connect 37 0 36 0;
+#X connect 47 0 48 0;
+#X connect 50 0 51 0;
 #X connect 51 0 52 0;
-#X connect 52 0 53 0;
-#X connect 52 1 54 0;
-#X connect 52 2 55 0;
-#X connect 53 0 56 0;
-#X connect 54 0 56 0;
-#X connect 55 0 56 0;
-#X connect 57 0 58 0;
-#X connect 58 0 48 0;
-#X connect 59 0 50 0;
-#X connect 60 0 61 0;
-#X connect 62 7 63 0;
-#X connect 63 0 65 0;
-#X connect 63 1 64 0;
-#X connect 69 0 70 0;
-#X connect 70 0 71 0;
-#X coords 0 -1 1 1 260 350 2 100 100;
-#X restore 1011 16 pd main-panel;
-#X obj 9 16 receiver \$0 1;
-#X obj 134 16 receiver \$0 2;
-#X obj 259 16 receiver \$0 3;
-#X obj 384 16 receiver \$0 4;
-#X obj 509 16 receiver \$0 5;
-#X obj 634 16 receiver \$0 6;
-#X obj 759 16 receiver \$0 7;
-#X obj 884 16 receiver \$0 8;
-#N canvas 381 440 947 499 README 0;
+#X connect 51 1 53 0;
+#X connect 51 2 54 0;
+#X connect 52 0 55 0;
+#X connect 53 0 55 0;
+#X connect 54 0 55 0;
+#X connect 56 0 57 0;
+#X connect 57 0 47 0;
+#X connect 58 0 49 0;
+#X connect 59 0 60 0;
+#X connect 61 7 62 0;
+#X connect 62 0 64 0;
+#X connect 62 1 63 0;
+#X connect 67 0 68 0;
+#X connect 68 0 69 0;
+#X coords 0 -1 1 1 260 340 2 100 100;
+#X restore 38 14 pd main-panel;
+#X obj 318 13 receiver \$0 1;
+#X obj 445 13 receiver \$0 2;
+#X obj 572 13 receiver \$0 3;
+#X obj 699 13 receiver \$0 4;
+#X obj 826 13 receiver \$0 5;
+#X obj 953 13 receiver \$0 6;
+#X obj 318 412 receiver \$0 7;
+#X obj 445 412 receiver \$0 8;
+#N canvas 301 207 940 567 README 0;
 #X text 482 252 VU meters on both inputs and outputs are post-fader.
 They clip at the top (not at the first red LED).;
 #X text 99 21 netty mcnetface (8/2020);
-#X text 19 418 At bottom right you can see statistics about what you
+#X text 18 416 At bottom right you can see statistics about what you
 are sending. These are readouts only. (To change sample rate \, go
 to Pd's audio settings panel \, not this patch.);
 #X text 482 131 You can change the delay time individually on all the
 channels you're listening to. Typical values range from 10 to 25 .
 The delay is in units of 64-sample blocks (1.45 or 1.33 millseconds
 at 44100 or 48000 sample rate).;
-#X text 482 46 The eight mixer channels control how (and whether) you
-will hear yourself and the other participants. You will appear on the
-channel showing your own channel name. You can quickly test audio by
-turning on the test tone at right and turning your own input channel
-up.;
 #X text 21 181 Each caller gives him/herself a channel name that will
 show up at on everyone's copy of the patch (including their own). Make
 sure no two callers are trying to use the same name. Also decide on
@@ -615,13 +621,6 @@ a sample rate everyone will use (set in Pd's audio settings dialogs).
 #X text 481 199 Each mixer channel can be set to mono (to pan a mono
 signal to both output channels) or stereo. The two outputs may be sent
 to individually chosen audio outputs.;
-#X text 24 49 This patch allows up to eight participants to share audio
-in real time through a repeater that should be run on a publicly-accessible
-server. (The server should run the patch named "netty-mcserver" \,
-which can be invoked remotely with the command "[path]/pd -nosound
--nogui -nrt netty-mcserver.pd" \, and should have UDP ports 38400-38499
-open assuming the base port number is 38400). Each group of up to 8
-callers requires its own instance of the server.;
 #X text 21 268 Once the server is running \, callers may join and leave
 the call at will using the CALL toggle (in the AUDIO TO SEND section
 of the patch). Before starting a call \, set the host address \, the
@@ -631,11 +630,253 @@ audio: number of channels \, block size \, "2x" to repeat each sent
 packet twice (almost never useful) \, level (from 0 to 100 with 50
 for unit gain) and "test" to send a tone instead of your audio input.
 ;
-#X obj 544 395 pdcontrol;
-#X msg 544 364 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
-#X text 491 331 click here to open detailed documentation in your browser:
+#X obj 543 445 pdcontrol;
+#X msg 543 414 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
+#X text 490 381 click here to open detailed documentation in your browser:
 ;
-#X connect 10 0 9 0;
-#X restore 1131 372 pd README;
-#X text 1021 372 directions ->>;
-#X text 1022 393 Netty mcnetface version 0.81.;
+#X text 480 297 One caller may take on the role of "chef" (by opening
+and starting the "chef's area" subpatch) in order to pre-assign channels
+to callers and name the call if desired. (Naming the call can help
+prevent bombing in case that's a worry).;
+#X text 24 49 This patch allows up to 12 participants to share audio
+in real time through a repeater that should be run on a publicly-accessible
+server. (The server should run the patch named "netty-mcserver" \,
+which can be invoked remotely with the command "[path]/pd -nosound
+-nogui -nrt netty-mcserver.pd" \, and should have UDP ports 38400-38499
+open assuming the base port number is 38400). Each group of up to 12
+callers requires its own instance of the server.;
+#X text 482 46 The 12 mixer channels control how (and whether) you
+will hear yourself and the other participants. You will appear on the
+channel showing your own channel name. You can quickly test audio by
+turning on the test tone at right and turning your own input channel
+up.;
+#X connect 8 0 7 0;
+#X restore 177 377 pd README;
+#X text 74 377 directions ->>;
+#N canvas 404 132 341 563 chefs-area 0;
+#N canvas 677 56 1118 906 works 0;
+#X symbolatom 176 132 10 0 0 0 - #0-password-set #0-password;
+#X symbolatom 171 203 15 0 0 0 caller-1 #0-caller-1-set #0-caller-1
+;
+#X symbolatom 171 225 15 0 0 0 caller-2 #0-caller-2-set #0-caller-2
+;
+#X symbolatom 169 172 15 0 0 0 - #0-call-name-set #0-call-name;
+#X symbolatom 171 247 15 0 0 0 caller-3 #0-caller-3-set #0-caller-3
+;
+#X symbolatom 171 269 15 0 0 0 caller-4 #0-caller-4-set #0-caller-4
+;
+#X symbolatom 171 291 15 0 0 0 caller-5 #0-caller-5-set #0-caller-5
+;
+#X symbolatom 171 313 15 0 0 0 caller-6 #0-caller-6-set #0-caller-6
+;
+#X symbolatom 171 335 15 0 0 0 caller-7 #0-caller-7-set #0-caller-7
+;
+#X symbolatom 171 357 15 0 0 0 caller-8 #0-caller-8-set #0-caller-8
+;
+#X obj 209 545 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 209 572 f \$0;
+#X obj 57 549 setctl \$0-password;
+#X obj 57 572 setctl \$0-call-name;
+#X obj 57 595 setctl \$0-caller-1;
+#X obj 57 618 setctl \$0-caller-2;
+#X obj 57 641 setctl \$0-caller-3;
+#X obj 57 664 setctl \$0-caller-4;
+#X obj 57 687 setctl \$0-caller-5;
+#X obj 57 710 setctl \$0-caller-6;
+#X obj 57 733 setctl \$0-caller-7;
+#X obj 57 756 setctl \$0-caller-8;
+#X obj 171 472 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 196 472 CLEAR;
+#X obj 432 41 r \$0-password;
+#X obj 432 386 t b s;
+#X obj 474 386 t b s;
+#X obj 474 64 r \$0-call-name;
+#X obj 516 386 t b s;
+#X obj 516 87 r \$0-caller-1;
+#X obj 558 386 t b s;
+#X obj 558 111 r \$0-caller-2;
+#X obj 601 386 t b s;
+#X obj 643 386 t b s;
+#X obj 685 386 t b s;
+#X obj 727 386 t b s;
+#X obj 770 386 t b s;
+#X obj 812 386 t b s;
+#X obj 601 133 r \$0-caller-3;
+#X obj 643 160 r \$0-caller-4;
+#X obj 685 185 r \$0-caller-5;
+#X obj 727 209 r \$0-caller-6;
+#X obj 770 231 r \$0-caller-7;
+#X obj 812 253 r \$0-caller-8;
+#X obj 440 458 symbol;
+#X obj 410 425 del 0;
+#N canvas 509 87 758 490 send-admin 0;
+#X obj 335 259 netsend -u;
+#X obj 372 131 r \$0-server;
+#X obj 338 184 pack 0 s 0;
+#X obj 385 156 r \$0-port;
+#X obj 339 104 sel 0;
+#X obj 163 28 r \$0-send-admin;
+#X obj 341 79 v \$0-admin-connected;
+#X msg 338 215 disconnect \, connect \$2 \$3;
+#X obj 335 333 sel 0;
+#X obj 335 415 s \$0-resend-admin;
+#X obj 355 301 v \$0-admin-connected;
+#X obj 425 263 s \$0-admin-got-reply;
+#X obj 166 60 t l b;
+#X obj 164 115 list trim;
+#X obj 335 362 del 1000;
+#X obj 578 239 print to-netsend;
+#X obj 164 90 list prepend send admin;
+#X obj 335 387 spigot;
+#X obj 386 387 r \$0-act-as-chef;
+#X connect 0 0 8 0;
+#X connect 0 0 10 0;
+#X connect 0 1 11 0;
+#X connect 1 0 2 1;
+#X connect 2 0 7 0;
+#X connect 3 0 2 2;
+#X connect 4 0 2 0;
+#X connect 5 0 12 0;
+#X connect 6 0 4 0;
+#X connect 7 0 0 0;
+#X connect 7 0 15 0;
+#X connect 8 0 14 0;
+#X connect 12 0 16 0;
+#X connect 12 1 6 0;
+#X connect 13 0 0 0;
+#X connect 14 0 17 0;
+#X connect 16 0 13 0;
+#X connect 17 0 9 0;
+#X connect 18 0 17 1;
+#X restore 446 589 pd send-admin;
+#X obj 439 551 s \$0-send-admin;
+#X obj 410 16 r \$0-resend-admin;
+#X obj 673 545 print send-admin;
+#X text 103 173 call name;
+#X obj 105 104 tgl 20 0 \$0-act-as-chef \$0-act-as-chef-set empty 17
+7 0 10 -262144 -1 -1 1 1;
+#X text 132 103 <<- act as chef;
+#X obj 136 34 setctl \$0-act-as-chef;
+#X obj 439 518 spigot;
+#X obj 503 517 r \$0-act-as-chef;
+#X obj 673 522 spigot;
+#X obj 731 523 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 114 138 password;
+#X text 128 124 server;
+#X text 332 403 this is bad style ->, f 9;
+#X obj 248 542 loadbang;
+#X msg 209 603 \; \$1-password symbol - \; \$1-call-name symbol - \;
+\$1-caller-1 symbol - \; \$1-caller-2 symbol - \; \$1-caller-3 symbol
+- \; \$1-caller-4 symbol - \; \$1-caller-5 symbol - \; \$1-caller-6
+symbol - \; \$1-caller-7 symbol - \; \$1-caller-8 symbol - \; \$1-caller-9
+symbol - \; \$1-caller-10 symbol - \; \$1-caller-11 symbol - \; \$1-caller-12
+symbol - \;;
+#X obj 57 779 setctl \$0-caller-9;
+#X obj 57 802 setctl \$0-caller-10;
+#X obj 57 825 setctl \$0-caller-11;
+#X obj 57 848 setctl \$0-caller-12;
+#X symbolatom 171 379 15 0 0 0 caller-9 #0-caller-9-set #0-caller-9
+;
+#X symbolatom 171 401 15 0 0 0 caller-10 #0-caller-10-set #0-caller-10
+;
+#X symbolatom 171 423 15 0 0 0 caller-11 #0-caller-11-set #0-caller-11
+;
+#X symbolatom 171 445 15 0 0 0 caller-12 #0-caller-12-set #0-caller-12
+;
+#X obj 838 290 r \$0-caller-9;
+#X obj 880 314 r \$0-caller-10;
+#X obj 923 336 r \$0-caller-11;
+#X obj 965 358 r \$0-caller-12;
+#X obj 855 387 t b s;
+#X obj 897 387 t b s;
+#X obj 940 387 t b s;
+#X obj 982 387 t b s;
+#X obj 440 481 pack s s s s s s s s s s s s s s, f 84;
+#X connect 10 0 11 0;
+#X connect 11 0 62 0;
+#X connect 22 0 10 0;
+#X connect 24 0 25 0;
+#X connect 25 0 45 0;
+#X connect 25 1 44 1;
+#X connect 26 0 45 0;
+#X connect 26 1 79 1;
+#X connect 27 0 26 0;
+#X connect 28 0 45 0;
+#X connect 28 1 79 2;
+#X connect 29 0 28 0;
+#X connect 30 0 45 0;
+#X connect 30 1 79 3;
+#X connect 31 0 30 0;
+#X connect 32 0 45 0;
+#X connect 32 1 79 4;
+#X connect 33 0 45 0;
+#X connect 33 1 79 5;
+#X connect 34 0 45 0;
+#X connect 34 1 79 6;
+#X connect 35 0 45 0;
+#X connect 35 1 79 7;
+#X connect 36 0 45 0;
+#X connect 36 1 79 8;
+#X connect 37 0 45 0;
+#X connect 37 1 79 9;
+#X connect 38 0 32 0;
+#X connect 39 0 33 0;
+#X connect 40 0 34 0;
+#X connect 41 0 35 0;
+#X connect 42 0 36 0;
+#X connect 43 0 37 0;
+#X connect 44 0 79 0;
+#X connect 45 0 44 0;
+#X connect 48 0 45 0;
+#X connect 54 0 47 0;
+#X connect 55 0 54 1;
+#X connect 56 0 49 0;
+#X connect 57 0 56 1;
+#X connect 61 0 11 0;
+#X connect 71 0 75 0;
+#X connect 72 0 76 0;
+#X connect 73 0 77 0;
+#X connect 74 0 78 0;
+#X connect 75 0 45 0;
+#X connect 75 1 79 10;
+#X connect 76 0 45 0;
+#X connect 76 1 79 11;
+#X connect 77 0 45 0;
+#X connect 77 1 79 12;
+#X connect 78 0 45 0;
+#X connect 78 1 79 13;
+#X connect 79 0 54 0;
+#X connect 79 0 56 0;
+#X coords 0 -1 1 1 200 390 2 100 100;
+#X restore 58 71 pd works;
+#X text 35 496 chef's additional directions ->>, f 17;
+#N canvas 180 276 471 359 READMETOO 0;
+#X text 53 17 Directions for the chef;
+#X text 24 191 You can also name the channels in advance. This will
+ensure that the callers show up in the order you want (such as v1 \,
+v2 \, va \, vc for a string quartet). Even if the order is arbitrary
+\, it might be desirable for them to show up consistently from meeting
+to meeting.;
+#X text 25 278 There might be an "admin password" (this is set when
+the server is started). If so you have to type the correct password
+at the top \, or else your settings will be ignored.;
+#X text 26 54 If you want \, you can set a call name. This will keep
+people not in the call from connecting to it. (They would probably
+not be doing this maliciously \, but if there are several groups working
+at the same time \, it would be a good idea to keep them from accidentally
+joining the wrong call). If the call name is a hyphen ("-") \, anyone
+can join. If the same or a similar group meets repeatedly \, you can
+keep the same call name for all the meetings.;
+#X restore 161 507 pd READMETOO;
+#X text 77 4 --- chef's area ---;
+#X text 9 25 One caller can use this to assign channels and/or password-protect
+the call., f 42;
+#X restore 143 406 pd chefs-area;
+#X obj 572 412 receiver \$0 9;
+#X obj 699 412 receiver \$0 10;
+#X obj 826 412 receiver \$0 11;
+#X obj 953 412 receiver \$0 12;
+#X text 59 773 Netty McNetface version 0.92test1;
