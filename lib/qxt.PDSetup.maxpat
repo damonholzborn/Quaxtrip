@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 130.0, 150.5, 29.5, 22.0 ],
+					"text" : "set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 130.0, 180.0, 111.0, 22.0 ],
+					"text" : "s qxt_zero_me_out"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
 					"id" : "obj-59",
 					"maxclass" : "newobj",
@@ -558,8 +582,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 797.0, 387.0, 232.0, 22.0 ],
-					"text" : "symbol /Applications/Pd-0.51-2.app"
+					"patching_rect" : [ 797.0, 387.0, 232.0, 22.0 ]
 				}
 
 			}
@@ -1364,6 +1387,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-55", 0 ]
 				}
 
 			}
