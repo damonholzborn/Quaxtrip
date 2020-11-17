@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1081.0, 179.0 ],
+		"rect" : [ 1.0, 45.0, 1081.0, 179.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -835,7 +835,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 1 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -858,7 +857,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 1 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -881,7 +879,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 1 ],
+					"args" : [ 1 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,

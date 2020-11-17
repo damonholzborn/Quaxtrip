@@ -954,7 +954,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 1 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -977,7 +976,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 1 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -1000,7 +998,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 4 ],
+					"args" : [ 4 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -1023,7 +1021,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 3 ],
+					"args" : [ 3 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -1046,7 +1044,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 2 ],
+					"args" : [ 2 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -1069,7 +1067,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", 1 ],
+					"args" : [ 1 ],
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -1322,13 +1320,6 @@
 			}
 , 			{
 				"name" : "5_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "5_qxt.SavedSettings_Default.txt",
 				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",

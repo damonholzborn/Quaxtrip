@@ -8,7 +8,7 @@ QuaxTrip is a set of Max patches that makes low-latency uncompressed audio and m
 2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.51-2 or later).
 3. If Max is running, quit Max.
 4. [Download](http://msp.ucsd.edu/software.html) PdMax (version 0.54 or later), unzip, and place in the ~/Documents/Max 8/library directory.
-5. [Download](https://github.com/damonholzborn/QuaxTrip/releases/download/quaxtrip-2020-1004/QuaxTrip.2020-1004.zip) the latest release of QuaxTrip, unzip, and place in the ~/Documents/Max 8/library directory.
+5. [Download](https://github.com/damonholzborn/QuaxTrip/releases/download/quaxtrip-2020-1004/QuaxTrip.2020-1117.zip) the latest release of QuaxTrip, unzip, and place in the ~/Documents/Max 8/library directory.
 
 # Quick Start
 
@@ -29,7 +29,7 @@ How to play with a remote partner:
 4. Adjust the **Output** channel volume to make it audible. You should now hear yourself. If using live mics, watch out for feedback.
 5. In the **Remote 1** channel:
 	1. QuaxTrip uses the **Server** foo.ucsd.edu by default. This public “conniption” server helps make the connection but once connected the audio runs straight between the two computers.
-	2. Set the **Call Name** to something likely to be unique (e.g. jack-and-jill), no white space allowed. The **Call Name** is the same for you and your partner.
+	2. Set the **Call Name** to something likely to be unique (e.g. jack-and-jill), no spaces allowed. The **Call Name** is the same for you and your partner.
 6. Set the **On/Off** toggle to on.
 
 Once you and your partner have completed these steps, the connected checkbox should be checked and you should now be able to hear each other!

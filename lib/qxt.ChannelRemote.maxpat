@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 30.0, 184.0, 1750.0, 639.0 ],
+		"rect" : [ 30.0, 184.0, 1750.0, 666.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-66",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1620.0, 19.0, 91.0, 60.0 ],
+					"text" : "Arguments\n\n1 - channel #\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-67",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 360.0, 134.0, 22.0 ],
-					"text" : "#2-messages-toggle $1"
+					"text" : "#1-messages-toggle $1"
 				}
 
 			}
@@ -179,7 +191,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 13.200000047683716, 120.0, 141.0, 22.0 ],
-					"text" : "loadmess set Remote #2"
+					"text" : "loadmess set Remote #1"
 				}
 
 			}
@@ -192,7 +204,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1388.035714285714448, 133.399999648332596, 153.0, 22.0 ],
-					"text" : "receive~ #2_qxt_remote_R"
+					"text" : "receive~ #1_qxt_remote_R"
 				}
 
 			}
@@ -205,7 +217,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1310.928571428571558, 103.399999648332596, 151.0, 22.0 ],
-					"text" : "receive~ #2_qxt_remote_L"
+					"text" : "receive~ #1_qxt_remote_L"
 				}
 
 			}
@@ -217,7 +229,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 150.0, 103.0, 22.0 ],
-					"text" : "qxt.Repattr #2_2x",
+					"text" : "qxt.Repattr #1_2x",
 					"varname" : "mp.Repattr[6]"
 				}
 
@@ -230,7 +242,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 120.0, 143.0, 22.0 ],
-					"text" : "qxt.Repattr #2_BlockSize",
+					"text" : "qxt.Repattr #1_BlockSize",
 					"varname" : "mp.Repattr[5]"
 				}
 
@@ -243,7 +255,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 210.0, 126.0, 22.0 ],
-					"text" : "qxt.Repattr #2_Server",
+					"text" : "qxt.Repattr #1_Server",
 					"varname" : "mp.Repattr[4]"
 				}
 
@@ -258,7 +270,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1114.857142857143117, 211.0, 108.0, 31.0 ],
-					"varname" : "#2_Server"
+					"varname" : "#1_Server"
 				}
 
 			}
@@ -284,7 +296,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 932.0, 211.0, 108.0, 31.0 ],
-					"varname" : "#2_CallName"
+					"varname" : "#1_CallName"
 				}
 
 			}
@@ -308,7 +320,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 180.0, 143.0, 22.0 ],
-					"text" : "qxt.Repattr #2_CallName",
+					"text" : "qxt.Repattr #1_CallName",
 					"varname" : "mp.Repattr[3]"
 				}
 
@@ -321,7 +333,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 90.0, 141.0, 22.0 ],
-					"text" : "qxt.Repattr #2_Channels",
+					"text" : "qxt.Repattr #1_Channels",
 					"varname" : "mp.Repattr[2]"
 				}
 
@@ -334,14 +346,14 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.0, 60.0, 141.0, 22.0 ],
-					"text" : "qxt.Repattr #2_FIFOSize",
+					"text" : "qxt.Repattr #1_FIFOSize",
 					"varname" : "mp.Repattr[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "remote", "#2" ],
+					"args" : [ "#1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -420,7 +432,7 @@
 					"patching_rect" : [ 13.200000047683716, 152.799999296665192, 96.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 2.0, 79.0, 22.0 ],
-					"text" : "Remote #2"
+					"text" : "Remote #1"
 				}
 
 			}
@@ -528,8 +540,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 300.0, 163.0, 22.0 ],
-									"text" : "#2-message quax-latency $1"
+									"patching_rect" : [ 10.0, 300.0, 250.0, 22.0 ],
+									"text" : "#1-message quax-latency $1"
 								}
 
 							}
@@ -553,7 +565,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 109.0, 150.0, 53.0, 22.0 ],
-									"text" : "route #2"
+									"text" : "route #1"
 								}
 
 							}
@@ -641,7 +653,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 190.0, 210.0, 187.0, 22.0 ],
-									"text" : "loadmess set Latency Remote #2"
+									"text" : "loadmess set Latency Remote #1"
 								}
 
 							}
@@ -679,14 +691,13 @@
 									"fontface" : 1,
 									"fontsize" : 14.0,
 									"id" : "obj-23",
-									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 190.0, 240.0, 65.0, 53.0 ],
+									"patching_rect" : [ 190.0, 240.0, 136.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 11.0, 140.0, 22.0 ],
-									"text" : "Latency Remote #2"
+									"text" : "Latency Remote #1"
 								}
 
 							}
@@ -918,7 +929,7 @@
 					"patching_rect" : [ 760.714285714285779, 250.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 694.5, 48.0, 22.0, 22.0 ],
-					"varname" : "#2_2x"
+					"varname" : "#1_2x"
 				}
 
 			}
@@ -930,7 +941,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 760.714285714285779, 320.0, 133.0, 22.0 ],
-					"text" : "panel-settings #2 2x $1"
+					"text" : "panel-settings #1 2x $1"
 				}
 
 			}
@@ -1323,7 +1334,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 760.714285714285779, 470.0, 53.0, 22.0 ],
-					"text" : "route #2"
+					"text" : "route #1"
 				}
 
 			}
@@ -1459,7 +1470,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1500.0, 320.0, 209.0, 22.0 ],
-					"text" : "panel-settings #2 measure-latency $1"
+					"text" : "panel-settings #1 measure-latency $1"
 				}
 
 			}
@@ -1543,7 +1554,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1089.5, 320.0, 153.0, 22.0 ],
-					"text" : "panel-settings #2 server $1"
+					"text" : "panel-settings #1 server $1"
 				}
 
 			}
@@ -1615,7 +1626,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 910.0, 320.0, 172.0, 22.0 ],
-					"text" : "panel-settings #2 call-name $1"
+					"text" : "panel-settings #1 call-name $1"
 				}
 
 			}
@@ -1646,7 +1657,7 @@
 					"tabcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"tabs" : [ "1", "2" ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
-					"varname" : "#2_Channels"
+					"varname" : "#1_Channels"
 				}
 
 			}
@@ -1665,7 +1676,7 @@
 					"tabcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"tabs" : [ "64", "128", "256" ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
-					"varname" : "#2_BlockSize"
+					"varname" : "#1_BlockSize"
 				}
 
 			}
@@ -1677,7 +1688,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 550.0, 320.0, 151.0, 22.0 ],
-					"text" : "panel-settings #2 blksel $1"
+					"text" : "panel-settings #1 blksel $1"
 				}
 
 			}
@@ -1695,7 +1706,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 450.0, 48.0, 50.0, 22.0 ],
 					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
-					"varname" : "#2_FIFOSize"
+					"varname" : "#1_FIFOSize"
 				}
 
 			}
@@ -1707,7 +1718,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 168.5, 320.0, 161.0, 22.0 ],
-					"text" : "panel-settings #2 fifo-size $1"
+					"text" : "panel-settings #1 fifo-size $1"
 				}
 
 			}
@@ -1733,7 +1744,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 320.0, 150.0, 22.0 ],
-					"text" : "panel-settings #2 on-off $1"
+					"text" : "panel-settings #1 on-off $1"
 				}
 
 			}
@@ -1759,7 +1770,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1270.0, 320.0, 211.0, 22.0 ],
-					"text" : "panel-settings #2 reset-dropouts bang"
+					"text" : "panel-settings #1 reset-dropouts bang"
 				}
 
 			}
@@ -1771,7 +1782,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 340.0, 321.0, 153.0, 22.0 ],
-					"text" : "panel-settings #2 nchan $1"
+					"text" : "panel-settings #1 nchan $1"
 				}
 
 			}
