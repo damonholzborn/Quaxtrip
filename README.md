@@ -8,7 +8,7 @@ Quaxtrip is a set of Max patches that makes low-latency uncompressed audio and m
 2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.51-2 or later).
 3. If Max is running, quit Max.
 4. [Download](http://msp.ucsd.edu/software.html) PdMax (version 0.54 or later), unzip, and place in the ~/Documents/Max 8/library directory.
-5. [Download](https://github.com/damonholzborn/QuaxTrip/archive/main.zip) the latest release of Quaxtrip, unzip, and place in the ~/Documents/Max 8/library directory.
+5. [Download](https://github.com/damonholzborn/Quaxtrip/archive/main.zip) the latest release of Quaxtrip, unzip, and place in the ~/Documents/Max 8/library directory.
 
 # Quick Start
 
