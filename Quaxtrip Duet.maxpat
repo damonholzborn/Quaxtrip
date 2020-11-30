@@ -1143,91 +1143,91 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxt.PDSetup.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pdpath.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Repattrhub.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "2_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "2_qxt.SavedSettings_Default.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ChannelRemote.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Channel.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ChannelLocal.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ChannelOutput.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ConniptionWindow.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.GetIP.js",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Messages.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
