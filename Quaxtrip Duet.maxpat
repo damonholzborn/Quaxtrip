@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1.0, 45.0, 1081.0, 179.0 ],
+		"rect" : [ 0.0, 45.0, 1060.0, 187.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,9 +45,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 220.0, 89.0, 22.0 ],
+					"patching_rect" : [ 390.0, 300.0, 89.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 622.0, 60.0, 60.0, 22.0 ],
+					"presentation_rect" : [ 830.0, 70.0, 60.0, 22.0 ],
 					"text" : "Message",
 					"textjustification" : 1
 				}
@@ -61,7 +61,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 250.0, 83.0, 22.0 ],
+					"patching_rect" : [ 390.0, 330.0, 83.0, 22.0 ],
 					"text" : "qxt.Messages"
 				}
 
@@ -75,9 +75,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 280.0, 30.0, 22.0 ],
+					"patching_rect" : [ 390.0, 360.0, 30.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 617.0, 55.5, 70.0, 30.0 ],
+					"presentation_rect" : [ 825.0, 65.5, 70.0, 30.0 ],
 					"proportion" : 0.5
 				}
 
@@ -89,7 +89,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 280.0, 29.5, 22.0 ],
+					"patching_rect" : [ 20.0, 360.0, 29.5, 22.0 ],
 					"text" : "set"
 				}
 
@@ -101,7 +101,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 310.0, 111.0, 22.0 ],
+					"patching_rect" : [ 20.0, 390.0, 111.0, 22.0 ],
 					"text" : "s qxt_zero_me_out"
 				}
 
@@ -114,7 +114,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 180.0, 104.0, 22.0 ],
+					"patching_rect" : [ 70.0, 260.0, 104.0, 22.0 ],
 					"text" : "r qxt_mainbuttons"
 				}
 
@@ -126,9 +126,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.0, 220.0, 105.0, 22.0 ],
+					"patching_rect" : [ 250.0, 300.0, 105.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 60.0, 105.0, 22.0 ],
+					"presentation_rect" : [ 945.0, 70.0, 105.0, 22.0 ],
 					"text" : "Conniption Server"
 				}
 
@@ -140,7 +140,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 250.0, 250.0, 128.0, 22.0 ],
+					"patching_rect" : [ 250.0, 330.0, 128.0, 22.0 ],
 					"text" : "qxt.ConniptionWindow"
 				}
 
@@ -152,9 +152,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 220.0, 82.0, 22.0 ],
+					"patching_rect" : [ 160.0, 300.0, 82.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 540.0, 10.0, 82.0, 22.0 ],
+					"presentation_rect" : [ 970.0, 10.0, 82.0, 22.0 ],
 					"text" : "Load Settings"
 				}
 
@@ -166,9 +166,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 220.0, 83.0, 22.0 ],
+					"patching_rect" : [ 70.0, 300.0, 83.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 10.0, 83.0, 22.0 ],
+					"presentation_rect" : [ 880.0, 10.0, 83.0, 22.0 ],
 					"text" : "Save Settings"
 				}
 
@@ -180,7 +180,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 220.0, 42.0, 22.0 ],
+					"patching_rect" : [ 20.0, 300.0, 42.0, 22.0 ],
 					"text" : "reload"
 				}
 
@@ -194,7 +194,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 20.0, 126.0, 22.0 ],
+					"patching_rect" : [ 530.0, 280.0, 126.0, 22.0 ],
 					"text" : "r qxt_loadingmessage"
 				}
 
@@ -208,7 +208,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 500.0, 50.0, 178.0, 24.0 ],
+					"patching_rect" : [ 530.0, 310.0, 178.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 178.0, 24.0 ],
 					"text" : "Loading, please wait...",
@@ -228,7 +228,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -795,7 +795,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 200.0, 180.0, 56.0, 22.0 ],
+					"patching_rect" : [ 200.0, 260.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -815,8 +815,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 920.0, 210.0, 125.0, 22.0 ],
-					"text" : "receive~ qxt_pd_in_R"
+					"patching_rect" : [ 920.0, 290.0, 114.0, 22.0 ],
+					"text" : "receive~ qxt_mix_R"
 				}
 
 			}
@@ -828,8 +828,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 788.0, 210.0, 123.0, 22.0 ],
-					"text" : "receive~ qxt_pd_in_L"
+					"patching_rect" : [ 788.0, 290.0, 112.0, 22.0 ],
+					"text" : "receive~ qxt_mix_L"
 				}
 
 			}
@@ -847,9 +847,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 690.0, 10.0, 380.0, 80.0 ],
+					"patching_rect" : [ 499.0, 10.0, 300.0, 90.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 690.0, 10.0, 380.0, 80.0 ],
+					"presentation_rect" : [ 499.0, 10.0, 301.5, 90.0 ],
 					"varname" : "qxt.QuackChannel[9]",
 					"viewvisibility" : 1
 				}
@@ -869,9 +869,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 10.0, 430.0, 80.0 ],
+					"patching_rect" : [ 10.0, 10.0, 490.0, 90.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 430.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 10.0, 490.0, 90.0 ],
 					"varname" : "qxt.QuackChannel[8]",
 					"viewvisibility" : 1
 				}
@@ -892,9 +892,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 89.0, 1060.0, 80.0 ],
+					"patching_rect" : [ 10.0, 169.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 89.0, 1060.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 99.0, 1040.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[1]",
 					"viewvisibility" : 1
 				}
@@ -907,7 +907,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 250.0, 97.0, 22.0 ],
+					"patching_rect" : [ 20.0, 330.0, 97.0, 22.0 ],
 					"text" : "qxt.Repattrhub 2"
 				}
 
@@ -919,7 +919,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 844.948597848415488, 310.0, 134.0, 22.0 ],
+					"patching_rect" : [ 844.948597848415488, 390.0, 134.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_R"
 				}
 
@@ -931,7 +931,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 770.0, 280.0, 132.0, 22.0 ],
+					"patching_rect" : [ 770.0, 360.0, 132.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_L"
 				}
 
@@ -943,7 +943,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 920.0, 280.0, 120.0, 22.0 ],
+					"patching_rect" : [ 920.0, 360.0, 120.0, 22.0 ],
 					"text" : "s qxt_from_quacktrip"
 				}
 
@@ -955,7 +955,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 950.0, 250.0, 55.0, 22.0 ],
+					"patching_rect" : [ 950.0, 330.0, 55.0, 22.0 ],
 					"text" : "pd~ stop"
 				}
 
@@ -968,7 +968,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 770.0, 180.0, 210.0, 22.0 ],
+					"patching_rect" : [ 770.0, 260.0, 210.0, 22.0 ],
 					"text" : "qxt.PDSetup quack.quacktrip_duet.pd"
 				}
 
@@ -982,7 +982,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 770.0, 250.0, 169.0, 22.0 ],
+					"patching_rect" : [ 770.0, 330.0, 169.0, 22.0 ],
 					"text" : "pd~ -ninsig 2 -noutsig 2"
 				}
 
@@ -1128,11 +1128,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-13::obj-120::obj-59" : [ "toggle", "toggle", 0 ],
 			"obj-13::obj-120::obj-67" : [ "gain~[5]", "gain~", 0 ],
-			"obj-55::obj-120::obj-59" : [ "toggle[7]", "toggle", 0 ],
+			"obj-13::obj-91" : [ "toggle", "toggle", 0 ],
 			"obj-55::obj-120::obj-67" : [ "gain~[9]", "gain~", 0 ],
-			"obj-55::obj-33" : [ "tab", "tab", 0 ],
+			"obj-55::obj-38" : [ "toggle[1]", "toggle", 0 ],
+			"obj-55::obj-57" : [ "live.tab[4]", "live.tab[1]", 0 ],
+			"obj-55::obj-59" : [ "toggle[2]", "toggle", 0 ],
 			"obj-56::obj-2" : [ "gain~[13]", "gain~", 0 ],
 			"parameterbanks" : 			{
 
@@ -1206,6 +1207,13 @@
 			}
 , 			{
 				"name" : "qxt.ChannelOutput.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ProxyRouter.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
