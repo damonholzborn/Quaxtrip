@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 725.0, 290.0, 869.0, 565.0 ],
+		"rect" : [ 1051.0, 380.0, 659.0, 267.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,27 +40,26 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
-					"id" : "obj-141",
+					"id" : "obj-10",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 17.0, 90.0, 95.0, 22.0 ],
-					"text" : "qxt.ProxyRouter"
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 22.5, 102.0, 72.0, 22.0 ],
+					"text" : "prepend set"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-162",
-					"maxclass" : "textedit",
+					"id" : "obj-11",
+					"maxclass" : "number",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 93.0, 121.9501953125, 47.0, 18.0498046875 ],
-					"text" : "1 & 2",
+					"patching_rect" : [ 22.5, 132.0, 50.0, 22.0 ],
+					"textcolor" : [ 0.43921568627451, 0.749019607843137, 0.254901960784314, 1.0 ],
 					"varname" : "Output_Channels"
 				}
 
@@ -72,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 58.5, 181.0, 29.5, 22.0 ],
+					"patching_rect" : [ 131.0, 181.0, 29.5, 22.0 ],
 					"text" : "+ 2"
 				}
 
@@ -84,7 +83,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 18.0, 181.0, 29.5, 22.0 ],
+					"patching_rect" : [ 90.5, 181.0, 29.5, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -97,13 +96,13 @@
 					"bgfillcolor_type" : "gradient",
 					"fontsize" : 11.0,
 					"id" : "obj-101",
-					"items" : [ 1, "&", 2, ",", 2, "&", 3, ",", 3, "&", 4, ",", 4, "&", 5, ",", 5, "&", 6, ",", 6, "&", 7, ",", 7, "&", 8, ",", 8, "&", 9, ",", 9, "&", 10, ",", 10, "&", 11, ",", 11, "&", 12, ",", 12, "&", 13, ",", 13, "&", 14, ",", 14, "&", 16, ",", 15, "&", 16 ],
+					"items" : [ 1, "&", 2, ",", 2, "&", 3, ",", 3, "&", 4, ",", 4, "&", 5, ",", 5, "&", 6, ",", 6, "&", 7, ",", 7, "&", 8, ",", 8, "&", 9, ",", 9, "&", 10, ",", 10, "&", 11, ",", 11, "&", 12, ",", 12, "&", 13, ",", 13, "&", 14, ",", 14, "&", 15, ",", 15, "&", 16 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 60.0, 60.0, 85.0, 21.0 ],
+					"patching_rect" : [ 90.5, 60.0, 85.0, 21.0 ],
 					"pattrmode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 58.0, 70.0, 21.0 ],
@@ -119,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 411.0, 228.0, 67.0, 22.0 ],
+					"patching_rect" : [ 483.5, 228.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -133,7 +132,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 198.0, 121.0, 22.0 ],
+					"patching_rect" : [ 483.5, 198.0, 121.0, 22.0 ],
 					"text" : "r qxt_bpatcher_offset"
 				}
 
@@ -145,7 +144,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 411.0, 132.0, 164.0, 22.0 ],
+					"patching_rect" : [ 483.5, 132.0, 164.0, 22.0 ],
 					"text" : "qxt.Repattr Output_Channels",
 					"varname" : "mp.Repattr[1]"
 				}
@@ -158,7 +157,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 170.0, 102.0, 72.0, 22.0 ],
+					"patching_rect" : [ 242.5, 102.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -171,7 +170,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 170.0, 132.0, 50.0, 22.0 ],
+					"patching_rect" : [ 242.5, 132.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 100.0, 58.0, 40.0, 22.0 ]
 				}
@@ -186,7 +185,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 320.0, 102.0, 20.0, 60.0 ],
+					"patching_rect" : [ 392.5, 102.0, 20.0, 60.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -209,7 +208,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 378.75, 102.0, 18.5, 60.0 ],
+					"patching_rect" : [ 451.25, 102.0, 18.5, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 46.0, 130.0, 12.0 ]
 				}
@@ -224,7 +223,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 261.0, 102.0, 20.0, 60.0 ],
+					"patching_rect" : [ 333.5, 102.0, 20.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 58.0, 90.0, 22.0 ]
 				}
@@ -237,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 352.25, 102.0, 18.5, 60.0 ],
+					"patching_rect" : [ 424.75, 102.0, 18.5, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 36.0, 130.0, 12.0 ]
 				}
@@ -265,7 +264,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 60.0, 105.0, 20.0 ],
+					"patching_rect" : [ 227.5, 60.0, 105.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 142.5, 36.0, 105.0, 20.0 ],
 					"text" : "Output Channels",
@@ -280,7 +279,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 211.0, 59.5, 22.0 ],
+					"patching_rect" : [ 90.5, 211.0, 59.5, 22.0 ],
 					"text" : "pack"
 				}
 
@@ -293,7 +292,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 320.0, 62.0, 136.0, 22.0 ],
+					"patching_rect" : [ 392.5, 62.0, 136.0, 22.0 ],
 					"text" : "receive~ qxt_monitor_R"
 				}
 
@@ -306,7 +305,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 261.0, 32.0, 134.0, 22.0 ],
+					"patching_rect" : [ 333.5, 32.0, 134.0, 22.0 ],
 					"text" : "receive~ qxt_monitor_L"
 				}
 
@@ -317,7 +316,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 259.5, 202.0, 45.0, 45.0 ],
+					"patching_rect" : [ 332.0, 202.0, 45.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 249.5, 36.0, 44.0, 44.0 ]
 				}
@@ -333,8 +332,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-141", 1 ],
-					"source" : [ "obj-101", 1 ]
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 2,
+					"source" : [ "obj-101", 0 ]
 				}
 
 			}
@@ -356,8 +363,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-162", 0 ],
-					"source" : [ "obj-141", 1 ]
+					"destination" : [ "obj-101", 0 ],
+					"midpoints" : [ 32.0, 164.0, 10.5, 164.0, 10.5, 49.0, 100.0, 49.0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -365,13 +373,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
-					"source" : [ "obj-162", 0 ]
 				}
 
 			}
@@ -465,20 +466,6 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "", -1 ],
-					"source" : [ "obj-141", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-101", 0 ],
-					"source" : [ "obj-141", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-2" : [ "gain~[9]", "gain~", 0 ],
@@ -491,13 +478,6 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.ProxyRouter.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -616,8 +596,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

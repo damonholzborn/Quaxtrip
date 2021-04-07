@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 745.0, 380.0, 282.0, 263.0 ],
+		"rect" : [ 945.0, 608.0, 282.0, 263.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,8 +57,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 230.0, 92.0, 22.0 ],
-					"text" : "s qxt.repattrhub"
+					"patching_rect" : [ 25.0, 220.0, 92.0, 22.0 ],
+					"text" : "s qxt_repattrhub"
 				}
 
 			}

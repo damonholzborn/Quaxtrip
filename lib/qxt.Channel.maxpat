@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2476.0, 227.0, 593.0, 428.0 ],
+		"rect" : [ 674.0, 178.0, 593.0, 427.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -335,7 +335,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 338.0, 62.0, 44.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 148.0, 4.0, 44.0, 20.0 ],
+					"presentation_rect" : [ 148.0, 7.0, 44.0, 20.0 ],
 					"text" : "Mono ",
 					"textjustification" : 1
 				}
@@ -415,7 +415,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 164.0, 12.0, 50.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 194.0, 4.0, 66.0, 20.0 ],
+					"presentation_rect" : [ 194.0, 7.0, 66.0, 20.0 ],
 					"text" : "Local Bus",
 					"textjustification" : 1
 				}
@@ -814,7 +814,7 @@
 				"name" : "qxt.Repattr.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

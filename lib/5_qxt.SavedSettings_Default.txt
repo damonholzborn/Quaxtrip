@@ -1,43 +1,83 @@
-0_Gain_qxt, 110;
+0_InputChannels_qxt, 0;
+0_Gain_qxt, 127;
 0_LocalBus_qxt, 0;
-0_StartingChannel_qxt, 0;
 0_Mono_qxt, 0;
 
-1_Gain_qxt, 110;
+1_Gain_qxt, 127;
 1_CallName_qxt, callname1;
 1_Server_qxt, foo.ucsd.edu;
-1_FIFOSize_qxt, 10;
+1_FIFOSize_qxt, 50;
 1_BlockSize_qxt, 0;
 1_2x_qxt, 0;
 1_LocalBus_qxt, 0;
 1_Mono_qxt, 0;
 
-2_Gain_qxt, 110;
+2_Gain_qxt, 127;
 2_CallName_qxt, callname2;
 2_Server_qxt, foo.ucsd.edu;
-2_FIFOSize_qxt, 10;
+2_FIFOSize_qxt, 50;
 2_BlockSize_qxt, 0;
 2_2x_qxt, 0;
 2_LocalBus_qxt, 0;
 2_Mono_qxt, 0;
 
-3_Gain_qxt, 110;
+3_Gain_qxt, 127;
 3_CallName_qxt, callname3;
 3_Server_qxt, foo.ucsd.edu;
-3_FIFOSize_qxt, 10;
+3_FIFOSize_qxt, 50;
 3_BlockSize_qxt, 0;
 3_2x_qxt, 0;
 3_LocalBus_qxt, 0;
 3_Mono_qxt, 0;
 
-4_Gain_qxt, 110;
+4_Gain_qxt, 127;
 4_CallName_qxt, callname4;
 4_Server_qxt, foo.ucsd.edu;
-4_FIFOSize_qxt, 10;
+4_FIFOSize_qxt, 50;
 4_BlockSize_qxt, 0;
 4_2x_qxt, 0;
 4_LocalBus_qxt, 0;
 4_Mono_qxt, 0;
 
-Output_Channel_qxt, "1 & 2";
+Output_Channels_qxt, 0;
 Output_Bus_qxt, 0;
+
+1_Mixer_InputChannels_qxt, 0;
+1_Mixer_Gain_qxt, 0;
+1_Mixer_Pan_qxt, 0;
+1_Mixer_Mono_qxt, 1;
+
+2_Mixer_InputChannels_qxt, 1;
+2_Mixer_Gain_qxt, 0;
+2_Mixer_Pan_qxt, 0;
+2_Mixer_Mono_qxt, 1;
+
+3_Mixer_InputChannels_qxt, 2;
+3_Mixer_Gain_qxt, 0;
+3_Mixer_Pan_qxt, 0;
+3_Mixer_Mono_qxt, 1;
+
+4_Mixer_InputChannels_qxt, 3;
+4_Mixer_Gain_qxt, 0;
+4_Mixer_Pan_qxt, 0;
+4_Mixer_Mono_qxt, 1;
+
+5_Mixer_InputChannels_qxt, 4;
+5_Mixer_Gain_qxt, 0;
+5_Mixer_Pan_qxt, 0;
+5_Mixer_Mono_qxt, 1;
+
+6_Mixer_InputChannels_qxt, 5;
+6_Mixer_Gain_qxt, 0;
+6_Mixer_Pan_qxt, 0;
+6_Mixer_Mono_qxt, 1;
+
+7_Mixer_InputChannels_qxt, 6;
+7_Mixer_Gain_qxt, 0;
+7_Mixer_Pan_qxt, 0;
+7_Mixer_Mono_qxt, 1;
+
+8_Mixer_InputChannels_qxt, 7;
+8_Mixer_Gain_qxt, 0;
+8_Mixer_Pan_qxt, 0;
+8_Mixer_Mono_qxt, 1;
