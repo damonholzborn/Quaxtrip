@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1061.0, 428.0 ],
+		"rect" : [ 0.0, 45.0, 1081.0, 430.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 496.0, 872.0, 201.0 ],
+						"rect" : [ 1.0, 498.0, 872.0, 201.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -84,7 +84,6 @@
 						"style" : "",
 						"subpatcher_template" : "--Template",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-22",
@@ -267,7 +266,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -277,7 +276,7 @@
 					"name" : "qxt.ChannelOutput.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
 					"patching_rect" : [ 510.0, 10.0, 300.0, 90.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 509.0, 10.0, 301.5, 90.0 ],
@@ -289,7 +288,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -299,7 +298,7 @@
 					"name" : "qxt.ChannelLocal.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
 					"patching_rect" : [ 10.0, 10.0, 490.0, 90.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 500.0, 90.0 ],
@@ -310,6 +309,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -354,7 +354,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 638.0, 424.0, 1046.0, 231.0 ],
+						"rect" : [ 126.0, 179.0, 1046.0, 231.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1051,6 +1051,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-35",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1083,8 +1084,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 810.0, 471.0, 125.0, 22.0 ],
-					"text" : "receive~ qxt_pd_in_R"
+					"patching_rect" : [ 840.0, 471.0, 151.0, 22.0 ],
+					"text" : "receive~ 0_qxt_channel_R"
 				}
 
 			}
@@ -1096,8 +1097,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 678.0, 471.0, 123.0, 22.0 ],
-					"text" : "receive~ qxt_pd_in_L"
+					"patching_rect" : [ 678.0, 471.0, 149.0, 22.0 ],
+					"text" : "receive~ 0_qxt_channel_L"
 				}
 
 			}
@@ -1153,6 +1154,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1167,6 +1169,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-8",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1209,7 +1212,6 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
-					"hidden" : 1,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1226,7 +1228,7 @@
 				"box" : 				{
 					"args" : [ 4 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1236,10 +1238,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
 					"patching_rect" : [ 10.0, 347.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 336.0, 1040.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 336.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[7]",
 					"viewvisibility" : 1
 				}
@@ -1249,7 +1251,7 @@
 				"box" : 				{
 					"args" : [ 3 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1259,10 +1261,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
 					"patching_rect" : [ 10.0, 268.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 257.0, 1040.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 257.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[2]",
 					"viewvisibility" : 1
 				}
@@ -1272,7 +1274,7 @@
 				"box" : 				{
 					"args" : [ 2 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1282,10 +1284,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
 					"patching_rect" : [ 10.0, 189.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 178.0, 1040.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 178.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[3]",
 					"viewvisibility" : 1
 				}
@@ -1295,7 +1297,7 @@
 				"box" : 				{
 					"args" : [ 1 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1305,10 +1307,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
 					"patching_rect" : [ 10.0, 110.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 99.0, 1040.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 99.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[1]",
 					"viewvisibility" : 1
 				}
@@ -1602,13 +1604,6 @@
 			}
 , 			{
 				"name" : "5_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "5_qxt.SavedSettings_Default.txt",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",

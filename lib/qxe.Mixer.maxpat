@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 539.0, 602.0, 911.0, 416.0 ],
+		"rect" : [ 538.0, 602.0, 1052.0, 424.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,70 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 650.0, 330.0, 55.0, 22.0 ],
+					"text" : "hidden 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 730.0, 300.0, 55.0, 22.0 ],
+					"text" : "hidden 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 650.0, 300.0, 55.0, 22.0 ],
+					"text" : "del 3500"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"hidden" : 1,
+					"id" : "obj-15",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 650.0, 370.0, 169.0, 116.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 10.0, 60.0, 860.0, 54.0 ],
+					"text" : "\nTo close this window, choose something other thans Quaxtrip Mixer for the Local Input Channels.\n",
+					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 370.0, 30.0, 30.0 ]
+					"patching_rect" : [ 390.0, 380.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -57,7 +114,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 330.0, 45.0, 22.0 ],
+					"patching_rect" : [ 390.0, 340.0, 45.0, 22.0 ],
 					"text" : "wclose"
 				}
 
@@ -69,7 +126,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 390.0, 290.0, 44.0, 22.0 ],
+					"patching_rect" : [ 390.0, 300.0, 44.0, 22.0 ],
 					"text" : "sel 0 1"
 				}
 
@@ -81,7 +138,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 450.5, 250.0, 39.0, 22.0 ],
+					"patching_rect" : [ 450.5, 260.0, 39.0, 22.0 ],
 					"text" : "== 16"
 				}
 
@@ -93,7 +150,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 550.0, 290.0, 100.0, 22.0 ],
+					"patching_rect" : [ 530.0, 300.0, 100.0, 22.0 ],
 					"text" : "s qxt_mixer_gate"
 				}
 
@@ -118,7 +175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 450.5, 290.0, 69.0, 22.0 ],
+					"patching_rect" : [ 450.5, 300.0, 69.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -131,7 +188,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 500.5, 250.0, 63.0, 22.0 ],
+					"patching_rect" : [ 500.5, 240.0, 63.0, 22.0 ],
 					"text" : "closebang"
 				}
 
@@ -143,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 450.5, 330.0, 33.0, 22.0 ],
+					"patching_rect" : [ 450.5, 340.0, 33.0, 22.0 ],
 					"text" : "front"
 				}
 
@@ -469,6 +526,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -483,7 +547,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"order" : 1,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
+					"order" : 2,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"order" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -504,8 +585,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -606,8 +701,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxe.MixerChannel.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib/quacktrip",
-				"patcherrelativepath" : "./quacktrip",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -726,8 +821,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

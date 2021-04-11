@@ -6,6 +6,7 @@
 1_Gain_qxt, 127;
 1_CallName_qxt, callname1;
 1_Server_qxt, foo.ucsd.edu;
+1_Channels_qxt, 1;
 1_FIFOSize_qxt, 50;
 1_BlockSize_qxt, 0;
 1_2x_qxt, 0;
@@ -15,6 +16,7 @@
 2_Gain_qxt, 127;
 2_CallName_qxt, callname2;
 2_Server_qxt, foo.ucsd.edu;
+2_Channels_qxt, 1;
 2_FIFOSize_qxt, 50;
 2_BlockSize_qxt, 0;
 2_2x_qxt, 0;
@@ -24,6 +26,7 @@
 3_Gain_qxt, 127;
 3_CallName_qxt, callname3;
 3_Server_qxt, foo.ucsd.edu;
+3_Channels_qxt, 1;
 3_FIFOSize_qxt, 50;
 3_BlockSize_qxt, 0;
 3_2x_qxt, 0;
@@ -33,6 +36,7 @@
 4_Gain_qxt, 127;
 4_CallName_qxt, callname4;
 4_Server_qxt, foo.ucsd.edu;
+4_Channels_qxt, 1;
 4_FIFOSize_qxt, 50;
 4_BlockSize_qxt, 0;
 4_2x_qxt, 0;

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1081.0, 192.0 ],
+		"rect" : [ 0.0, 45.0, 1081.0, 191.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 260.0, 872.0, 201.0 ],
+						"rect" : [ 1.0, 259.0, 887.0, 204.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -91,7 +91,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 220.0, 67.0, 22.0 ],
+									"patching_rect" : [ 0.0, 240.0, 67.0, 22.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -112,7 +112,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
+									"patching_rect" : [ 0.0, 0.0, 870.0, 220.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
 									"varname" : "qxe.Mixer",
@@ -221,8 +221,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1445,13 +1445,6 @@
 			}
 , 			{
 				"name" : "2_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "2_qxt.SavedSettings_Default.txt",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",

@@ -6,6 +6,7 @@
 1_Gain_qxt, 127;
 1_CallName_qxt, callname1;
 1_Server_qxt, foo.ucsd.edu;
+1_Channels_qxt, 1;
 1_FIFOSize_qxt, 50;
 1_BlockSize_qxt, 0;
 1_2x_qxt, 0;

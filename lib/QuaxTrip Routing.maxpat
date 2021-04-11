@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 484.0, 1017.0, 307.0 ],
+		"rect" : [ 0.0, 486.0, 1017.0, 307.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -95,7 +95,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 40.0, 365.0, 114.0 ],
-									"text" : "A mix of all remote signals combined with the Local Input is available via send~ objects. The Local Input signal is post Remote Mute. This mix reflects what is heard by the all ensemble members.\n\nTo set your patch to receive the Monitor Output audio:\n\n    1. Add qxt_mix_L and qxt_mix_R receive~ objects in your patch."
+									"text" : "A mix of all remote signals combined with the Local Input is available via send~ objects. The Local Input signal is post Remote Mute. This mix reflects what is heard by all the ensemble members.\n\nTo set your patch to receive the main mix audio:\n\n    1. Add qxt_mix_L and qxt_mix_R receive~ objects in your patch."
 								}
 
 							}
@@ -350,7 +350,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
+						"rect" : [ 0.0, 512.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -663,7 +663,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 510.0, 1017.0, 281.0 ],
+						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -700,7 +700,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 40.0, 365.0, 114.0 ],
-									"text" : "The audio that is being sent out of the Monitor Output of QuaxTrip is available via send~ objects. These sends are post Monitor Mute and reflect the audio that QuaxTrip is sending to the dac~. \n\nTo set your patch to receive the Monitor Output audio:\n\n    1. Add qxt_post_mute_L and qxt_post_mute_R receive~ objects\n        in your patch."
+									"text" : "The audio that is being sent out of the Monitor Output of Quaxtrip is available via send~ objects. These sends are post Monitor Mute and reflect the audio that Quaxtrip is sending to the dac~. \n\nTo set your patch to receive the Monitor Output audio:\n\n    1. Add qxt_post_mute_L and qxt_monitor_R receive~ objects\n        in your patch."
 								}
 
 							}
@@ -713,7 +713,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 11.0, 270.0, 24.0 ],
-									"text" : "Monitor Output"
+									"text" : "Monitor Mix"
 								}
 
 							}
