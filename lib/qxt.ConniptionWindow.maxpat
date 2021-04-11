@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1087.0, 45.0, 149.0, 200.0 ],
+		"rect" : [ 1082.0, 45.0, 151.0, 232.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -138,15 +138,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 235.5, 156.0, 122.0, 87.0 ],
+					"patching_rect" : [ 235.5, 156.0, 122.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 6,
-					"presentation_rect" : [ 10.0, 100.0, 122.0, 87.0 ],
-					"text" : "Local IP Address(es):\n   192.168.0.114\n   192.168.0.115\n\nPublic IP Address:\n   24.185.126.23"
+					"presentation_linecount" : 7,
+					"presentation_rect" : [ 10.0, 120.0, 130.0, 100.0 ],
+					"text" : "Local IP Address(es):\n   192.168.0.105\n   192.168.0.102\n   172.16.0.2\n\nPublic IP Address:\n   24.185.126.23"
 				}
 
 			}
@@ -161,6 +161,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -179,7 +181,7 @@
 					"patching_rect" : [ 75.5, 86.0, 86.5, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 36.0, 25.333333194255829, 86.66666454076767, 33.0 ],
+					"presentation_rect" : [ 36.0, 35.333333194255829, 86.66666454076767, 33.0 ],
 					"text" : "Messages to Max Console"
 				}
 
@@ -194,7 +196,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 45.5, 86.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 29.833333194255829, 24.0, 24.0 ]
+					"presentation_rect" : [ 10.0, 39.833333194255829, 24.0, 24.0 ]
 				}
 
 			}
@@ -208,7 +210,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ -0.5, 156.0, 70.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.0, 63.333333194255829, 87.0, 20.0 ],
+					"presentation_rect" : [ 36.0, 73.333333194255829, 87.0, 20.0 ],
 					"text" : "Call Received"
 				}
 
@@ -223,7 +225,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 235.5, 6.0, 130.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 0.0, 139.0, 22.0 ],
+					"presentation_rect" : [ 1.0, 0.0, 149.0, 22.0 ],
 					"text" : "Conniption Server",
 					"textjustification" : 1
 				}
@@ -233,7 +235,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -277,7 +279,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 10.0, 86.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 61.333333194255829, 24.0, 24.0 ]
+					"presentation_rect" : [ 10.0, 71.333333194255829, 24.0, 24.0 ]
 				}
 
 			}
@@ -458,15 +460,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "qxt.GetIP.js",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{

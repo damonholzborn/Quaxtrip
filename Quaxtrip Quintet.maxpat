@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1081.0, 417.0 ],
+		"rect" : [ 0.0, 45.0, 1081.0, 430.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,14 +40,284 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 10,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 1.0, 498.0, 872.0, 201.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 2,
+						"gridsize" : [ 10.0, 10.0 ],
+						"gridsnaponopen" : 2,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 0,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 15,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "--Template",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 10.0, 220.0, 67.0, 22.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "qxe.Mixer.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
+									"varname" : "qxe.Mixer",
+									"viewvisibility" : 1
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Audiomix",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Jamoma_highlighted_orange",
+								"default" : 								{
+									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "ksliderWhite",
+								"default" : 								{
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBlue-1",
+								"default" : 								{
+									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBrown-1",
+								"default" : 								{
+									"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjCyan-1",
+								"default" : 								{
+									"accentcolor" : [ 0.029546, 0.773327, 0.821113, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjGreen-1",
+								"default" : 								{
+									"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjYellow-1",
+								"default" : 								{
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberGold-1",
+								"default" : 								{
+									"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rsliderGold",
+								"default" : 								{
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 520.0, 490.0, 105.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p \"Quaxtrip Mixer\"",
+					"varname" : "Quaxtrip Mixer[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-56",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "qxt.ChannelOutput.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 10000.0, 10000.0 ],
+					"patching_rect" : [ 510.0, 10.0, 300.0, 90.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 509.0, 10.0, 301.5, 90.0 ],
+					"varname" : "qxt.QuackChannel[9]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-55",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "qxt.ChannelLocal.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 10000.0, 10000.0 ],
+					"patching_rect" : [ 10.0, 10.0, 490.0, 90.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 10.0, 10.0, 500.0, 90.0 ],
+					"varname" : "qxt.QuackChannel[8]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 460.0, 89.0, 22.0 ],
+					"patching_rect" : [ 380.0, 481.0, 89.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 622.0, 60.0, 60.0, 22.0 ],
+					"presentation_rect" : [ 820.0, 70.0, 60.0, 22.0 ],
 					"text" : "Message",
 					"textjustification" : 1
 				}
@@ -61,7 +331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 490.0, 83.0, 22.0 ],
+					"patching_rect" : [ 380.0, 511.0, 83.0, 22.0 ],
 					"text" : "qxt.Messages"
 				}
 
@@ -78,13 +348,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 638.0, 424.0, 1046.0, 231.0 ],
+						"rect" : [ 126.0, 179.0, 1046.0, 231.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -645,7 +915,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 176.0, 420.0, 56.0, 22.0 ],
+					"patching_rect" : [ 176.0, 441.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -664,7 +934,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 906.5, 610.0, 134.0, 22.0 ],
+					"patching_rect" : [ 906.5, 631.0, 134.0, 22.0 ],
 					"text" : "send~ 4_qxt_remote_R"
 				}
 
@@ -676,7 +946,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 871.285714285714221, 580.0, 132.0, 22.0 ],
+					"patching_rect" : [ 871.285714285714221, 601.0, 132.0, 22.0 ],
 					"text" : "send~ 4_qxt_remote_L"
 				}
 
@@ -688,7 +958,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 836.071428571428555, 550.0, 134.0, 22.0 ],
+					"patching_rect" : [ 836.071428571428555, 571.0, 134.0, 22.0 ],
 					"text" : "send~ 3_qxt_remote_R"
 				}
 
@@ -700,7 +970,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 800.85714285714289, 520.0, 132.0, 22.0 ],
+					"patching_rect" : [ 800.85714285714289, 541.0, 132.0, 22.0 ],
 					"text" : "send~ 3_qxt_remote_L"
 				}
 
@@ -712,7 +982,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.64285714285711, 610.0, 134.0, 22.0 ],
+					"patching_rect" : [ 765.64285714285711, 631.0, 134.0, 22.0 ],
 					"text" : "send~ 2_qxt_remote_R"
 				}
 
@@ -724,7 +994,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.428571428571445, 580.0, 132.0, 22.0 ],
+					"patching_rect" : [ 730.428571428571445, 601.0, 132.0, 22.0 ],
 					"text" : "send~ 2_qxt_remote_L"
 				}
 
@@ -736,7 +1006,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 695.214285714285666, 550.0, 134.0, 22.0 ],
+					"patching_rect" : [ 695.214285714285666, 571.0, 134.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_R"
 				}
 
@@ -748,7 +1018,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.0, 520.0, 132.0, 22.0 ],
+					"patching_rect" : [ 660.0, 541.0, 132.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_L"
 				}
 
@@ -760,7 +1030,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 941.714285714285779, 520.0, 120.0, 22.0 ],
+					"patching_rect" : [ 941.714285714285779, 541.0, 120.0, 22.0 ],
 					"text" : "s qxt_from_quacktrip"
 				}
 
@@ -774,21 +1044,22 @@
 					"numinlets" : 2,
 					"numoutlets" : 9,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 660.0, 490.0, 300.714285714285666, 22.0 ],
+					"patching_rect" : [ 660.0, 511.0, 300.714285714285666, 22.0 ],
 					"text" : "pd~ -ninsig 2 -noutsig 8"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-35",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 460.0, 105.0, 22.0 ],
+					"patching_rect" : [ 240.0, 481.0, 105.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 60.0, 105.0, 22.0 ],
+					"presentation_rect" : [ 945.0, 70.0, 105.0, 22.0 ],
 					"text" : "Conniption Server"
 				}
 
@@ -800,7 +1071,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 490.0, 128.0, 22.0 ],
+					"patching_rect" : [ 240.0, 511.0, 128.0, 22.0 ],
 					"text" : "qxt.ConniptionWindow"
 				}
 
@@ -813,8 +1084,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 810.0, 450.0, 125.0, 22.0 ],
-					"text" : "receive~ qxt_pd_in_R"
+					"patching_rect" : [ 840.0, 471.0, 151.0, 22.0 ],
+					"text" : "receive~ 0_qxt_channel_R"
 				}
 
 			}
@@ -826,8 +1097,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 678.0, 450.0, 123.0, 22.0 ],
-					"text" : "receive~ qxt_pd_in_L"
+					"patching_rect" : [ 678.0, 471.0, 149.0, 22.0 ],
+					"text" : "receive~ 0_qxt_channel_L"
 				}
 
 			}
@@ -839,7 +1110,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 660.0, 420.0, 223.0, 22.0 ],
+					"patching_rect" : [ 660.0, 441.0, 223.0, 22.0 ],
 					"text" : "qxt.PDSetup quack.quacktrip_quintet.pd"
 				}
 
@@ -851,7 +1122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 520.0, 29.5, 22.0 ],
+					"patching_rect" : [ 10.0, 541.0, 29.5, 22.0 ],
 					"text" : "set"
 				}
 
@@ -863,7 +1134,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 550.0, 111.0, 22.0 ],
+					"patching_rect" : [ 10.0, 571.0, 111.0, 22.0 ],
 					"text" : "s qxt_zero_me_out"
 				}
 
@@ -876,35 +1147,37 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 420.0, 104.0, 22.0 ],
+					"patching_rect" : [ 60.0, 441.0, 104.0, 22.0 ],
 					"text" : "r qxt_mainbuttons"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.0, 460.0, 82.0, 22.0 ],
+					"patching_rect" : [ 150.0, 481.0, 82.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 540.0, 10.0, 82.0, 22.0 ],
+					"presentation_rect" : [ 968.0, 10.0, 82.0, 22.0 ],
 					"text" : "Load Settings"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-8",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 460.0, 83.0, 22.0 ],
+					"patching_rect" : [ 60.0, 481.0, 83.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.0, 10.0, 83.0, 22.0 ],
+					"presentation_rect" : [ 880.0, 10.0, 83.0, 22.0 ],
 					"text" : "Save Settings"
 				}
 
@@ -916,7 +1189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 460.0, 42.0, 22.0 ],
+					"patching_rect" : [ 10.0, 481.0, 42.0, 22.0 ],
 					"text" : "reload"
 				}
 
@@ -930,7 +1203,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 20.0, 126.0, 22.0 ],
+					"patching_rect" : [ 830.0, 10.0, 126.0, 22.0 ],
 					"text" : "r qxt_loadingmessage"
 				}
 
@@ -939,12 +1212,11 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
-					"hidden" : 1,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 500.0, 50.0, 178.0, 24.0 ],
+					"patching_rect" : [ 830.0, 40.0, 178.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 178.0, 24.0 ],
 					"text" : "Loading, please wait...",
@@ -954,53 +1226,9 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-56",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "qxt.ChannelOutput.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 690.0, 10.0, 380.399999999999977, 80.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 690.0, 10.0, 380.399999976158142, 80.0 ],
-					"varname" : "qxt.QuackChannel[9]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-55",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "qxt.ChannelLocal.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 10.0, 430.0, 80.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 430.0, 80.0 ],
-					"varname" : "qxt.QuackChannel[8]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"args" : [ 4 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1010,10 +1238,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 326.0, 1060.0, 80.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
+					"patching_rect" : [ 10.0, 347.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 326.0, 1060.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 336.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[7]",
 					"viewvisibility" : 1
 				}
@@ -1023,7 +1251,7 @@
 				"box" : 				{
 					"args" : [ 3 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1033,10 +1261,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 247.0, 1060.0, 80.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
+					"patching_rect" : [ 10.0, 268.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 247.0, 1060.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 257.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[2]",
 					"viewvisibility" : 1
 				}
@@ -1046,7 +1274,7 @@
 				"box" : 				{
 					"args" : [ 2 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1056,10 +1284,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 168.0, 1060.0, 80.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
+					"patching_rect" : [ 10.0, 189.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 168.0, 1060.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 178.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[3]",
 					"viewvisibility" : 1
 				}
@@ -1069,7 +1297,7 @@
 				"box" : 				{
 					"args" : [ 1 ],
 					"bgmode" : 0,
-					"border" : 1,
+					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1079,10 +1307,10 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 10.0, 89.0, 1060.0, 80.0 ],
+					"offset" : [ 10000.0, 10000.0 ],
+					"patching_rect" : [ 10.0, 110.0, 1060.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 89.0, 1060.0, 80.0 ],
+					"presentation_rect" : [ 10.0, 99.0, 1060.0, 80.0 ],
 					"varname" : "qxt.QuackChannel[1]",
 					"viewvisibility" : 1
 				}
@@ -1095,7 +1323,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 490.0, 159.0, 22.0 ],
+					"patching_rect" : [ 10.0, 511.0, 159.0, 22.0 ],
 					"text" : "qxt.Repattrhub 5"
 				}
 
@@ -1109,9 +1337,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 520.0, 30.0, 22.0 ],
+					"patching_rect" : [ 380.0, 541.0, 30.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 617.0, 55.5, 70.0, 30.0 ],
+					"presentation_rect" : [ 815.0, 65.5, 70.0, 30.0 ],
 					"proportion" : 0.5
 				}
 
@@ -1292,19 +1520,75 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-13::obj-120::obj-59" : [ "toggle", "toggle", 0 ],
 			"obj-13::obj-120::obj-67" : [ "gain~[5]", "gain~", 0 ],
-			"obj-14::obj-120::obj-59" : [ "toggle[2]", "toggle", 0 ],
+			"obj-13::obj-91" : [ "toggle", "toggle", 0 ],
 			"obj-14::obj-120::obj-67" : [ "gain~[7]", "gain~", 0 ],
-			"obj-29::obj-120::obj-59" : [ "toggle[1]", "toggle", 0 ],
+			"obj-14::obj-91" : [ "toggle[2]", "toggle", 0 ],
+			"obj-19::obj-1::obj-10::obj-13" : [ "live.dial[10]", "Pan", 0 ],
+			"obj-19::obj-1::obj-10::obj-19" : [ "1_Mixer_Mute[10]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-10::obj-67" : [ "gain~[20]", "gain~", 0 ],
+			"obj-19::obj-1::obj-12::obj-13" : [ "live.dial[9]", "Pan", 0 ],
+			"obj-19::obj-1::obj-12::obj-19" : [ "1_Mixer_Mute[9]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-12::obj-67" : [ "gain~[16]", "gain~", 0 ],
+			"obj-19::obj-1::obj-13::obj-13" : [ "live.dial[6]", "Pan", 0 ],
+			"obj-19::obj-1::obj-13::obj-19" : [ "1_Mixer_Mute[6]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-13::obj-67" : [ "gain~[11]", "gain~", 0 ],
+			"obj-19::obj-1::obj-2::obj-13" : [ "live.dial", "Pan", 0 ],
+			"obj-19::obj-1::obj-2::obj-19" : [ "1_Mixer_Mute", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-2::obj-67" : [ "gain~[6]", "gain~", 0 ],
+			"obj-19::obj-1::obj-3::obj-13" : [ "live.dial[5]", "Pan", 0 ],
+			"obj-19::obj-1::obj-3::obj-19" : [ "1_Mixer_Mute[5]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-3::obj-67" : [ "gain~[10]", "gain~", 0 ],
+			"obj-19::obj-1::obj-6::obj-13" : [ "live.dial[8]", "Pan", 0 ],
+			"obj-19::obj-1::obj-6::obj-19" : [ "1_Mixer_Mute[8]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-6::obj-67" : [ "gain~[9]", "gain~", 0 ],
+			"obj-19::obj-1::obj-7::obj-13" : [ "live.dial[7]", "Pan", 0 ],
+			"obj-19::obj-1::obj-7::obj-19" : [ "1_Mixer_Mute[7]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-7::obj-67" : [ "gain~[15]", "gain~", 0 ],
+			"obj-19::obj-1::obj-8::obj-13" : [ "live.dial[11]", "Pan", 0 ],
+			"obj-19::obj-1::obj-8::obj-19" : [ "1_Mixer_Mute[11]", "1_Mixer_Mute", 0 ],
+			"obj-19::obj-1::obj-8::obj-67" : [ "gain~[13]", "gain~", 0 ],
 			"obj-29::obj-120::obj-67" : [ "gain~[8]", "gain~", 0 ],
-			"obj-33::obj-120::obj-59" : [ "toggle[3]", "toggle", 0 ],
+			"obj-29::obj-91" : [ "toggle[1]", "toggle", 0 ],
 			"obj-33::obj-120::obj-67" : [ "gain~[12]", "gain~", 0 ],
-			"obj-55::obj-120::obj-59" : [ "toggle[7]", "toggle", 0 ],
-			"obj-55::obj-120::obj-67" : [ "gain~[9]", "gain~", 0 ],
-			"obj-55::obj-33" : [ "tab", "tab", 0 ],
-			"obj-56::obj-2" : [ "gain~[13]", "gain~", 0 ],
+			"obj-33::obj-91" : [ "toggle[3]", "toggle", 0 ],
+			"obj-55::obj-120::obj-67" : [ "gain~[19]", "gain~", 0 ],
+			"obj-55::obj-38" : [ "toggle[4]", "toggle", 0 ],
+			"obj-55::obj-57" : [ "live.tab[4]", "live.tab[1]", 0 ],
+			"obj-55::obj-59" : [ "toggle[5]", "toggle", 0 ],
+			"obj-56::obj-2" : [ "gain~[18]", "gain~", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-19::obj-1::obj-10::obj-13" : 				{
+					"parameter_longname" : "live.dial[10]"
+				}
+,
+				"obj-19::obj-1::obj-12::obj-13" : 				{
+					"parameter_longname" : "live.dial[9]"
+				}
+,
+				"obj-19::obj-1::obj-13::obj-13" : 				{
+					"parameter_longname" : "live.dial[6]"
+				}
+,
+				"obj-19::obj-1::obj-3::obj-13" : 				{
+					"parameter_longname" : "live.dial[5]"
+				}
+,
+				"obj-19::obj-1::obj-6::obj-13" : 				{
+					"parameter_longname" : "live.dial[8]"
+				}
+,
+				"obj-19::obj-1::obj-7::obj-13" : 				{
+					"parameter_longname" : "live.dial[7]"
+				}
+,
+				"obj-19::obj-1::obj-8::obj-13" : 				{
+					"parameter_longname" : "live.dial[11]"
+				}
 
 			}
 ,
@@ -1313,84 +1597,112 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "qxt.Repattrhub.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "5_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ChannelRemote.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Channel.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.ChannelLocal.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.ChannelOutput.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.PDSetup.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pdpath.txt",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.ConniptionWindow.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.GetIP.js",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxt.Messages.maxpat",
-				"bootpath" : "~/Documents/ Projects/Ω Max/QuaxTrip/QuaxTrip/lib",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ChannelLocal.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ChannelOutput.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxe.Mixer.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxe.MixerChannel.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxe.Balance.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxe.Pan.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1

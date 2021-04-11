@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1.0, 247.0, 1080.0, 307.0 ],
+		"rect" : [ 0.0, 486.0, 1017.0, 307.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,6 +43,298 @@
 				"box" : 				{
 					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
 					"hidden" : 1,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 10,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 2,
+						"gridsize" : [ 10.0, 10.0 ],
+						"gridsnaponopen" : 2,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 0,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 15,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "--Template",
+						"showontab" : 2,
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"linecount" : 8,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 10.0, 40.0, 365.0, 114.0 ],
+									"text" : "A mix of all remote signals combined with the Local Input is available via send~ objects. The Local Input signal is post Remote Mute. This mix reflects what is heard by all the ensemble members.\n\nTo set your patch to receive the main mix audio:\n\n    1. Add qxt_mix_L and qxt_mix_R receive~ objects in your patch."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontsize" : 16.0,
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 10.0, 11.0, 270.0, 24.0 ],
+									"text" : "Main Mix"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "ezdac~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 420.0, 220.0, 45.0, 45.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"maxclass" : "meter~",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 492.0, 80.0, 18.0, 90.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-35",
+									"maxclass" : "meter~",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 402.0, 80.0, 18.0, 90.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-36",
+									"maxclass" : "gain~",
+									"multichannelvariant" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 470.0, 80.0, 20.0, 90.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "gain~[18]",
+											"parameter_mmax" : 157.0,
+											"parameter_shortname" : "gain~[1]",
+											"parameter_type" : 0
+										}
+
+									}
+,
+									"varname" : "gain~[4]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"maxclass" : "gain~",
+									"multichannelvariant" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 380.0, 81.0, 20.0, 90.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "gain~[19]",
+											"parameter_mmax" : 157.0,
+											"parameter_shortname" : "gain~",
+											"parameter_type" : 0
+										}
+
+									}
+,
+									"varname" : "gain~[5]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
+									"id" : "obj-87",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 470.0, 40.0, 114.0, 22.0 ],
+									"text" : "receive~ qxt_mix_R"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
+									"id" : "obj-88",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 380.0, 10.0, 112.0, 22.0 ],
+									"text" : "receive~ qxt_mix_L"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"order" : 0,
+									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 1 ],
+									"order" : 1,
+									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"order" : 2,
+									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"order" : 2,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"midpoints" : [ 392.0, 181.0, 442.75, 181.0, 442.75, 69.0, 479.5, 69.0 ],
+									"source" : [ "obj-37", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 1 ],
+									"order" : 0,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"order" : 1,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"source" : [ "obj-87", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"source" : [ "obj-88", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "Audiomix",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "Jamoma_highlighted_orange",
+								"default" : 								{
+									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 480.0, 180.0, 75.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p \"Main Mix\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -52,13 +344,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
+						"rect" : [ 0.0, 512.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -94,7 +386,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 470.0, 139.5, 179.0, 22.0 ],
+									"patching_rect" : [ 440.0, 139.5, 179.0, 22.0 ],
 									"text" : "prepend 1-message quax-demo"
 								}
 
@@ -106,8 +398,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 870.0, 160.0, 180.0, 22.0 ],
-									"text" : "13."
+									"patching_rect" : [ 820.0, 160.0, 180.0, 22.0 ],
+									"text" : "92."
 								}
 
 							}
@@ -118,7 +410,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 630.0, 60.0, 123.0, 22.0 ],
+									"patching_rect" : [ 600.0, 60.0, 123.0, 22.0 ],
 									"text" : "This is a list message"
 								}
 
@@ -131,7 +423,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 760.0, 60.0, 50.0, 22.0 ]
+									"patching_rect" : [ 730.0, 60.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -142,7 +434,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 470.0, 90.0, 57.0, 22.0 ],
+									"patching_rect" : [ 440.0, 90.0, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -154,7 +446,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 470.0, 60.0, 150.0, 22.0 ],
+									"patching_rect" : [ 440.0, 60.0, 150.0, 22.0 ],
 									"text" : "This is a symbol message."
 								}
 
@@ -166,7 +458,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 850.0, 120.0, 99.0, 22.0 ],
+									"patching_rect" : [ 800.0, 120.0, 99.0, 22.0 ],
 									"text" : "route quax-demo"
 								}
 
@@ -178,7 +470,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 470.0, 190.0, 122.0, 22.0 ],
+									"patching_rect" : [ 440.0, 190.0, 122.0, 22.0 ],
 									"text" : "s qxt_send_message"
 								}
 
@@ -191,7 +483,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 850.0, 60.0, 133.0, 22.0 ],
+									"patching_rect" : [ 800.0, 60.0, 133.0, 22.0 ],
 									"text" : "r qxt_receive_message"
 								}
 
@@ -203,7 +495,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 850.0, 90.0, 46.0, 22.0 ],
+									"patching_rect" : [ 800.0, 90.0, 46.0, 22.0 ],
 									"text" : "route 1"
 								}
 
@@ -214,7 +506,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 850.0, 190.0, 160.0, 22.0 ],
+									"patching_rect" : [ 800.0, 190.0, 160.0, 22.0 ],
 									"text" : "print \"Quax Demo Message\""
 								}
 
@@ -222,12 +514,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 16,
+									"linecount" : 17,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 410.0, 221.0 ],
-									"text" : "In addition to the audio that is sent between partners, there is also a system for sending messages. Messages can be symbols, numbers, or lists.\n\nTo send messages:\n\n    1. Add a qxt_send_message send object in your patch.\n    2. Send the message \"n-message the message\" where \"n\" is the\n        Remote channel number where you wish to send the message and\n        \"the message\" is the symbol, number, or list you wish to send.\n\nTo receive messages:\n\n    1. Add a qxt_receive_message receive object in your patch.\n    2. Messages received will be in the format \"n the message\" where \"n\"\n        is the Remote channel number that sent the message and \n        \"the message\" is the symbol, number, or list  sent."
+									"patching_rect" : [ 10.0, 40.0, 413.0, 234.0 ],
+									"text" : "In addition to the audio that is sent between partners, there is also a system for sending messages. Messages can be symbols, numbers, or lists. This will allow to you send, for example, OSC messages to remote partners.\n\nTo send messages:\n\n    1. Add a qxt_send_message send object in your patch.\n    2. Send the message \"n-message the message\" where \"n\" is the\n        Remote channel number where you wish to send the message and\n        \"the message\" is the symbol, number, or list you wish to send.\n\nTo receive messages:\n\n    1. Add a qxt_receive_message receive object in your patch.\n    2. Messages received will be in the format \"n the message\" where \"n\"\n        is the Remote channel number that sent the message and \n        \"the message\" is the symbol, number, or list  sent."
 								}
 
 							}
@@ -340,7 +632,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 815.0, 211.0, 82.0, 22.0 ],
+					"patching_rect" : [ 570.0, 180.0, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -349,454 +641,6 @@
 					}
 ,
 					"text" : "p Messages"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
-					"hidden" : 1,
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 2,
-						"gridsize" : [ 10.0, 10.0 ],
-						"gridsnaponopen" : 2,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 0,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 15,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "--Template",
-						"showontab" : 2,
-						"assistshowspatchername" : 0,
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 662.0, 40.0, 61.0, 20.0 ],
-									"text" : "Remote 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 752.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 662.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 730.0, 80.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_longname" : "gain~[15]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~[1]",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[1]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 640.0, 81.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_longname" : "gain~[10]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[2]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-10",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 730.0, 40.0, 165.0, 22.0 ],
-									"text" : "receive~ 1_qxt_post_mute_R"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-11",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 640.0, 10.0, 163.0, 22.0 ],
-									"text" : "receive~ 1_qxt_post_mute_L"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 402.0, 41.0, 37.0, 20.0 ],
-									"text" : "Local"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"linecount" : 11,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 352.0, 154.0 ],
-									"text" : "There are send~ objects that route each channel's audio, post-fader.\n\nTo set your patch to receive the post-mute audio from individual channels:\n\n    1. Add 0_qxt_post_mute_L and  0_qxt_post_mute_R receive~\n        objects in your patch to receive the Local channel.\n    2. Add #_qxt_post_mute_L and  #_qxt_post_mute_R for each\n        Remote channel (e.g. 1_qxt_post_mute_L and\n       1_qxt_post_mute_R for Remote 1)."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"fontsize" : 16.0,
-									"id" : "obj-2",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 11.0, 305.0, 24.0 ],
-									"text" : "Post-mute Audio: Channels"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-38",
-									"maxclass" : "ezdac~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 560.0, 216.0, 45.0, 45.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-34",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 492.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-35",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 402.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-36",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 470.0, 80.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_longname" : "gain~[16]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~[1]",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[4]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-37",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 380.0, 81.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_longname" : "gain~[17]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[5]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-87",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 470.0, 40.0, 165.0, 22.0 ],
-									"text" : "receive~ 0_qxt_post_mute_R"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-88",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 10.0, 163.0, 22.0 ],
-									"text" : "receive~ 0_qxt_post_mute_L"
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
-									"order" : 1,
-									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 1 ],
-									"order" : 0,
-									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"order" : 1,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"midpoints" : [ 392.0, 181.0, 445.75, 181.0, 445.75, 69.0, 479.5, 69.0 ],
-									"source" : [ "obj-37", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"order" : 0,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 1 ],
-									"order" : 1,
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"order" : 0,
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-87", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
-									"source" : [ "obj-88", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"order" : 1,
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"order" : 0,
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"midpoints" : [ 652.0, 181.0, 705.75, 181.0, 705.75, 69.0, 739.5, 69.0 ],
-									"source" : [ "obj-9", 1 ]
-								}
-
-							}
- ],
-						"styles" : [ 							{
-								"name" : "Audiomix",
-								"default" : 								{
-									"bgfillcolor" : 									{
-										"type" : "gradient",
-										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
-									}
-
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
-, 							{
-								"name" : "Jamoma_highlighted_orange",
-								"default" : 								{
-									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
- ]
-					}
-,
-					"patching_rect" : [ 526.5, 210.0, 139.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p \"Post-mute: Channels\""
 				}
 
 			}
@@ -813,13 +657,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
+						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -856,7 +700,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 40.0, 365.0, 114.0 ],
-									"text" : "The audio that is being sent out of the Output of QuaxTrip is available via send~ objects. These sends reflect the audio that QuaxTrip is sending to the dac~.\n\nTo set your patch to receive the post-mute Output audio:\n\n    1. Add qxt_post_mute_L and qxt_post_mute_R receive~ objects in your patch."
+									"text" : "The audio that is being sent out of the Monitor Output of Quaxtrip is available via send~ objects. These sends are post Monitor Mute and reflect the audio that Quaxtrip is sending to the dac~. \n\nTo set your patch to receive the Monitor Output audio:\n\n    1. Add qxt_post_mute_L and qxt_monitor_R receive~ objects\n        in your patch."
 								}
 
 							}
@@ -868,8 +712,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 11.0, 274.0, 42.0 ],
-									"text" : "Post-mute Audio: Mix\n"
+									"patching_rect" : [ 10.0, 11.0, 270.0, 24.0 ],
+									"text" : "Monitor Mix"
 								}
 
 							}
@@ -961,8 +805,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 470.0, 40.0, 129.0, 22.0 ],
-									"text" : "receive~ qxt_output_R"
+									"patching_rect" : [ 470.0, 40.0, 136.0, 22.0 ],
+									"text" : "receive~ qxt_monitor_R"
 								}
 
 							}
@@ -974,8 +818,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 10.0, 127.0, 22.0 ],
-									"text" : "receive~ qxt_output_L"
+									"patching_rect" : [ 380.0, 10.0, 134.0, 22.0 ],
+									"text" : "receive~ qxt_monitor_L"
 								}
 
 							}
@@ -1080,7 +924,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 296.5, 210.0, 107.0, 22.0 ],
+					"patching_rect" : [ 380.0, 180.0, 89.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1088,7 +932,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p \"Post-mute: Mix\""
+					"text" : "p \"Monitor Mix\""
 				}
 
 			}
@@ -1105,13 +949,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
+						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1229,8 +1073,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 730.0, 40.0, 160.0, 22.0 ],
-									"text" : "receive~ 1_qxt_pre_mute_R"
+									"patching_rect" : [ 730.0, 40.0, 151.0, 22.0 ],
+									"text" : "receive~ 1_qxt_channel_R"
 								}
 
 							}
@@ -1242,8 +1086,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 640.0, 10.0, 158.0, 22.0 ],
-									"text" : "receive~ 1_qxt_pre_mute_L"
+									"patching_rect" : [ 640.0, 10.0, 149.0, 22.0 ],
+									"text" : "receive~ 1_qxt_channel_L"
 								}
 
 							}
@@ -1265,8 +1109,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 352.0, 154.0 ],
-									"text" : "There are send~ objects that route pre-mute, post-fader audio for each channel.\n\nTo set your patch to receive the pre-mute audio from individual channels:\n\n    1. Add 0_qxt_pre_mute_L and  0_qxt_pre_mute_R receive~\n        objects in your patch to receive the Local channel.\n    2. Add #_qxt_pre_mute_L and  #_qxt_pre_mute_R for each\n        Remote channel (e.g. 1_qxt_pre_mute_L and\n       1_qxt_pre_mute_R for Remote 1)."
+									"patching_rect" : [ 10.0, 40.0, 340.0, 154.0 ],
+									"text" : "There are send~ objects that route post-fader audio for the Local Input and for each Remote channel. The Local Input send~ is post Remote Mute.\n\nTo set your patch to receive audio from individual channels:\n\n    1. Add 0_qxt_channel_L and  0_qxt_channel_R receive~\n        objects in your patch to receive the Local channel.\n    2. Add #_qxt_channel_L and  #_qxt_channel_R for each\n        Remote channel (e.g. 1_qxt_channel_L and\n       1_qxt_channel_R for Remote 1)."
 								}
 
 							}
@@ -1279,7 +1123,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 11.0, 296.0, 24.0 ],
-									"text" : "Pre-mute Audio: Channels"
+									"text" : "Channels"
 								}
 
 							}
@@ -1371,8 +1215,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 470.0, 40.0, 160.0, 22.0 ],
-									"text" : "receive~ 0_qxt_pre_mute_R"
+									"patching_rect" : [ 470.0, 40.0, 151.0, 22.0 ],
+									"text" : "receive~ 0_qxt_channel_R"
 								}
 
 							}
@@ -1384,8 +1228,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 10.0, 158.0, 22.0 ],
-									"text" : "receive~ 0_qxt_pre_mute_L"
+									"patching_rect" : [ 380.0, 10.0, 149.0, 22.0 ],
+									"text" : "receive~ 0_qxt_channel_L"
 								}
 
 							}
@@ -1528,7 +1372,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 676.5, 211.0, 134.0, 22.0 ],
+					"patching_rect" : [ 300.0, 180.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1536,7 +1380,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p \"Pre-mute: Channels\""
+					"text" : "p Channels"
 				}
 
 			}
@@ -1569,705 +1413,6 @@
 				"box" : 				{
 					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
 					"hidden" : 1,
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 2,
-						"gridsize" : [ 10.0, 10.0 ],
-						"gridsnaponopen" : 2,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 0,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 15,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "--Template",
-						"showontab" : 2,
-						"assistshowspatchername" : 0,
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"linecount" : 14,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 366.0, 194.0 ],
-									"text" : "There are send~ objects that route audio before the Mute toggle. This allows you to mute channels locally for monitoring purposes while also sending all channels to another patch. For example, you might create a patch that receives the un-muted stream in order to livestream over the internet. These sends are a mix of all channels and are post-fader of each individual channel but pre-Output-fader.\n\nSee the the \"Pre-mute: Channels\" or \"Post-mute: Channels\" tabs if you want to receive individual channels rather than the mix.\n\nTo set your patch to receive the pre-mute mix audio:\n\n    1. Add qxt_pre_mute_L and qxt_pre_mute_R receive~ \n        objects in your patch."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"fontsize" : 16.0,
-									"id" : "obj-2",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 11.0, 272.0, 24.0 ],
-									"text" : "Pre-mute Audio: Mix"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-38",
-									"maxclass" : "ezdac~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 420.0, 220.0, 45.0, 45.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-34",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 492.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-35",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 402.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-36",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 470.0, 80.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_longname" : "gain~[4]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~[1]",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[4]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-37",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 380.0, 81.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_longname" : "gain~[5]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[5]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-87",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 470.0, 40.0, 146.0, 22.0 ],
-									"text" : "receive~ qxt_pre_mute_R"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-88",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 10.0, 144.0, 22.0 ],
-									"text" : "receive~ qxt_pre_mute_L"
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
-									"order" : 0,
-									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 1 ],
-									"order" : 1,
-									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"order" : 2,
-									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"order" : 2,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"midpoints" : [ 392.0, 181.0, 442.75, 181.0, 442.75, 69.0, 479.5, 69.0 ],
-									"source" : [ "obj-37", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 1 ],
-									"order" : 0,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"order" : 1,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-87", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
-									"source" : [ "obj-88", 0 ]
-								}
-
-							}
- ],
-						"styles" : [ 							{
-								"name" : "Audiomix",
-								"default" : 								{
-									"bgfillcolor" : 									{
-										"type" : "gradient",
-										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
-									}
-
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
-, 							{
-								"name" : "Jamoma_highlighted_orange",
-								"default" : 								{
-									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
- ]
-					}
-,
-					"patching_rect" : [ 416.5, 210.0, 102.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p \"Pre-mute: Mix\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
-					"hidden" : 1,
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 2,
-						"gridsize" : [ 10.0, 10.0 ],
-						"gridsnaponopen" : 2,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 0,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 15,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "--Template",
-						"showontab" : 2,
-						"assistshowspatchername" : 0,
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"linecount" : 13,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 350.0, 181.0 ],
-									"text" : "Using receive~ and send~ objects in your patch you can route audio from the Output to your own patch and back again. These sends are pre-fader.\n\nTo use this effects loop:\n\n    1. Check the Output Bus checkbox in the Output channel.\n    2. Include qxt_output_bus_send_L and\n        qxt_output_bus_send_R receive~ objects in your patch\n        to receive the audio.\n    3. Include qxt_output_bus_receive_L and\n       qxt_output_bus_receive_R send~ objects in your patch to\n       send the audio back to QuaxTrip."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 1,
-									"fontsize" : 16.0,
-									"id" : "obj-2",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 10.0, 173.0, 24.0 ],
-									"text" : "Using the Output Bus"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "slider",
-									"min" : 100.0,
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 530.0, 114.0, 110.0, 22.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ 3500 ],
-											"parameter_initial_enable" : 1,
-											"parameter_longname" : "slider[1]",
-											"parameter_mmax" : 9999.0,
-											"parameter_shortname" : "slider",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"size" : 10000.0,
-									"varname" : "slider[1]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "number",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 530.0, 150.0, 50.0, 22.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ 5000 ],
-											"parameter_initial_enable" : 1,
-											"parameter_invisible" : 1,
-											"parameter_longname" : "number[1]",
-											"parameter_shortname" : "number",
-											"parameter_type" : 3
-										}
-
-									}
-,
-									"varname" : "number[1]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 478.5, 190.0, 92.0, 22.0 ],
-									"text" : "lores~ 1500 0.7"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-10",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 378.5, 190.0, 92.0, 22.0 ],
-									"text" : "lores~ 1500 0.7"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 502.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "meter~",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 402.0, 80.0, 18.0, 90.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 480.0, 80.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ 127 ],
-											"parameter_initial_enable" : 1,
-											"parameter_longname" : "gain~[2]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~[1]",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[2]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "gain~",
-									"multichannelvariant" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 380.0, 80.0, 20.0, 90.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ 127 ],
-											"parameter_initial_enable" : 1,
-											"parameter_longname" : "gain~[3]",
-											"parameter_mmax" : 157.0,
-											"parameter_shortname" : "gain~",
-											"parameter_type" : 0
-										}
-
-									}
-,
-									"varname" : "gain~[3]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-31",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 478.5, 220.0, 188.0, 22.0 ],
-									"text" : "send~ qxt_output_bus_receive_R"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-32",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 378.5, 250.0, 186.0, 22.0 ],
-									"text" : "send~ qxt_output_bus_receive_L"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-12",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 480.0, 40.0, 188.0, 22.0 ],
-									"text" : "receive~ qxt_output_bus_send_R"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 380.0, 10.0, 186.0, 22.0 ],
-									"text" : "receive~ qxt_output_bus_send_L"
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-32", 0 ],
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"order" : 0,
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"order" : 1,
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"order" : 1,
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-28", 0 ],
-									"order" : 0,
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"midpoints" : [ 392.0, 180.0, 431.75, 180.0, 431.75, 69.0, 489.5, 69.0 ],
-									"source" : [ "obj-30", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 1 ],
-									"order" : 1,
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 1 ],
-									"order" : 0,
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
- ],
-						"styles" : [ 							{
-								"name" : "Audiomix",
-								"default" : 								{
-									"bgfillcolor" : 									{
-										"type" : "gradient",
-										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
-									}
-
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
-, 							{
-								"name" : "Jamoma_highlighted_orange",
-								"default" : 								{
-									"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
-								}
-,
-								"parentstyle" : "",
-								"multi" : 0
-							}
- ]
-					}
-,
-					"patching_rect" : [ 196.5, 210.0, 87.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p \"Output Bus\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
-					"hidden" : 1,
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2277,13 +1422,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
+						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2659,7 +1804,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 106.5, 210.0, 80.0, 22.0 ],
+					"patching_rect" : [ 210.0, 180.0, 80.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2676,7 +1821,6 @@
 					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
 					"hidden" : 1,
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
@@ -2685,13 +1829,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1080.0, 281.0 ],
+						"rect" : [ 0.0, 26.0, 1017.0, 281.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2727,8 +1871,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 40.0, 350.0, 167.0 ],
-									"text" : "Using qxt_local_patch_L and qxt_local_patch_R send~ objects in your patch you can send audio from your patch to the Local channel, bypassing the Local audio input. To set QuaxTrip to receive this audio:\n\n    1. Select send qxt_local_patch in the Input \n        Starting Channel pull-down of the \n        Local channel.\n    2. Include qxt_local_patch_L and qxt_local_patch_R send~\n        objects in your patch to send the audio.\n\n"
+									"patching_rect" : [ 10.0, 40.0, 351.0, 167.0 ],
+									"text" : "Using qxt_local_input_L and qxt_local_input_R send~ objects in your patch you can send audio from your patch to the Local channel, bypassing the Local audio input. To set QuaxTrip to receive this audio:\n\n    1. Select send qxt_local_input in the Input \n        Starting Channel pull-down of the \n        Local channel.\n    2. Include qxt_local_input_L and qxt_local_input_R send~\n        objects in your patch to send the audio.\n\n"
 								}
 
 							}
@@ -2776,8 +1920,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 400.0, 80.0, 144.0, 22.0 ],
-									"text" : "send~ qxt_local_patch_R"
+									"patching_rect" : [ 400.0, 80.0, 140.0, 22.0 ],
+									"text" : "send~ qxt_local_input_R"
 								}
 
 							}
@@ -2788,8 +1932,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 380.0, 110.0, 142.0, 22.0 ],
-									"text" : "send~ qxt_local_patch_L"
+									"patching_rect" : [ 380.0, 110.0, 138.0, 22.0 ],
+									"text" : "send~ qxt_local_input_L"
 								}
 
 							}
@@ -2847,7 +1991,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 10.0, 210.0, 90.0, 35.0 ],
+					"patching_rect" : [ 10.0, 180.0, 190.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2866,22 +2010,14 @@
 			"obj-13::obj-15" : [ "gain~[1]", "gain~[1]", 0 ],
 			"obj-13::obj-23" : [ "number", "number", 0 ],
 			"obj-13::obj-4" : [ "slider", "slider", 0 ],
-			"obj-14::obj-29" : [ "gain~[2]", "gain~[1]", 0 ],
-			"obj-14::obj-30" : [ "gain~[3]", "gain~", 0 ],
-			"obj-14::obj-5" : [ "slider[1]", "slider", 0 ],
-			"obj-14::obj-8" : [ "number[1]", "number", 0 ],
-			"obj-15::obj-36" : [ "gain~[4]", "gain~[1]", 0 ],
-			"obj-15::obj-37" : [ "gain~[5]", "gain~", 0 ],
-			"obj-3::obj-36" : [ "gain~[16]", "gain~[1]", 0 ],
-			"obj-3::obj-37" : [ "gain~[17]", "gain~", 0 ],
-			"obj-3::obj-8" : [ "gain~[15]", "gain~[1]", 0 ],
-			"obj-3::obj-9" : [ "gain~[10]", "gain~", 0 ],
 			"obj-5::obj-36" : [ "gain~[6]", "gain~[1]", 0 ],
 			"obj-5::obj-37" : [ "gain~[7]", "gain~", 0 ],
 			"obj-5::obj-8" : [ "gain~[8]", "gain~[1]", 0 ],
 			"obj-5::obj-9" : [ "gain~[9]", "gain~", 0 ],
 			"obj-7::obj-36" : [ "gain~[11]", "gain~[1]", 0 ],
 			"obj-7::obj-37" : [ "gain~[14]", "gain~", 0 ],
+			"obj-8::obj-36" : [ "gain~[18]", "gain~[1]", 0 ],
+			"obj-8::obj-37" : [ "gain~[19]", "gain~", 0 ],
 			"parameterbanks" : 			{
 
 			}
