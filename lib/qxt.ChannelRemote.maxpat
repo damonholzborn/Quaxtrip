@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
+					"id" : "obj-105",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1444.0, 260.0, 143.0, 22.0 ],
+					"text" : "send~ #1_qxt_monitor_R"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.6642446518, 0.0, 0.0456424281, 1.0 ],
+					"id" : "obj-106",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1282.0, 258.75, 141.0, 22.0 ],
+					"text" : "send~ #1_qxt_monitor_L"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
 					"id" : "obj-104",
 					"maxclass" : "newobj",
@@ -588,7 +612,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1542.0, 261.0, 73.0, 20.0 ],
+					"patching_rect" : [ 1542.0, 311.0, 73.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 297.0, 7.0, 73.0, 20.0 ],
 					"text" : "Latency Tester",
@@ -1208,8 +1232,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1227,8 +1251,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1237,7 +1261,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1500.0, 291.0, 61.0, 22.0 ],
+					"patching_rect" : [ 1500.0, 341.0, 61.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1708,7 +1732,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1300.0, 293.0, 43.0, 17.0 ],
+					"patching_rect" : [ 1300.0, 343.0, 43.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.0, 11.0, 32.0, 17.0 ],
 					"text" : "Reset"
@@ -1818,7 +1842,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1500.0, 321.0, 209.0, 22.0 ],
+					"patching_rect" : [ 1500.0, 371.0, 209.0, 22.0 ],
 					"text" : "panel-settings #1 measure-latency $1"
 				}
 
@@ -2107,7 +2131,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1270.0, 291.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1270.0, 341.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 812.0, 10.0, 19.0, 19.0 ]
 				}
@@ -2120,7 +2144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1270.0, 321.0, 211.0, 22.0 ],
+					"patching_rect" : [ 1270.0, 371.0, 211.0, 22.0 ],
 					"text" : "panel-settings #1 reset-dropouts bang"
 				}
 
@@ -2451,7 +2475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
-					"midpoints" : [ 1570.5, 503.0, 1722.0, 503.0, 1722.0, 255.0, 1509.5, 255.0 ],
+					"midpoints" : [ 1570.5, 503.0, 1722.0, 503.0, 1722.0, 301.0, 1509.5, 301.0 ],
 					"source" : [ "obj-28", 14 ]
 				}
 
@@ -2735,14 +2759,32 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
+					"destination" : [ "obj-105", 0 ],
+					"order" : 1,
 					"source" : [ "obj-92", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"order" : 0,
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"order" : 1,
+					"source" : [ "obj-93", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
+					"order" : 0,
 					"source" : [ "obj-93", 0 ]
 				}
 
@@ -2797,7 +2839,7 @@
 				"name" : "qxt.Repattr.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : ".",
-				"type" : "TEXT",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -2894,8 +2936,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2913,8 +2955,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

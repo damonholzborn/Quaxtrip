@@ -41,4 +41,4 @@ More Documentation included in Manual.pdf in the Quaxtrip distribution.
 
 Quaxtrip runs Miller Puckette’s [Quacktrip](http://msp.ucsd.edu/tools/quacktrip/) Pure Data patch within Cycling ‘74’s Max. Quacktrip, in turn, is an implementation, in Pure Data, of Chris Chafe’s [JackTrip](https://ccrma.stanford.edu/software/jacktrip/) network protocol, based on jacktrip.pd by Roman Haefeli and Johannes Schuett. It establishes a low-latency, point-to-point connection between two sites, with no audio compression.
 
-*version 2021-0411*
+*version 2021-0413*
