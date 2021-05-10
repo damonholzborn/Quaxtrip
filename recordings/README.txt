@@ -1,0 +1,1 @@
+This directory is where you will find recordings made with the Quaxtrip Recorder. See the Recording section of the manual for more information.

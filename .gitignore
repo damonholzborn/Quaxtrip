@@ -2,5 +2,7 @@
 2_qxt.SavedSettings.txt
 5_qxt.SavedSettings.txt
 pdpath.txt
+recordings/*
+!recordings/README.txt
 # make sure to copy the Icon line with the two newlines following it
 Icon
