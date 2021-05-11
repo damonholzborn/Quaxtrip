@@ -1,8 +1,0 @@
-0, "single echoes, high density";
-1, "double echoes/long decay";
-2, "repeating echoes that can become a longer reverb";
-3, "long reverb/repeating echoes/slow attack";
-4, "repeating echoes, with HUGE reverb";
-5, "long reverb/repeating echos/long decay/slow attack";
-6, "single echoes, low density";
-7, "single echoes, medium density";

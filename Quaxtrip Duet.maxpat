@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 10,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,6 +40,33 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 260.0, 310.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 994.0, 40.0, 58.0, 22.0 ],
+					"text" : "Recorder"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 260.0, 340.0, 77.0, 22.0 ],
+					"text" : "qxr.Recorder",
+					"varname" : "qxr.Recorder"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
 					"id" : "obj-19",
 					"maxclass" : "newobj",
@@ -50,13 +77,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 10,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1.0, 259.0, 887.0, 204.0 ],
+						"rect" : [ 0.0, 259.0, 887.0, 204.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -240,8 +267,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -453,7 +480,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 10,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1244,7 +1271,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1259,7 +1286,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
@@ -1267,8 +1294,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 2,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1277,6 +1312,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -1440,11 +1482,18 @@
 				"name" : "qxt.Repattrhub.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "2_qxt.SavedSettings.txt",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "2_qxt.SavedSettings_Default.txt",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
@@ -1468,7 +1517,7 @@
 				"name" : "qxt.Repattr.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1529,6 +1578,13 @@
 			}
 , 			{
 				"name" : "qxe.Pan.maxpat",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxr.Recorder.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
