@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 259.0, 247.0, 225.0 ],
+		"rect" : [ 888.0, 259.0, 241.0, 204.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,32 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 720.0, 510.0, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 218.0, 99.0, 12.0, 71.333333283662796 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 620.0, 510.0, 80.0, 13.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 209.0, 99.0, 12.0, 71.333333283662796 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-76",
 					"linecount" : 5,
 					"maxclass" : "message",
@@ -47,7 +73,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 20.0, 300.0, 89.0, 76.0 ],
-					"presentation_linecount" : 5,
 					"text" : "\"ProBook:/Users/damon/Documents/ Max/ Quaxtrip/Quaxtrip/\""
 				}
 
@@ -331,7 +356,7 @@
 					"patching_rect" : [ 470.0, 250.0, 78.5, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 20.5, 144.5, 78.5, 33.0 ],
+					"presentation_rect" : [ 17.234888000000012, 133.25, 78.5, 33.0 ],
 					"text" : "Start/Stop Recording",
 					"textjustification" : 1
 				}
@@ -787,7 +812,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 420.0, 240.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 100.0, 136.0, 50.0, 50.0 ]
+					"presentation_rect" : [ 100.0, 129.5, 40.5, 40.5 ]
 				}
 
 			}
@@ -823,8 +848,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 497.0, 770.0, 203.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 189.0, 220.0, 27.0 ],
-					"text" : "00:00:02.443",
+					"presentation_rect" : [ 10.0, 175.0, 220.0, 27.0 ],
+					"text" : "00:00:00.000",
 					"textjustification" : 1
 				}
 
@@ -881,7 +906,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 694.5, 228.0, 82.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 40.0, 82.0, 20.0 ],
+					"presentation_rect" : [ 17.234888000000012, 71.0, 82.0, 20.0 ],
 					"text" : "Sample Type",
 					"textjustification" : 2
 				}
@@ -896,7 +921,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 900.0, 200.0, 81.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 70.0, 81.0, 20.0 ],
+					"presentation_rect" : [ 17.234888000000012, 41.0, 81.0, 20.0 ],
 					"text" : "Sample Rate",
 					"textjustification" : 2
 				}
@@ -1060,8 +1085,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 10.0, 129.0, 22.0 ],
-					"text" : "r qxt_local_bus_toggle"
+					"patching_rect" : [ 380.0, 10.0, 149.0, 22.0 ],
+					"text" : "r #1_gxt_local_bus_toggle"
 				}
 
 			}
@@ -1121,6 +1146,15 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1216,6 +1250,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1849,8 +1892,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1868,8 +1911,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
