@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 10,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 45.0, 1081.0, 430.0 ],
+		"rect" : [ -1.0, 45.0, 1081.0, 430.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,32 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.827450980392157, 0.698039215686274, 0.109803921568627, 1.0 ],
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 477.0, 571.0, 181.0, 22.0 ],
+					"text" : "loadmess title \"Quaxtrip Quintet\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 477.0, 601.5, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
 					"id" : "obj-19",
 					"maxclass" : "newobj",
@@ -50,13 +76,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 10,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1.0, 498.0, 872.0, 201.0 ],
+						"rect" : [ 1.0, 498.0, 801.0, 203.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -84,14 +110,29 @@
 						"style" : "",
 						"subpatcher_template" : "--Template",
 						"assistshowspatchername" : 0,
+						"title" : "Quaxtrip Mixer",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.827450980392157, 0.698039215686274, 0.109803921568627, 1.0 ],
+									"id" : "obj-30",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 20.0, 210.0, 172.0, 22.0 ],
+									"text" : "loadmess title \"Quaxtrip Mixer\""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-22",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 220.0, 67.0, 22.0 ],
+									"patching_rect" : [ 0.0, 240.0, 67.0, 22.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -114,7 +155,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 790.0, 200.0 ],
 									"varname" : "qxe.Mixer",
 									"viewvisibility" : 1
 								}
@@ -125,6 +166,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-30", 0 ]
 								}
 
 							}
@@ -221,8 +269,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -240,8 +288,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -250,7 +298,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 520.0, 490.0, 105.0, 22.0 ],
+					"patching_rect" : [ 487.5, 480.0, 105.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -266,7 +314,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -276,7 +324,7 @@
 					"name" : "qxt.ChannelOutput.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 10000.0, 10000.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 510.0, 10.0, 300.0, 90.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 509.0, 10.0, 301.5, 90.0 ],
@@ -288,7 +336,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -298,7 +346,7 @@
 					"name" : "qxt.ChannelLocal.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 10000.0, 10000.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 10.0, 10.0, 490.0, 90.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 500.0, 90.0 ],
@@ -309,7 +357,6 @@
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -348,7 +395,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 10,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1051,7 +1098,6 @@
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-35",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1154,7 +1200,6 @@
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1169,7 +1214,6 @@
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
 					"id" : "obj-8",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1212,6 +1256,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
+					"hidden" : 1,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1228,7 +1273,7 @@
 				"box" : 				{
 					"args" : [ 4 ],
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1238,7 +1283,7 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 10000.0, 10000.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 10.0, 347.0, 1060.0, 80.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 336.0, 1060.0, 80.0 ],
@@ -1251,7 +1296,7 @@
 				"box" : 				{
 					"args" : [ 3 ],
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1261,7 +1306,7 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 10000.0, 10000.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 10.0, 268.0, 1060.0, 80.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 257.0, 1060.0, 80.0 ],
@@ -1274,7 +1319,7 @@
 				"box" : 				{
 					"args" : [ 2 ],
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1284,7 +1329,7 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 10000.0, 10000.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 10.0, 189.0, 1060.0, 80.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 178.0, 1060.0, 80.0 ],
@@ -1297,7 +1342,7 @@
 				"box" : 				{
 					"args" : [ 1 ],
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1307,7 +1352,7 @@
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 10000.0, 10000.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 10.0, 110.0, 1060.0, 80.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 99.0, 1060.0, 80.0 ],
@@ -1402,6 +1447,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -1599,11 +1651,18 @@
 				"name" : "qxt.Repattrhub.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "5_qxt.SavedSettings.txt",
+				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "5_qxt.SavedSettings_Default.txt",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
@@ -1627,7 +1686,7 @@
 				"name" : "qxt.Repattr.maxpat",
 				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1714,6 +1773,24 @@
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "Audiomix",
 				"default" : 				{
 					"bgfillcolor" : 					{
@@ -1734,6 +1811,80 @@
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
 					"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "ksliderWhite",
+				"default" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjBlue-1",
+				"default" : 				{
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjBrown-1",
+				"default" : 				{
+					"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjCyan-1",
+				"default" : 				{
+					"accentcolor" : [ 0.029546, 0.773327, 0.821113, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjGreen-1",
+				"default" : 				{
+					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjYellow-1",
+				"default" : 				{
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberGold-1",
+				"default" : 				{
+					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "rsliderGold",
+				"default" : 				{
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

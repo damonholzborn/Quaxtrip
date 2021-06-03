@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 888.0, 259.0, 241.0, 204.0 ],
+		"rect" : [ 837.0, 259.0, 243.0, 202.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,45 @@
 		"style" : "",
 		"subpatcher_template" : "--Template",
 		"assistshowspatchername" : 0,
+		"title" : "Quaxtrip Recorder",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.827450980392157, 0.698039215686274, 0.109803921568627, 1.0 ],
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 140.0, 138.0, 35.0 ],
+					"text" : "loadmess title \"Quaxtrip Recorder\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 148.75, 460.0, 65.0, 22.0 ],
+					"text" : "unpack i i i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 220.0, 350.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-67",
 					"maxclass" : "meter~",
@@ -47,7 +85,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 720.0, 510.0, 80.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 218.0, 99.0, 12.0, 71.333333283662796 ]
+					"presentation_rect" : [ 218.0, 99.0, 12.0, 71.0 ]
 				}
 
 			}
@@ -60,7 +98,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 620.0, 510.0, 80.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 209.0, 99.0, 12.0, 71.333333283662796 ]
+					"presentation_rect" : [ 209.0, 99.0, 12.0, 71.0 ]
 				}
 
 			}
@@ -84,8 +122,8 @@
 					"numinlets" : 10,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 580.0, 377.0, 22.0 ],
-					"text" : "sprintf symout %srecordings/%i.%02i.%02i-%02i.%02i.%02i%s%s%s"
+					"patching_rect" : [ 70.0, 580.0, 381.0, 22.0 ],
+					"text" : "sprintf symout %srecordings/%i.%02i.%02i--%02i.%02i.%02i%s%s%s"
 				}
 
 			}
@@ -474,18 +512,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 148.75, 460.0, 37.0, 22.0 ],
-					"text" : "zl rev"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -515,8 +541,8 @@
 					"numinlets" : 11,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 510.0, 446.5, 22.0 ],
-					"text" : "sprintf open \\\"%srecordings/%i.%02i.%02i-%02i.%02i.%02i%s%s%s\\\" %s"
+					"patching_rect" : [ 10.0, 510.0, 404.0, 22.0 ],
+					"text" : "sprintf open \\\"%srecordings/%i.%02i.%02i--%02i.%02i.%02i%s%s%s\\\" %s"
 				}
 
 			}
@@ -540,7 +566,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 207.0, 87.0, 22.0 ],
+					"patching_rect" : [ 70.0, 199.0, 87.0, 22.0 ],
 					"text" : "loadmess path"
 				}
 
@@ -818,16 +844,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 369.0, 680.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -848,7 +864,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 497.0, 770.0, 203.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 175.0, 220.0, 27.0 ],
+					"presentation_rect" : [ 10.0, 174.0, 220.0, 27.0 ],
 					"text" : "00:00:00.000",
 					"textjustification" : 1
 				}
@@ -1234,16 +1250,25 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
+					"destination" : [ "obj-56", 4 ],
+					"order" : 0,
+					"source" : [ "obj-17", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 4 ],
-					"order" : 0,
-					"source" : [ "obj-17", 1 ]
+					"destination" : [ "obj-70", 0 ],
+					"order" : 1,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -1360,6 +1385,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -1614,22 +1646,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"order" : 1,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-56", 1 ],
-					"order" : 0,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-56", 0 ]
 				}
@@ -1737,6 +1753,54 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"order" : 1,
+					"source" : [ "obj-70", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 3 ],
+					"order" : 1,
+					"source" : [ "obj-70", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 2 ],
+					"order" : 1,
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 1 ],
+					"order" : 0,
+					"source" : [ "obj-70", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 3 ],
+					"order" : 0,
+					"source" : [ "obj-70", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 2 ],
+					"order" : 0,
+					"source" : [ "obj-70", 0 ]
 				}
 
 			}
@@ -1911,8 +1975,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

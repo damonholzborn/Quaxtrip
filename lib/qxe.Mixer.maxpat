@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 10,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 538.0, 602.0, 1052.0, 424.0 ],
+		"rect" : [ 562.0, 602.0, 1028.0, 424.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -88,7 +88,7 @@
 					"patching_rect" : [ 650.0, 370.0, 169.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 60.0, 860.0, 54.0 ],
+					"presentation_rect" : [ 10.0, 60.0, 780.0, 54.0 ],
 					"text" : "\nTo close this window, choose something other thans Quaxtrip Mixer for the Local Input Channels.\n",
 					"textcolor" : [ 0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0 ],
 					"textjustification" : 1
@@ -99,7 +99,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -269,9 +269,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 780.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 710.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 780.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 700.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[4]",
 					"viewvisibility" : 1
 				}
@@ -292,9 +292,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 680.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 620.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 610.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[5]",
 					"viewvisibility" : 1
 				}
@@ -315,9 +315,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 580.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 530.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 580.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 520.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[6]",
 					"viewvisibility" : 1
 				}
@@ -338,9 +338,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 480.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 440.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 480.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 430.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[7]",
 					"viewvisibility" : 1
 				}
@@ -361,9 +361,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 380.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 350.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 380.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 340.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[2]",
 					"viewvisibility" : 1
 				}
@@ -384,9 +384,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 280.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 260.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 250.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[3]",
 					"viewvisibility" : 1
 				}
@@ -407,9 +407,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 180.0, 0.0, 90.0, 200.0 ],
+					"patching_rect" : [ 170.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 160.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel[1]",
 					"viewvisibility" : 1
 				}
@@ -432,7 +432,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 80.0, 0.0, 90.0, 200.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 80.0, 0.0, 90.0, 200.0 ],
+					"presentation_rect" : [ 70.0, 0.0, 90.0, 200.0 ],
 					"varname" : "qxe.MixerChannel",
 					"viewvisibility" : 1
 				}
@@ -636,99 +636,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-10::obj-13" : [ "live.dial[1]", "Pan", 0 ],
-			"obj-10::obj-19" : [ "1_Mixer_Mute[1]", "1_Mixer_Mute", 0 ],
-			"obj-10::obj-67" : [ "gain~[1]", "gain~", 0 ],
-			"obj-12::obj-13" : [ "live.dial[2]", "Pan", 0 ],
-			"obj-12::obj-19" : [ "1_Mixer_Mute[2]", "1_Mixer_Mute", 0 ],
-			"obj-12::obj-67" : [ "gain~[2]", "gain~", 0 ],
-			"obj-13::obj-13" : [ "live.dial[3]", "Pan", 0 ],
-			"obj-13::obj-19" : [ "1_Mixer_Mute[3]", "1_Mixer_Mute", 0 ],
-			"obj-13::obj-67" : [ "gain~[7]", "gain~", 0 ],
-			"obj-2::obj-13" : [ "live.dial[7]", "Pan", 0 ],
-			"obj-2::obj-19" : [ "1_Mixer_Mute[7]", "1_Mixer_Mute", 0 ],
-			"obj-2::obj-67" : [ "gain~[9]", "gain~", 0 ],
-			"obj-3::obj-13" : [ "live.dial[6]", "Pan", 0 ],
-			"obj-3::obj-19" : [ "1_Mixer_Mute[6]", "1_Mixer_Mute", 0 ],
-			"obj-3::obj-67" : [ "gain~[8]", "gain~", 0 ],
-			"obj-6::obj-13" : [ "live.dial[4]", "Pan", 0 ],
-			"obj-6::obj-19" : [ "1_Mixer_Mute[4]", "1_Mixer_Mute", 0 ],
-			"obj-6::obj-67" : [ "gain~[3]", "gain~", 0 ],
-			"obj-7::obj-13" : [ "live.dial[5]", "Pan", 0 ],
-			"obj-7::obj-19" : [ "1_Mixer_Mute[5]", "1_Mixer_Mute", 0 ],
-			"obj-7::obj-67" : [ "gain~[4]", "gain~", 0 ],
-			"obj-8::obj-13" : [ "live.dial", "Pan", 0 ],
-			"obj-8::obj-19" : [ "1_Mixer_Mute", "1_Mixer_Mute", 0 ],
-			"obj-8::obj-67" : [ "gain~[6]", "gain~", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"parameter_overrides" : 			{
-				"obj-10::obj-13" : 				{
-					"parameter_longname" : "live.dial[1]"
-				}
-,
-				"obj-12::obj-13" : 				{
-					"parameter_longname" : "live.dial[2]"
-				}
-,
-				"obj-13::obj-13" : 				{
-					"parameter_longname" : "live.dial[3]"
-				}
-,
-				"obj-2::obj-13" : 				{
-					"parameter_longname" : "live.dial[7]"
-				}
-,
-				"obj-3::obj-13" : 				{
-					"parameter_longname" : "live.dial[6]"
-				}
-,
-				"obj-6::obj-13" : 				{
-					"parameter_longname" : "live.dial[4]"
-				}
-,
-				"obj-7::obj-13" : 				{
-					"parameter_longname" : "live.dial[5]"
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "qxe.MixerChannel.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxe.Balance.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxe.Pan.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -821,8 +728,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -840,8 +747,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
