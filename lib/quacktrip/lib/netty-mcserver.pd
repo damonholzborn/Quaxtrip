@@ -676,7 +676,7 @@
 #X text 807 824 to 12;
 #X restore 161 106 pd ch9-12;
 #X msg 205 295 38500;
-#X text 52 8 server101 version 0.92test1;
+#X text 52 8 server101 version 0.92;
 #X connect 7 0 9 0;
 #X connect 7 0 10 0;
 #X connect 11 0 12 0;

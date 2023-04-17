@@ -1,7 +1,7 @@
 #N struct rect float x float y float z float c;
-#N canvas 252 263 853 390 12;
+#N canvas 126 219 872 423 12;
 #X declare -path lib/quacktrip~ -path lib -path ../lib;
-#N canvas 75 184 1243 719 main-panel 0;
+#N canvas 589 248 1243 719 main-panel 0;
 #X text 24 216 server;
 #X symbolatom 26 237 32 0 0 0 - #0-server-set #0-server;
 #X obj 185 355 tgl 15 0 \$0-onoff \$0-onoff-set empty 17 7 0 10 -262144
@@ -1070,7 +1070,7 @@ running bw, f 68;
 #X text 157 108 test:;
 #X text 131 30 -- send --;
 #X text 246 30 -- receive --;
-#N canvas 405 122 383 542 setctls 0;
+#N canvas 48 131 383 542 setctls 0;
 #X obj 55 101 setctl \$0-onoff;
 #X obj 53 126 setctl \$0-server;
 #X obj 50 227 setctl \$0-blksel;
@@ -1094,7 +1094,7 @@ running bw, f 68;
 -1 -1 0 1;
 #X text 173 128 tone;
 #X obj 109 61 vsl 15 101 0 100 0 0 \$0-lvl-in \$0-lvl-in-set empty
-0 -9 0 10 -262144 -1 -1 0 1;
+0 -9 0 10 -262144 -1 -1 4800 1;
 #X obj 287 55 vsl 15 101 0 100 0 0 \$0-lvl-out \$0-lvl-out-set empty
 0 -9 0 10 -262144 -1 -1 0 1;
 #X obj 250 55 vsl 15 101 0 100 0 0 \$0-lvl-echo \$0-lvl-echo-set empty
@@ -1133,6 +1133,83 @@ running bw, f 68;
 #X obj 1015 423 unpack 0 0 0 0;
 #X obj 1077 484 s \$0-min-fill-set;
 #X obj 1098 455 s \$0-max-fill-set;
+#N canvas 384 163 1075 572 save-and-restore 0;
+#X obj 111 51 r \$0-save-settings;
+#X obj 111 76 b;
+#X obj 111 101 savepanel;
+#X obj 281 22 r \$0-my-name;
+#X obj 295 55 r \$0-session-name;
+#X obj 316 82 r \$0-server;
+#X obj 333 107 r \$0-port;
+#X obj 111 126 t s b b;
+#X obj 170 446 text define \$0-savebuffer;
+#X msg 175 306 clear;
+#X obj 221 180 symbol;
+#X obj 253 272 text set \$0-savebuffer 1e+09;
+#X msg 80 305 write -c \$1;
+#X obj 674 62 b;
+#X obj 674 37 r \$0-restore-settings;
+#X obj 674 87 openpanel;
+#X obj 674 112 t b s;
+#X obj 770 134 text define \$0-restorebuffer;
+#X msg 700 265 this doesn't appear to contain call settings.;
+#X obj 594 272 route call;
+#X obj 594 297 list;
+#X obj 601 509 s \$0-my-name;
+#X obj 617 481 s \$0-session-name;
+#X obj 635 453 s \$0-server;
+#X obj 656 426 s \$0-port;
+#X msg 675 151 0;
+#X msg 766 106 read -c \$1;
+#X obj 675 178 text get \$0-restorebuffer;
+#X obj 675 203 list trim;
+#X obj 699 292 print Music101;
+#X obj 671 231 route music101;
+#X obj 342 131 r \$0-stereo;
+#X obj 360 155 r \$0-fifo-size;
+#X obj 257 211 pack s s s 0 0 0;
+#X obj 668 399 s \$0-stereo;
+#X obj 687 374 s \$0-fifo-size;
+#X obj 594 322 unpack s s s 0 0 0;
+#X msg 256 237 list music101 call \$1 \$2 \$3 \$4 \$5 \$6;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 3 0 10 1;
+#X connect 4 0 33 1;
+#X connect 5 0 33 2;
+#X connect 6 0 33 3;
+#X connect 7 0 12 0;
+#X connect 7 1 10 0;
+#X connect 7 2 9 0;
+#X connect 9 0 8 0;
+#X connect 10 0 33 0;
+#X connect 12 0 8 0;
+#X connect 13 0 15 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X connect 16 0 25 0;
+#X connect 16 1 26 0;
+#X connect 18 0 29 0;
+#X connect 19 0 20 0;
+#X connect 20 0 36 0;
+#X connect 25 0 27 0;
+#X connect 26 0 17 0;
+#X connect 27 0 28 0;
+#X connect 28 0 30 0;
+#X connect 30 0 19 0;
+#X connect 30 1 18 0;
+#X connect 31 0 33 4;
+#X connect 32 0 33 5;
+#X connect 33 0 37 0;
+#X connect 36 0 21 0;
+#X connect 36 1 22 0;
+#X connect 36 2 23 0;
+#X connect 36 3 24 0;
+#X connect 36 4 34 0;
+#X connect 36 5 35 0;
+#X connect 37 0 11 0;
+#X restore 547 41 pd save-and-restore;
 #X connect 10 0 11 0;
 #X connect 10 1 11 1;
 #X connect 11 0 95 0;
@@ -1211,8 +1288,8 @@ running bw, f 68;
 #X connect 152 3 154 0;
 #X coords 0 -1 1 1 390 350 2 20 30;
 #X restore 17 13 pd main-panel;
-#N canvas 177 134 467 623 chefs-corner 0;
-#N canvas 441 622 986 597 works 0;
+#N canvas 785 322 475 660 chefs-corner 0;
+#N canvas 183 227 986 597 works 0;
 #X symbolatom 171 128 10 0 0 0 password #0-password-set #0-password
 ;
 #X symbolatom 176 157 15 0 0 0 - #0-call-name-set #0-call-name;
@@ -1270,7 +1347,7 @@ running bw, f 68;
 #X connect 20 0 21 0;
 #X connect 21 0 6 0;
 #X restore 341 41 pd send-admin;
-#N canvas 228 352 1378 919 read-roster 0;
+#N canvas 118 160 1378 919 read-roster 0;
 #X obj 81 152 text define \$0-roster;
 #X msg 79 51 symbol example-roster.txt;
 #X obj 402 278 moses 1;
@@ -1741,27 +1818,22 @@ pan \, solo) for every caller in one long message, f 33;
 #X text 127 143 read roster file, f 12;
 #X text 36 151 1 -->;
 #X text 41 196 2 -->;
-#X text 123 573 reopen control panel ->>;
-#X text 19 251 One member of the group should open this \, set the
-roster \, and start the call. That member also controls the mix \,
-using a mixer panel that is configured when the roster is set.;
-#X text 17 322 There is an example roster file in the "lib" subdirectory
+#X text 126 597 reopen control panel ->>;
+#X text 20 346 There is an example roster file in the "lib" subdirectory
 called \, yes \, "example-roster.txt". Each nonempty line contains
 one member's name and a pan value (0 for hard left \, 10 for hard right
 \, 5 for center). If no pan value is given the most recent one is used.
 A single empty line breaks a column of entries in the panel \, and
 a double empty line sets groups apart. Each such group gets a submaster
 (a slider that pushes everyone in the group up or down.);
-#X text 22 229 This is the "chef's corner" \, used to organize the
-call.;
-#X text 20 460 The server (which is run separately on a machine with
+#X text 23 484 The server (which is run separately on a machine with
 a public IP address) may require a password. If not \, a "-" will get
 you in. You (the chef) may also specify a call name that all members
 have to give in order to get into the call. These are to prevent bombing
 (which seems unlikely \, but then again there are a lot of juveniles
 running around on the net).;
-#N canvas 906 109 650 664 \$0-panel 0;
-#X restore 302 573 pd \$0-panel;
+#N canvas 1281 73 650 664 \$0-panel 0;
+#X restore 305 597 pd \$0-panel;
 #X obj 286 186 bng 30 250 50 0 \$0-write-roster-dialog empty empty
 17 7 0 10 -262144 -1 -1;
 #X text 324 185 save roster to file, f 11;
@@ -1771,22 +1843,89 @@ running around on the net).;
 #X obj 286 145 tgl 30 0 \$0-open-roster \$0-open-roster-set empty 17
 7 0 10 -262144 -1 -1 0 1;
 #X text 319 142 open mixer panel, f 10;
-#X restore 665 330 pd chefs-corner;
-#X obj 467 303 pdcontrol;
-#X msg 467 277 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
-#X text 418 254 click here to open detailed documentation in your browser:
+#X text 23 229 This is the "chef's corner" \, used to set up a call.
 ;
-#X text 417 94 Music101 connects to a central server that makes a 2-channel
+#X text 20 255 One member of the group volunteers to be chef. Before
+anyone joins the call \, the chef opens this subwindow \, sets the
+roster \, and _after doing that_ joins the call using the main window.
+That member also controls the mix \, using a mixer panel that is configured
+when the roster is set.;
+#X restore 672 339 pd chefs-corner;
+#X obj 461 315 pdcontrol;
+#X msg 461 286 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
+#X text 419 267 click here to open detailed documentation in your browser:
+;
+#X text 422 79 Music101 connects to a central server that makes a 2-channel
 mix of all connected patches and sends that one mix back out to everyone
 in the ensemble. One participant acts as chef and runs the meeting
 \, setting the names of all ensemble members and setting mix levels.
 ;
-#X text 461 330 open to set up a meeting ->>;
-#X text 420 23 Music101 - Quacktrip for larger ensembles;
-#X text 419 51 This is the third patch in the Quacktrip series \, after
+#X text 468 339 open to set up a meeting ->>;
+#X text 445 15 Music101 - Quacktrip for larger ensembles;
+#X text 421 42 This is the third patch in the Quacktrip series \, after
 Quacktrp and Netty McNetface.;
-#X text 416 183 Controls are much the same as for Netty McNetface \,
-except that "test local" lets you hear your own mic signal with a short
-delay so you can test your mic.;
-#X text 630 356 Music101 version 0.92test1;
+#X obj 27 374 bng 15 250 50 0 \$0-save-settings empty empty 17 7 0
+10 -262144 -1 -1;
+#X text 47 371 save settings to file...;
+#X obj 277 372 bng 15 250 50 0 \$0-restore-settings empty empty 17
+7 0 10 -262144 -1 -1;
+#X text 297 369 read settings from file...;
+#X text 637 365 Music101 version 0.92;
+#X text 426 170 click here for directions ->;
+#N canvas 594 56 968 531 README 0;
+#X text 477 282 VU meters on both inputs and outputs are post-fader.
+They clip at the top (not at the first red LED).;
+#X text 477 320 At bottom right you can see statistics about what you
+are sending. These are readouts only. (To change sample rate \, go
+to Pd's audio settings panel \, not this patch.);
+#X obj 551 491 pdcontrol;
+#X msg 551 466 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
+#X text 484 440 click here to open detailed documentation in your browser:
+;
+#X text 105 21 directions for using music101;
+#X text 24 277 Each caller is assigned a channel name by a "chef" who
+starts the call and sets the roster of channel names. See under the
+"chef's conrner" to see how to do that.;
+#X text 21 189 (The server can be started remotely with the command
+"[path]/pd -r 48000 -nosound -nogui -nrt music101.pd" \, and should
+have UDP ports 10100-10199 open assuming the base port number is 38400).
+Each group of callers requires its own instance of the server.;
+#X text 23 57 This patch is intended for group performances or classes
+with up to 99 callers \, communicating through a central server running
+the "server100.pd" patch. (The related "netty mcnetface" patch gives
+more flexible control but is limited to 12 callers). Unlike Netty \,
+the music101 server makes one centralized stereo mix that is sent to
+everyone on the call \, except that each callers can separately control
+their own level in the mix).;
+#X text 477 148 On the "receive" side you set an "echo" level (this
+will be the level at which you hear your own input \, bounced back
+from teh server so as to be in sync with everyone else) \, and a master
+level. (Both are 50 for unit gain \, like the send level). You can
+also control the left/right balance and a "delay" value \, approximately
+in milliseconds \, that should usually range from 10 to 20 and should
+be set as low as possible without getting gaps in the audio you hear
+back.;
+#X text 22 334 Once the chef has started and joined a call \, callers
+may join and leave the call at will using the CALL toggle (in the fromt
+panel of the patch). Before starting a call \, set the host address
+\, the base port number (if it's different from 10100) and your channel's
+name.;
+#X text 479 47 Controls on the upper left hand side of the control
+panel are for sending audio: a toggle to enable sending stereo \, level
+(from 0 to 100 with 50 for unit gain) a tone" toggle to send a tone
+instead of your audio input and a "local" toggle to send your input
+locally to your own output for testing.;
+#X text 24 416 *** Be sure ** that you are running locally at the same
+sample rate as the server (usually 48000 Hz.) The "local sample rate"
+readout will tell you the sample rate you're running at. Unfortunlately
+\, you can't change the sample rate by typing at that control - you
+will need to open Pd's "audio settings" panel to do that.;
+#X text 475 378 "save settings" and "read settings" buttons at bottom
+allow you to save the channel adn call namd and the server address
+admn port range to save you having to retype them.;
+#X connect 3 0 2 0;
+#X restore 631 172 pd README;
+#X text 424 206 new: The "save settings" and "read settings" buttons
+save you from having to retype channel/call names and server address
+each time.;
 #X connect 3 0 2 0;

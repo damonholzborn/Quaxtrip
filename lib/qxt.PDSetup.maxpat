@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 326.0, 45.0, 1075.0, 948.0 ],
+		"rect" : [ 1167.0, 53.0, 1075.0, 948.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -132,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 587.0, 180.0, 22.0 ],
+					"patching_rect" : [ 520.0, 587.0, 194.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -582,7 +582,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 797.0, 387.0, 232.0, 22.0 ]
+					"patching_rect" : [ 797.0, 387.0, 232.0, 22.0 ],
+					"text" : "symbol /Applications/Pd-0.53-2.app"
 				}
 
 			}
@@ -994,7 +995,7 @@
 				"box" : 				{
 					"comment" : "Quacktrip Pd~",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1607,25 +1608,16 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "pdpath.txt",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1.0, 45.0, 1081.0, 430.0 ],
+		"rect" : [ 2.0, 53.0, 1080.0, 428.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,29 +38,17 @@
 		"style" : "",
 		"subpatcher_template" : "--Template",
 		"assistshowspatchername" : 0,
+		"title" : "Quaxtrip Quintet",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.827450980392157, 0.698039215686274, 0.109803921568627, 1.0 ],
-					"id" : "obj-30",
+					"bgcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ],
+					"id" : "obj-69",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 477.0, 571.0, 181.0, 22.0 ],
-					"text" : "loadmess title \"Quaxtrip Quintet\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 477.0, 601.5, 67.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 712.428571428571558, 500.0, 150.0, 22.0 ],
+					"text" : "receive~ qxt_talkback_mic"
 				}
 
 			}
@@ -75,14 +63,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1.0, 498.0, 801.0, 203.0 ],
+						"rect" : [ 0.0, 510.0, 910.0, 202.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -111,7 +99,6 @@
 						"subpatcher_template" : "--Template",
 						"assistshowspatchername" : 0,
 						"title" : "Quaxtrip Mixer",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgcolor" : [ 0.827450980392157, 0.698039215686274, 0.109803921568627, 1.0 ],
@@ -120,7 +107,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 210.0, 172.0, 22.0 ],
+									"patching_rect" : [ 20.0, 230.0, 172.0, 22.0 ],
 									"text" : "loadmess title \"Quaxtrip Mixer\""
 								}
 
@@ -132,7 +119,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 0.0, 240.0, 67.0, 22.0 ],
+									"patching_rect" : [ 0.0, 260.0, 67.0, 22.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -147,15 +134,16 @@
 									"enablevscroll" : 0,
 									"id" : "obj-1",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "qxe.Mixer.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 0.0, 0.0, 870.0, 200.0 ],
+									"patching_rect" : [ 0.0, 0.0, 910.0, 220.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 790.0, 200.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 910.0, 200.0 ],
 									"varname" : "qxe.Mixer",
 									"viewvisibility" : 1
 								}
@@ -181,13 +169,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -199,12 +187,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -288,26 +276,81 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
 								"multi" : 0
 							}
- ]
+ ],
+						"textcolor_inverse" : [ 0.92156862745098, 0.376470588235294, 0.517647058823529, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 487.5, 480.0, 105.0, 22.0 ],
+					"patching_rect" : [ 487.5, 490.0, 105.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"tags" : ""
+						"tags" : "",
+						"textcolor_inverse" : [ 0.92156862745098, 0.376470588235294, 0.517647058823529, 1.0 ]
 					}
 ,
 					"text" : "p \"Quaxtrip Mixer\"",
 					"varname" : "Quaxtrip Mixer[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 240.0, 550.0, 58.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 994.0, 40.0, 58.0, 22.0 ],
+					"text" : "Recorder"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 240.0, 580.0, 77.0, 22.0 ],
+					"text" : "qxr.Recorder",
+					"varname" : "qxr.Recorder"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.827450980392157, 0.698039215686274, 0.109803921568627, 1.0 ],
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 477.0, 571.0, 181.0, 22.0 ],
+					"text" : "loadmess title \"Quaxtrip Quintet\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 477.0, 601.5, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
 				}
 
 			}
@@ -320,6 +363,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-56",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "qxt.ChannelOutput.maxpat",
 					"numinlets" : 0,
@@ -342,6 +386,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-55",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "qxt.ChannelLocal.maxpat",
 					"numinlets" : 0,
@@ -385,7 +430,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
+					"bgcolor" : [ 0.501957535743713, 0.50194239616394, 0.014744119718671, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -394,14 +439,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 126.0, 179.0, 1046.0, 231.0 ],
+						"rect" : [ 126.0, 179.0, 930.0, 231.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -436,7 +481,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 540.0, 90.0, 29.5, 22.0 ],
+									"patching_rect" : [ 419.0, 90.0, 29.5, 22.0 ],
 									"text" : "1"
 								}
 
@@ -450,7 +495,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 540.0, 180.0, 60.0, 22.0 ]
+									"patching_rect" : [ 419.0, 180.0, 60.0, 22.0 ]
 								}
 
 							}
@@ -463,7 +508,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 560.0, 140.0, 118.0, 23.0 ],
+									"patching_rect" : [ 439.0, 140.0, 118.0, 23.0 ],
 									"text" : "adstatus overdrive"
 								}
 
@@ -475,7 +520,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 870.0, 40.0, 162.0, 22.0 ],
+									"patching_rect" : [ 749.0, 40.0, 162.0, 22.0 ],
 									"text" : "offset 10000 10000, border 0"
 								}
 
@@ -487,7 +532,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 870.0, 80.0, 123.0, 22.0 ],
+									"patching_rect" : [ 749.0, 80.0, 123.0, 22.0 ],
 									"text" : "s qxt_bpatcher_offset"
 								}
 
@@ -499,7 +544,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 750.0, 80.0, 106.0, 22.0 ],
+									"patching_rect" : [ 629.0, 80.0, 106.0, 22.0 ],
 									"text" : "s qxt_mainbuttons"
 								}
 
@@ -511,7 +556,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 750.0, 50.0, 55.0, 22.0 ],
+									"patching_rect" : [ 629.0, 50.0, 55.0, 22.0 ],
 									"text" : "hidden 1"
 								}
 
@@ -523,7 +568,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 610.0, 80.0, 128.0, 22.0 ],
+									"patching_rect" : [ 489.0, 80.0, 128.0, 22.0 ],
 									"text" : "s qxt_loadingmessage"
 								}
 
@@ -535,7 +580,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 610.0, 50.0, 55.0, 22.0 ],
+									"patching_rect" : [ 489.0, 50.0, 55.0, 22.0 ],
 									"text" : "hidden 0"
 								}
 
@@ -568,19 +613,6 @@
 								"box" : 								{
 									"id" : "obj-21",
 									"items" : [ 1, ",", 2, ",", 4, ",", 8, ",", 16, ",", 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048, ",", 4096 ],
-									"maxclass" : "umenu",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 411.0, 180.0, 100.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-20",
-									"items" : [ 32, ",", 64, ",", 128, ",", 256, ",", 512, ",", 1024, ",", 2048 ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -647,22 +679,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 427.0, 140.0, 93.0, 23.0 ],
+									"patching_rect" : [ 306.0, 140.0, 93.0, 23.0 ],
 									"text" : "adstatus sigvs"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
-									"patching_rect" : [ 306.0, 140.0, 84.0, 23.0 ],
-									"text" : "adstatus iovs"
 								}
 
 							}
@@ -730,13 +748,6 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-11", 0 ]
 								}
@@ -760,17 +771,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
-									"order" : 1,
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 299.5, 122.5, 420.5, 122.5 ],
-									"order" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -805,16 +806,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"midpoints" : [ 299.5, 212.0, 398.5, 212.0, 398.5, 129.0, 315.5, 129.0 ],
-									"source" : [ "obj-20", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
-									"midpoints" : [ 420.5, 212.0, 526.5, 212.0, 526.5, 129.0, 436.5, 129.0 ],
+									"midpoints" : [ 299.5, 212.0, 405.5, 212.0, 405.5, 129.0, 315.5, 129.0 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -822,7 +815,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 549.5, 213.360320999999999, 689.680053999999927, 213.360320999999999, 689.680053999999927, 128.951812000000018, 569.5, 128.951812000000018 ],
+									"midpoints" : [ 428.5, 213.360320999999999, 568.680053999999927, 213.360320999999999, 568.680053999999927, 128.951812000000018, 448.5, 128.951812000000018 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -937,12 +930,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -962,7 +955,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 176.0, 441.0, 56.0, 22.0 ],
+					"patching_rect" : [ 150.0, 550.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -981,7 +974,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 906.5, 631.0, 134.0, 22.0 ],
+					"patching_rect" : [ 906.5, 660.0, 134.0, 22.0 ],
 					"text" : "send~ 4_qxt_remote_R"
 				}
 
@@ -993,7 +986,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 871.285714285714221, 601.0, 132.0, 22.0 ],
+					"patching_rect" : [ 871.285714285714221, 630.0, 132.0, 22.0 ],
 					"text" : "send~ 4_qxt_remote_L"
 				}
 
@@ -1005,7 +998,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 836.071428571428555, 571.0, 134.0, 22.0 ],
+					"patching_rect" : [ 836.071428571428555, 600.0, 134.0, 22.0 ],
 					"text" : "send~ 3_qxt_remote_R"
 				}
 
@@ -1017,7 +1010,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 800.85714285714289, 541.0, 132.0, 22.0 ],
+					"patching_rect" : [ 800.85714285714289, 570.0, 132.0, 22.0 ],
 					"text" : "send~ 3_qxt_remote_L"
 				}
 
@@ -1029,7 +1022,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.64285714285711, 631.0, 134.0, 22.0 ],
+					"patching_rect" : [ 765.64285714285711, 660.0, 134.0, 22.0 ],
 					"text" : "send~ 2_qxt_remote_R"
 				}
 
@@ -1041,7 +1034,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.428571428571445, 601.0, 132.0, 22.0 ],
+					"patching_rect" : [ 730.428571428571445, 630.0, 132.0, 22.0 ],
 					"text" : "send~ 2_qxt_remote_L"
 				}
 
@@ -1053,7 +1046,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 695.214285714285666, 571.0, 134.0, 22.0 ],
+					"patching_rect" : [ 695.214285714285666, 600.0, 134.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_R"
 				}
 
@@ -1065,7 +1058,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 660.0, 541.0, 132.0, 22.0 ],
+					"patching_rect" : [ 660.0, 570.0, 132.0, 22.0 ],
 					"text" : "send~ 1_qxt_remote_L"
 				}
 
@@ -1077,7 +1070,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 941.714285714285779, 541.0, 120.0, 22.0 ],
+					"patching_rect" : [ 941.714285714285779, 570.0, 120.0, 22.0 ],
 					"text" : "s qxt_from_quacktrip"
 				}
 
@@ -1091,7 +1084,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 9,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 660.0, 511.0, 300.714285714285666, 22.0 ],
+					"patching_rect" : [ 660.0, 540.0, 300.714285714285666, 22.0 ],
 					"text" : "pd~ -ninsig 2 -noutsig 8"
 				}
 
@@ -1263,7 +1256,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 830.0, 40.0, 178.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 178.0, 24.0 ],
+					"presentation_rect" : [ 100.0, 10.0, 178.0, 24.0 ],
 					"text" : "Loading, please wait...",
 					"textcolor" : [ 0.662745098039216, 0.0, 0.047058823529412, 1.0 ]
 				}
@@ -1279,6 +1272,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-33",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
@@ -1302,6 +1296,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
@@ -1325,6 +1320,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-29",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
@@ -1348,6 +1344,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-13",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "qxt.ChannelRemote.maxpat",
 					"numinlets" : 0,
@@ -1363,7 +1360,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.03921568627451, 0.305882352941176, 0.698039215686274, 1.0 ],
+					"bgcolor" : [ 0.501957535743713, 0.50194239616394, 0.014744119718671, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -1400,7 +1397,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 2,
+					"order" : 3,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1416,7 +1421,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1424,7 +1429,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1433,6 +1438,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -1558,6 +1570,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-58", 1 ],
+					"order" : 0,
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"order" : 1,
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -1585,6 +1613,7 @@
 			"obj-19::obj-1::obj-13::obj-13" : [ "live.dial[6]", "Pan", 0 ],
 			"obj-19::obj-1::obj-13::obj-19" : [ "1_Mixer_Mute[6]", "1_Mixer_Mute", 0 ],
 			"obj-19::obj-1::obj-13::obj-67" : [ "gain~[11]", "gain~", 0 ],
+			"obj-19::obj-1::obj-22::obj-19" : [ "1_Mixer_Mute[12]", "1_Mixer_Mute", 0 ],
 			"obj-19::obj-1::obj-2::obj-13" : [ "live.dial", "Pan", 0 ],
 			"obj-19::obj-1::obj-2::obj-19" : [ "1_Mixer_Mute", "1_Mixer_Mute", 0 ],
 			"obj-19::obj-1::obj-2::obj-67" : [ "gain~[6]", "gain~", 0 ],
@@ -1648,127 +1677,141 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "qxt.Repattrhub.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "5_qxt.SavedSettings.txt",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "5_qxt.SavedSettings_Default.txt",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.ChannelRemote.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.Channel.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.Repattr.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.PDSetup.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pdpath.txt",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "qxt.ConniptionWindow.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "pd~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "qxt.GetIP.js",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.Messages.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.ChannelLocal.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qxt.ChannelOutput.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"name" : "qxe.Balance.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxe.Mixer.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxe.MixerChannel.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "qxe.Balance.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"name" : "qxe.MixerTalkback.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qxe.Pan.maxpat",
-				"bootpath" : "~/Documents/ Max/ Quaxtrip/Quaxtrip/lib",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pd~.mxo",
-				"type" : "iLaX"
+				"name" : "qxr.Recorder.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.Channel.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ChannelLocal.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ChannelOutput.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ChannelRemote.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.ConniptionWindow.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.GetIP.js",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.Messages.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.PDSetup.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.Repattr.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qxt.Repattrhub.maxpat",
+				"bootpath" : "~/Documents/ Max/Quaxtrip/Quaxtrip/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
@@ -1776,13 +1819,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -1794,12 +1837,12 @@
 				"name" : "Audiomix",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -1883,8 +1926,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

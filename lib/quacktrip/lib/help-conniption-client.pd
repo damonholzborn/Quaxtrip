@@ -1,4 +1,4 @@
-#N canvas 147 294 937 642 12;
+#N canvas 544 257 937 642 12;
 #X obj 60 506 list;
 #X msg 61 581 packet 81;
 #X obj 60 531 list prepend set;
@@ -13,16 +13,16 @@
 -1 -1;
 #X obj 329 272 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 325 514 route running;
+#X obj 320 533 route running;
 #X obj 34 532 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 329 295 sel 1 0;
 #X msg 329 323 start poodle;
 #X msg 359 346 stop;
-#X obj 340 458 spigot;
-#X obj 403 460 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 335 477 spigot;
+#X obj 398 479 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 341 483 print status;
+#X obj 336 502 print status;
 #X msg 58 410 send packet \$1;
 #X text 33 11 conniption-client - place a network call with help from
 a conniption server;
@@ -34,7 +34,7 @@ a conniption server;
 #X text 523 379 change server address;
 #X text 457 411 change server port number;
 #X text 68 464 first outlet: messages received, f 18;
-#X text 441 463 second outlet: status;
+#X text 436 482 second outlet: status;
 #X obj 60 441 conniption-client -u localhost 3840;
 #X text 31 57 the conniption-client object can make a UDP network connection
 with another conniption-client on a different machine \, with the help
@@ -47,6 +47,8 @@ NAT router unless the server is also behind it.);
 #X text 486 65 You can provide your own server or use the one at foo.ucsd.edu
 \, port 3840 ("f00" in hex). The server may be on the same machine
 as one or both of the clients.;
+#X text 321 440 <-- first creation argument is -b for binary \, -u
+for ascii;
 #X connect 0 0 2 0;
 #X connect 0 0 12 0;
 #X connect 2 0 3 0;

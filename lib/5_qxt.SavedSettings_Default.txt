@@ -85,3 +85,7 @@ Output_Bus_qxt, 0;
 8_Mixer_Gain_qxt, 0;
 8_Mixer_Pan_qxt, 0;
 8_Mixer_Mono_qxt, 1;
+
+Recorder_PreLocalBus_qxt, 0;
+Recorder_SampleType_qxt, 2;
+Recorder_FileType_qxt, 0;

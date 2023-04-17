@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1081.0, 45.0, 150.0, 222.0 ],
+		"rect" : [ 1083.0, 274.0, 152.0, 252.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -133,7 +133,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 319.5, 116.0, 109.0, 22.0 ],
+					"patching_rect" : [ 352.5, 110.0, 109.0, 22.0 ],
 					"text" : "r qxt_zero_me_out"
 				}
 
@@ -145,7 +145,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 235.5, 116.0, 72.0, 22.0 ],
+					"patching_rect" : [ 268.5, 110.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -157,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 235.5, 36.0, 64.0, 22.0 ],
+					"patching_rect" : [ 268.5, 30.0, 64.0, 22.0 ],
 					"text" : "script start"
 				}
 
@@ -165,15 +165,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 235.5, 156.0, 122.0, 100.0 ],
+					"patching_rect" : [ 268.5, 150.0, 131.5, 87.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 7,
-					"presentation_rect" : [ 10.0, 110.0, 130.0, 100.0 ],
-					"text" : "Local IP Address(es):\n   192.168.0.111\n   192.168.0.115\n   172.16.0.2\n\nPublic IP Address:\n   24.46.53.77"
+					"presentation_linecount" : 6,
+					"presentation_rect" : [ 10.0, 110.0, 130.0, 87.0 ],
+					"text" : "Local IP Address(es):\n   192.168.1.187\n   192.168.1.151\n\nPublic IP Address:\n   141.157.252.108"
 				}
 
 			}
@@ -184,11 +184,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 235.5, 76.0, 203.0, 22.0 ],
+					"patching_rect" : [ 268.5, 70.0, 203.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"watch" : 0
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
+						"watch" : 1
 					}
 ,
 					"text" : "node.script qxt.GetIP.js @autostart 1"
@@ -339,7 +341,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 307.5, 36.0, 150.0, 22.0 ]
+					"parameter_enable" : 0,
+					"patching_rect" : [ 340.5, 30.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -496,13 +499,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -514,12 +517,12 @@
 				"name" : "Audiomix",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
@@ -603,8 +606,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -1,29 +1,13 @@
-#N canvas 932 195 902 687 12;
+#N canvas 260 148 889 695 12;
 #X declare -path lib;
 #X obj 71 485 out-panel;
 #X obj 71 62 in-panel;
-#X text 441 499 in-panel and out-panel: the "level" control is 50 for
-unit gain \, 100 for +24 dB. Meters are post-fader. The "test" button
-sends sine tones (660 and 880 Hz) \, also affected by the level control.
-;
 #X obj 70 166 quack-panel 1;
-#X text 440 8 This is a Pure Data patch allowing musicians (or others)
-to make point-to-point \, uncompressed \, low-latency audio connections
-\, through home routers \, between their computers. It's best if you
-can run an ethernet cable from your computer to your router \, but
-this will work over "wifi" (wireless networks) too.;
-#X text 440 103 To make a call \, enter a unique "call name" (click
-on the text area that says "this-call-name" and type in a new name)
-\, then click "ON/OFF so that an "X" appears. When someone else makes
-a call with the same name \, quacktrip should connect you together
-in a call. A public "conniption" server (by default foo.ucsd.edu) helps
-make the connection but the audio runs straight between the two computers.
-;
-#X text 439 383 You can also change the number of channels and/or the
+#X text 434 373 You can also change the number of channels and/or the
 block size of the audio you send to the other site. Click "2X" to send
 each outgoing packet twice (this doubles the data rate but might give
 fewer dropped packets).;
-#X text 440 219 If the "calling" button is flashing we're either waiting
+#X text 436 208 If the "calling" button is flashing we're either waiting
 for a response from the server \, or from the peer. Once both of these
 arrive the "connected" toggle turns on (gets an "x" mark.) At this
 point a call is in progress and the "packets in" counter should be
@@ -46,24 +30,42 @@ on-off 1, f 68;
 #X msg 196 52 \; quack-panel-1 call-name fred \, server foo.ucsd.edu
 \, on-off 1;
 #X text 226 14 scripting examples:;
-#X restore 776 636 pd more-stuff;
-#X text 440 448 Be sure your sample rate matches your peer's - if they
+#X restore 773 649 pd more-stuff;
+#X text 436 439 Be sure your sample rate matches your peer's - if they
 don't you'll get breaks in the sound. (Sample rate is set in Pd's Media
 menu \, not in this window).;
-#X text 439 316 The input delay can be set to absorb network time variations
-(in units of 64 samples). The "fill" counter shows how far ahead of
-the incoming stream we are. If this number drops below 2 there will
-be a dropout in the audio output.;
-#X obj 443 624 pdcontrol;
-#X msg 443 593 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
-#X text 437 569 click here to open detailed documentation in your browser:
+#X obj 437 643 pdcontrol;
+#X msg 437 615 browse http://msp.ucsd.edu/tools/quacktrip/doc.htm;
+#X text 431 591 click here to open detailed documentation in your browser:
 ;
-#X text 517 635 ... or here for scripting examples:;
+#X text 515 649 ... or here for scripting examples:;
 #X text 132 615 Quacktrip is open-source software with a BSD license.
 , f 29;
-#X text 47 11 Quacktrip version 0.92test1: Peer-to-peer audio;
-#X connect 1 0 3 0;
-#X connect 1 1 3 1;
-#X connect 3 0 0 0;
-#X connect 3 1 0 1;
-#X connect 12 0 11 0;
+#X text 47 11 Quacktrip version 0.92: Peer-to-peer audio;
+#X text 440 8 This is a Pure Data patch allowing musicians (or others)
+to make point-to-point \, uncompressed \, low-latency audio connections
+\, through home routers. It's best if you can run an ethernet cable
+from your computer to your router \, but this will work over "wifi"
+(wireless networks) too.;
+#X text 436 94 To make a call \, enter a unique "call name" (click
+on the text area that says "this-call-name" and type in a new name)
+\, then click "ON/OFF so that an "X" appears. When someone else makes
+a call with the same name \, quacktrip should connect you together
+in a call. A public "conniption" server (by default foo.ucsd.edu) helps
+make the connection \, but the audio runs straight between the two
+computers.;
+#X text 434 306 The input delay can be set to absorb network time variations
+(in units of 64 samples). The "fill" range shows how far ahead of the
+incoming stream we are. If the lower number drops below 2 there will
+be a dropout in the audio output.;
+#X text 433 491 IN and OUT panels: the "level" control is 50 for unit
+gain \, 100 for +24 dB. Meters are post-fader. The "test" button sends
+sine tones (660 and 880 Hz) \, also affected by the level control.
+"Input monitor" loops your input to your own output \, with optional
+delay in milliseconds \, so you can hear yourself in sync with the
+other caller.;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 2 0 0 0;
+#X connect 2 1 0 1;
+#X connect 8 0 7 0;

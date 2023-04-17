@@ -765,7 +765,7 @@ values, f 63;
 #X obj 534 341 catch~ \$0-solobus2;
 #X obj 534 366 s~ \$0-from-solobus2;
 #X msg 322 205 vis 2 1;
-#X text 52 8 server101 version 0.92test1;
+#X text 52 8 server101 version 0.92;
 #X connect 6 0 0 0;
 #X connect 7 0 1 0;
 #X connect 11 0 10 0;

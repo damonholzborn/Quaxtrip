@@ -1,12 +1,12 @@
-#N canvas 691 215 1103 823 12;
+#N canvas 95 332 1103 823 12;
 #X declare -path lib/quacktrip~ -path lib;
-#N canvas 518 199 962 670 main-panel 0;
+#N canvas 377 151 962 670 main-panel 0;
 #X text 114 254 server;
 #X symbolatom 116 275 32 0 0 0 - #0-server-set #0-server;
 #X obj 260 365 tgl 15 0 \$0-onoff \$0-onoff-set empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 176 163 vradio 15 1 0 3 \$0-blksel \$0-blksel-set empty 0 -8
-0 10 -262144 -1 -1 0;
+0 10 -262144 -1 -1 1;
 #X text 195 159 64;
 #X text 193 176 128;
 #X text 194 190 256;
@@ -212,8 +212,7 @@
 #X text 115 385 sample rate, f 6;
 #X text 225 386 block size, f 5;
 #X text 163 398 channels;
-#X floatatom 278 419 5 0 0 0 - #0-local-mbits-set #0-local-mbits;
-#X text 272 383 mbits per sec, f 7;
+#X floatatom 278 419 5 0 0 0 - #0-local-kbits-set #0-local-kbits;
 #X obj 674 229 samplerate~;
 #X obj 674 254 s \$0-local-sr-set;
 #X obj 683 308 s \$0-local-ch-set;
@@ -231,8 +230,6 @@
 #X obj 462 377 route got-packet drop late miss request-call no-peer-yet
 running bw, f 68;
 #X obj 733 406 unpack;
-#X obj 774 451 s \$0-local-mbits-set;
-#X obj 733 491 s \$0-remote-mbits-set;
 #X floatatom 444 481 5 0 0 0 - - -;
 #X obj 553 335 print to-q;
 #X obj 242 490 r \$0-server;
@@ -567,31 +564,117 @@ c s l r m p \; f g k n r t \;;
 #X msg 430 508 \; \$1-server symbol localhost \; \$1-port 38400 \;
 \$1-this-caller 1 \; \$1-nchan 1 \; \$1-block 64 \; \$1-my-name symbol
 - \; \$1-session-name symbol - \;;
+#X obj 735 431 * 1000;
+#X obj 740 457 s \$0-local-kbits-set;
+#X text 272 383 kbits per sec, f 7;
+#N canvas 458 -29 1075 572 save-and-restore 0;
+#X obj 111 51 r \$0-save-settings;
+#X obj 111 76 b;
+#X obj 111 101 savepanel;
+#X obj 281 22 r \$0-my-name;
+#X obj 295 55 r \$0-session-name;
+#X obj 342 131 r \$0-nchan;
+#X obj 316 82 r \$0-server;
+#X obj 333 107 r \$0-port;
+#X obj 360 155 r \$0-blksel;
+#X obj 384 181 r \$0-2x;
+#X obj 111 126 t s b b;
+#X obj 170 446 text define \$0-savebuffer;
+#X msg 175 306 clear;
+#X obj 221 180 symbol;
+#X obj 257 211 pack s s s 0 0 0 0;
+#X msg 256 237 list netty call \$1 \$2 \$3 \$4 \$5 \$6 \$7;
+#X obj 253 272 text set \$0-savebuffer 1e+09;
+#X msg 80 305 write -c \$1;
+#X obj 674 62 b;
+#X obj 674 37 r \$0-restore-settings;
+#X obj 674 87 openpanel;
+#X obj 674 112 t b s;
+#X obj 770 134 text define \$0-restorebuffer;
+#X obj 671 232 route netty;
+#X msg 700 265 this doesn't appear to contain call settings.;
+#X obj 699 292 print Netty-McNetface;
+#X obj 594 272 route call;
+#X obj 594 297 list;
+#X obj 601 509 s \$0-my-name;
+#X obj 617 481 s \$0-session-name;
+#X obj 635 453 s \$0-server;
+#X obj 656 426 s \$0-port;
+#X obj 668 399 s \$0-nchan;
+#X obj 687 374 s \$0-blksel;
+#X obj 723 348 s \$0-2x;
+#X msg 675 151 0;
+#X msg 766 106 read -c \$1;
+#X obj 523 386 print foo;
+#X obj 675 178 text get \$0-restorebuffer;
+#X obj 675 203 list trim;
+#X obj 594 322 unpack s s s 0 0 0 0;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 10 0;
+#X connect 3 0 13 1;
+#X connect 4 0 14 1;
+#X connect 5 0 14 4;
+#X connect 6 0 14 2;
+#X connect 7 0 14 3;
+#X connect 8 0 14 5;
+#X connect 9 0 14 6;
+#X connect 10 0 17 0;
+#X connect 10 1 13 0;
+#X connect 10 2 12 0;
+#X connect 12 0 11 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 17 0 11 0;
+#X connect 18 0 20 0;
+#X connect 19 0 18 0;
+#X connect 20 0 21 0;
+#X connect 21 0 35 0;
+#X connect 21 1 36 0;
+#X connect 23 0 26 0;
+#X connect 23 1 24 0;
+#X connect 24 0 25 0;
+#X connect 26 0 27 0;
+#X connect 27 0 37 0;
+#X connect 27 0 40 0;
+#X connect 35 0 38 0;
+#X connect 36 0 22 0;
+#X connect 38 0 39 0;
+#X connect 39 0 23 0;
+#X connect 40 0 28 0;
+#X connect 40 1 29 0;
+#X connect 40 2 30 0;
+#X connect 40 3 31 0;
+#X connect 40 4 32 0;
+#X connect 40 5 33 0;
+#X connect 40 6 34 0;
+#X restore 265 63 pd save-and-restore;
 #X connect 31 0 33 0;
 #X connect 31 1 33 1;
-#X connect 33 2 61 0;
+#X connect 33 2 60 0;
 #X connect 34 0 33 2;
 #X connect 35 0 37 0;
-#X connect 36 0 92 0;
-#X connect 36 0 65 0;
+#X connect 36 0 89 0;
+#X connect 36 0 62 0;
 #X connect 37 0 36 0;
-#X connect 47 0 48 0;
+#X connect 46 0 47 0;
+#X connect 49 0 50 0;
 #X connect 50 0 51 0;
-#X connect 51 0 52 0;
-#X connect 51 1 53 0;
-#X connect 51 2 54 0;
-#X connect 52 0 55 0;
-#X connect 53 0 55 0;
-#X connect 54 0 55 0;
-#X connect 56 0 57 0;
-#X connect 57 0 47 0;
-#X connect 58 0 49 0;
-#X connect 59 0 60 0;
-#X connect 61 7 62 0;
-#X connect 62 0 64 0;
-#X connect 62 1 63 0;
-#X connect 67 0 68 0;
-#X connect 68 0 69 0;
+#X connect 50 1 52 0;
+#X connect 50 2 53 0;
+#X connect 51 0 54 0;
+#X connect 52 0 54 0;
+#X connect 53 0 54 0;
+#X connect 55 0 56 0;
+#X connect 56 0 46 0;
+#X connect 57 0 48 0;
+#X connect 58 0 59 0;
+#X connect 60 7 61 0;
+#X connect 61 1 90 0;
+#X connect 64 0 65 0;
+#X connect 65 0 66 0;
+#X connect 90 0 91 0;
 #X coords 0 -1 1 1 260 340 2 100 100;
 #X restore 38 14 pd main-panel;
 #X obj 318 13 receiver \$0 1;
@@ -602,10 +685,9 @@ c s l r m p \; f g k n r t \;;
 #X obj 953 13 receiver \$0 6;
 #X obj 318 412 receiver \$0 7;
 #X obj 445 412 receiver \$0 8;
-#N canvas 301 207 940 567 README 0;
+#N canvas 479 186 940 567 README 1;
 #X text 482 252 VU meters on both inputs and outputs are post-fader.
 They clip at the top (not at the first red LED).;
-#X text 99 21 netty mcnetface (8/2020);
 #X text 18 416 At bottom right you can see statistics about what you
 are sending. These are readouts only. (To change sample rate \, go
 to Pd's audio settings panel \, not this patch.);
@@ -613,11 +695,6 @@ to Pd's audio settings panel \, not this patch.);
 channels you're listening to. Typical values range from 10 to 25 .
 The delay is in units of 64-sample blocks (1.45 or 1.33 millseconds
 at 44100 or 48000 sample rate).;
-#X text 21 181 Each caller gives him/herself a channel name that will
-show up at on everyone's copy of the patch (including their own). Make
-sure no two callers are trying to use the same name. Also decide on
-a sample rate everyone will use (set in Pd's audio settings dialogs).
-;
 #X text 481 199 Each mixer channel can be set to mono (to pan a mono
 signal to both output channels) or stereo. The two outputs may be sent
 to individually chosen audio outputs.;
@@ -638,19 +715,24 @@ for unit gain) and "test" to send a tone instead of your audio input.
 and starting the "chef's area" subpatch) in order to pre-assign channels
 to callers and name the call if desired. (Naming the call can help
 prevent bombing in case that's a worry).;
-#X text 24 49 This patch allows up to 12 participants to share audio
-in real time through a repeater that should be run on a publicly-accessible
-server. (The server should run the patch named "netty-mcserver" \,
-which can be invoked remotely with the command "[path]/pd -nosound
--nogui -nrt netty-mcserver.pd" \, and should have UDP ports 38400-38499
-open assuming the base port number is 38400). Each group of up to 12
-callers requires its own instance of the server.;
 #X text 482 46 The 12 mixer channels control how (and whether) you
 will hear yourself and the other participants. You will appear on the
 channel showing your own channel name. You can quickly test audio by
 turning on the test tone at right and turning your own input channel
 up.;
-#X connect 8 0 7 0;
+#X text 105 21 directions for using netty mcnetface;
+#X text 24 49 This patch allows up to 12 participants to share audio
+in real time through a repeater that should be run on a publicly-accessible
+server. (The server should run the patch named "netty-mcserver" \,
+which can be invoked remotely with the command "[path]/pd -nosound
+-nogui -nrt netty-mcserver.pd" \, and should have UDP ports 38400-38821
+open assuming the base port number is 38400). Each group of up to 12
+callers requires its own instance of the server.;
+#X text 22 181 Each caller chooses a channel name that will show up
+on everyone's copy of the patch (including their own). Make sure no
+two callers are trying to use the same name. Also decide on a sample
+rate everyone will use (set in Pd's audio settings dialogs).;
+#X connect 6 0 5 0;
 #X restore 177 377 pd README;
 #X text 74 377 directions ->>;
 #N canvas 404 132 341 563 chefs-area 0;
@@ -756,13 +838,13 @@ up.;
 #X obj 673 545 print send-admin;
 #X text 103 173 call name;
 #X obj 105 104 tgl 20 0 \$0-act-as-chef \$0-act-as-chef-set empty 17
-7 0 10 -262144 -1 -1 1 1;
+7 0 10 -262144 -1 -1 0 1;
 #X text 132 103 <<- act as chef;
 #X obj 136 34 setctl \$0-act-as-chef;
 #X obj 439 518 spigot;
 #X obj 503 517 r \$0-act-as-chef;
 #X obj 673 522 spigot;
-#X obj 731 523 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 731 523 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 114 138 password;
 #X text 128 124 server;
@@ -879,4 +961,10 @@ the call., f 42;
 #X obj 699 412 receiver \$0 10;
 #X obj 826 412 receiver \$0 11;
 #X obj 953 412 receiver \$0 12;
-#X text 59 773 Netty McNetface version 0.92test1;
+#X obj 65 457 bng 15 250 50 0 \$0-save-settings empty empty 17 7 0
+10 -262144 -1 -1;
+#X text 85 454 save settings to file...;
+#X obj 65 484 bng 15 250 50 0 \$0-restore-settings empty empty 17 7
+0 10 -262144 -1 -1;
+#X text 85 481 read settings from file...;
+#X text 59 773 Netty McNetface version 0.92;
