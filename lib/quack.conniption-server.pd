@@ -1,42 +1,40 @@
-#N canvas 0 23 986 873 12;
+#N canvas 743 37 1028 944 12;
 #X declare -path quacktrip/lib;
-#X obj 227 830 stdout;
-#X obj 228 797 spigot;
-#X obj 290 798 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 10 727 list prepend got-call-bang;
-#X obj 342 777 r message-toggle;
-#X obj 764 721 list prepend replying:;
-#X obj 581 720 list prepend to-netsend:;
-#X obj 392 722 list prepend add-new-line:;
-#X obj 229 721 list prepend got-call:;
-#X obj 582 784 declare -path quacktrip/lib;
-#X obj 61 153 netreceive -u -f;
-#X obj 739 90 text define connections;
-#X obj 61 184 route call;
-#X obj 61 283 list append;
-#X obj 44 377 text search connections 0;
-#X obj 44 403 sel -1;
-#X obj 487 54 loadbang;
-#X obj 487 108 metro 1000;
-#X obj 487 138 f;
-#X obj 488 87 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 487 163 + 1;
-#X obj 487 188 mod 1e+06;
-#X msg 430 85 30;
-#X obj 430 110 until;
-#X obj 739 115 text define this-msg;
-#X obj 264 434 text set this-msg;
-#X obj 274 411 print got-call;
-#X obj 221 593 text set connections 1e+09;
-#X obj 207 538 text get this-msg;
-#X msg 208 512 0;
-#X obj 373 356 r secs;
-#X floatatom 515 217 5 0 0 0 - - -;
-#X obj 492 259 s secs;
-#X msg 739 64 clear;
-#X obj 207 654 print add-new-line;
+#X obj 275 910 stdout;
+#X obj 276 877 spigot;
+#X obj 338 878 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 58 807 list prepend got-call-bang;
+#X obj 390 857 r message-toggle;
+#X obj 812 801 list prepend replying:;
+#X obj 629 800 list prepend to-netsend:;
+#X obj 440 802 list prepend add-new-line:;
+#X obj 277 801 list prepend got-call:;
+#X obj 630 864 declare -path quacktrip/lib;
+#X obj 98 144 netreceive -u -f;
+#X obj 776 81 text define connections;
+#X obj 98 175 route call;
+#X obj 98 274 list append;
+#X obj 81 368 text search connections 0;
+#X obj 81 394 sel -1;
+#X obj 524 45 loadbang;
+#X obj 524 99 metro 1000;
+#X obj 524 129 f;
+#X obj 525 78 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 524 154 + 1;
+#X obj 524 179 mod 1e+06;
+#X msg 467 76 30;
+#X obj 467 101 until;
+#X obj 776 106 text define this-msg;
+#X obj 301 425 text set this-msg;
+#X obj 311 402 print got-call;
+#X obj 258 584 text set connections 1e+09;
+#X obj 244 529 text get this-msg;
+#X msg 245 503 0;
+#X obj 410 347 r secs;
+#X floatatom 552 208 5 0 0 0 - - - 0;
+#X obj 529 250 s secs;
+#X msg 776 55 clear;
+#X obj 244 645 print add-new-line;
 #N canvas 32 106 585 498 prune-connections 0;
 #X msg 288 39 \; prune-connections bang;
 #X obj 87 34 r prune-connections;
@@ -44,8 +42,7 @@
 #X msg 158 229 \$4 \$7;
 #X obj 160 337 sel 1;
 #X obj 54 410 text delete connections;
-#X obj 160 262 expr ($f1 < 0 || (($f3-$f1+1000000)%1000000) > 30) &&
-($f2 < 0 || (($f3-$f2+1000000)%1000000) > 30), f 33;
+#X obj 160 262 expr ($f1 < 0 || (($f3-$f1+1000000)%1000000) > 30) && ($f2 < 0 || (($f3-$f2+1000000)%1000000) > 30), f 33;
 #X obj 88 87 text size connections;
 #X obj 87 59 t b b;
 #X obj 88 113 until;
@@ -73,50 +70,39 @@
 #X connect 14 0 11 1;
 #X connect 15 0 5 0;
 #X connect 15 0 11 1;
-#X restore 733 210 pd prune-connections;
-#X obj 59 309 t b s l b;
-#X msg 60 127 listen \$1;
-#X floatatom 60 101 5 0 0 0 - - -;
-#X msg 124 76 0;
-#X obj 491 367 r reply;
-#X obj 487 563 netsend -u;
-#X obj 567 216 mod 30;
-#X obj 567 241 sel 0;
-#X obj 567 294 s prune-connections;
-#X obj 567 266 spigot;
-#X obj 628 240 loadbang;
-#X obj 628 264 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 274 387 spigot;
-#X obj 334 386 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 34 274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 492 399 unpack s 0 0 s 0 0;
-#X obj 575 429 addrmunger;
-#X obj 492 428 addrmunger;
-#X obj 492 460 pack s 0 0 s 0 0;
-#X obj 757 504 spigot;
-#X obj 817 506 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 596 561 spigot;
-#X obj 658 562 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 43 50 loadbang;
-#X msg 44 73 3840;
-#X msg 487 511 disconnect \, connect \$1 \$2 3840 \, send peer-addr
-\$4 \$5 \$2 \, disconnect, f 35;
-#X obj 599 589 print to-netsend;
-#X obj 357 385 loadbang;
+#X restore 770 201 pd prune-connections;
+#X obj 96 300 t b s l b;
+#X msg 97 118 listen \$1;
+#X floatatom 97 92 5 0 0 0 - - - 0;
+#X msg 161 67 0;
+#X obj 528 358 r reply;
+#X obj 524 554 netsend -u;
+#X obj 604 207 mod 30;
+#X obj 604 232 sel 0;
+#X obj 604 285 s prune-connections;
+#X obj 604 257 spigot;
+#X obj 665 231 loadbang;
+#X obj 665 255 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 311 378 spigot;
+#X obj 371 377 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 71 265 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 529 390 unpack s 0 0 s 0 0;
+#X obj 612 420 addrmunger;
+#X obj 529 419 addrmunger;
+#X obj 529 451 pack s 0 0 s 0 0;
+#X obj 794 495 spigot;
+#X obj 854 497 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 633 552 spigot;
+#X obj 695 553 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 55 33 loadbang;
+#X msg 84 65 3840;
+#X msg 524 502 disconnect \, connect \$1 \$2 3840 \, send peer-addr \$4 \$5 \$2 \, disconnect, f 35;
+#X obj 636 580 print to-netsend;
+#X obj 394 376 loadbang;
 #N canvas 1211 400 653 517 simulate-calls 0;
 #X obj 96 461 outlet;
 #X obj 403 427 text define -k test1;
-#A set zzz ::ffff:104.186.255.171 52350 0 178290 \; zzz ::ffff:104.186.255.171
-52350 0 178291 \; zzz ::ffff:104.186.255.171 52350 0 178292 \; zzz
-::ffff:76.126.215.138 62351 0 178292 \; zzz ::ffff:104.186.255.171
-52350 0 178293 \; zzz ::ffff:76.126.215.138 51247 0 179536 \; zzz ::ffff:104.186.255.171
-61535 0 177698 \; zzz ::ffff:76.126.215.138 61129 0 177698 \; zzz ::ffff:104.186.255.171
-61535 0 177699 \; zzz ::ffff:76.126.215.138 65301 0 177806 \;;
+#A set zzz ::ffff:104.186.255.171 52350 0 178290 \; zzz ::ffff:104.186.255.171 52350 0 178291 \; zzz ::ffff:104.186.255.171 52350 0 178292 \; zzz ::ffff:76.126.215.138 62351 0 178292 \; zzz ::ffff:104.186.255.171 52350 0 178293 \; zzz ::ffff:76.126.215.138 51247 0 179536 \; zzz ::ffff:104.186.255.171 61535 0 177698 \; zzz ::ffff:76.126.215.138 61129 0 177698 \; zzz ::ffff:104.186.255.171 61535 0 177699 \; zzz ::ffff:76.126.215.138 65301 0 177806 \;;
 #X msg 401 382 read -c /tmp/foo.txt;
 #X obj 129 338 text sequence test1;
 #X msg 133 314 line 0 \, auto;
@@ -145,11 +131,11 @@
 #X connect 13 0 8 0;
 #X connect 14 0 8 0;
 #X connect 15 0 8 0;
-#X restore 156 279 pd simulate-calls;
-#X obj 494 484 t l l;
-#X obj 44 428 s add-new-line;
-#X obj 36 465 r add-new-line;
-#X obj 97 404 s matched-line;
+#X restore 193 270 pd simulate-calls;
+#X obj 531 475 t l l;
+#X obj 81 419 s add-new-line;
+#X obj 73 456 r add-new-line;
+#X obj 134 395 s matched-line;
 #N canvas 590 101 1092 864 matched-line 0;
 #X obj 335 123 text get this-msg;
 #X obj 389 68 v matched-line;
@@ -182,8 +168,7 @@
 #X obj 20 109 spigot;
 #X obj 21 491 t b f;
 #X obj 53 523 print delete-line;
-#X obj 584 814 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 584 814 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 335 150 t s s, f 16;
 #X obj 335 210 spigot;
 #X obj 37 269 spigot;
@@ -197,10 +182,8 @@
 #X obj 337 733 v matched-line;
 #X obj 337 759 text get connections;
 #X msg 498 672 1;
-#X obj 315 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 547 238 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 315 241 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 547 238 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 831 591 text get this-msg;
 #X msg 831 565 0;
 #X obj 883 680 v matched-line;
@@ -209,8 +192,7 @@
 #X msg 989 679 1;
 #X obj 21 549 s add-new-line;
 #X obj 359 810 s reply;
-#X obj 340 811 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 340 811 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 314 15 r matched-line;
 #X msg 503 57 \; need-reply 1;
 #X obj 73 111 r need-reply;
@@ -221,8 +203,7 @@
 #X obj 834 735 v matched-line;
 #X obj 834 761 text get connections;
 #X obj 856 812 s reply;
-#X obj 837 813 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 837 813 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 368 417 s replace-whole-line;
 #X obj 157 345 s replace-peer-2;
 #X obj 585 537 r replace-peer-2;
@@ -255,33 +236,16 @@
 #X text 695 217 port;
 #X text 734 218 ID;
 #X obj 570 449 s replace-peer-2;
-#X text 615 10 matched-line is sent if a line in "connections" matches
-the call name of the incoming request. First check if the caller is
-already in the line \, and if so just replace that caller's fields.
-OTOH \, If the call matches an existing ipaddr and ID but the port
-has changed \, maybe it's not the same caller after all - in this case
-replace the entire line.;
-#X text 12 10 if no party in the call matches incoming request \, and
-if there's only one caller in the call \, we're the other caller \,
-so add us to the connection, f 32;
-#X text 17 574 if caller isn't in the call and there are already 2
-people in the call \, there are 3 callers. Perhaps one of them has
-since disappeared. In hopes of this \, reset the call and hope only
-one other caller is still requesting a call., f 40;
-#X text 773 124 The flag "need-reply" is initialized to 1 \, but as
-soon as something in this chain of attempts generates a reply the flag
-is cleared. This stops the search for a suitable action. This would
-be an if-then-else with 5 clauses if we were using a text-based programming
-language instead of Pd., f 43;
+#X text 615 10 matched-line is sent if a line in "connections" matches the call name of the incoming request. First check if the caller is already in the line \, and if so just replace that caller's fields. OTOH \, If the call matches an existing ipaddr and ID but the port has changed \, maybe it's not the same caller after all - in this case replace the entire line.;
+#X text 12 10 if no party in the call matches incoming request \, and if there's only one caller in the call \, we're the other caller \, so add us to the connection, f 32;
+#X text 17 574 if caller isn't in the call and there are already 2 people in the call \, there are 3 callers. Perhaps one of them has since disappeared. In hopes of this \, reset the call and hope only one other caller is still requesting a call., f 40;
+#X text 773 124 The flag "need-reply" is initialized to 1 \, but as soon as something in this chain of attempts generates a reply the flag is cleared. This stops the search for a suitable action. This would be an if-then-else with 5 clauses if we were using a text-based programming language instead of Pd., f 43;
 #X msg 584 785 list \$6 \$7 \$9 \$2 \$3 \$5;
 #X msg 835 787 list \$2 \$3 \$5 \$6 \$7 \$9;
-#X text 373 496 Here are the three possible actions we can take in
-response. We reply with the caller's (ipaddr \, port \, time) and the
-peer's (ipaddr \, port \, time)., f 72;
+#X text 373 496 Here are the three possible actions we can take in response. We reply with the caller's (ipaddr \, port \, time) and the peer's (ipaddr \, port \, time)., f 72;
 #X msg 742 666 5;
 #X msg 338 785 list \$2 \$3 \$5 \$6 \$7 \$9;
-#X obj 33 448 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 33 448 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 156 297 \$9;
 #X msg 335 96 0 2;
 #X msg 335 358 0 3;
@@ -401,52 +365,48 @@ peer's (ipaddr \, port \, time)., f 72;
 #X connect 115 0 41 0;
 #X connect 116 0 36 0;
 #X connect 117 0 51 0;
-#X restore 734 182 pd matched-line;
-#X msg 627 463 \; need-reply 0;
-#X obj 36 492 t b b;
-#X obj 37 521 text size connections;
-#X obj 37 546 - 1;
-#X obj 36 574 text get connections;
-#X obj 58 625 s reply;
-#X obj 39 626 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 817 477 loadbang;
-#X obj 760 532 print replying;
-#X obj 207 627 spigot;
-#X obj 267 629 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 293 627 loadbang;
-#X obj 28 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X text 52 24 listen for incoming messages;
-#X msg 79 339 list \$1;
-#X text 589 318 was: call-name ip1 port1 time1 ip2 port2 time2;
-#X text 591 349 new: call-name ip1 port1 id1 time1 ip2 port2 id2 time2
-;
-#X text 700 366 \$2;
-#X text 730 367 \$3;
-#X text 767 367 \$4;
-#X text 801 367 \$5;
-#X text 842 368 \$6;
-#X text 872 369 \$7;
-#X text 909 369 \$8;
-#X text 943 369 \$9;
-#X text 700 332 \$2;
-#X text 730 333 \$3;
-#X text 767 333 \$4;
-#X text 807 332 \$5;
-#X text 839 333 \$6;
-#X text 876 332 \$7;
-#X msg 129 232 0;
-#X text 166 221 if no ID it's an old client so assume 0, f 14;
-#X msg 37 600 list \$2 \$3 \$5 \$6 \$7 \$9;
-#X text 254 315 call-name \, call-ID \, ipaddr-from \, port-from \,
-time, f 28;
-#X obj 263 356 pack s 0 s 0 0;
-#X msg 207 563 list \$1 \$3 \$4 \$2 \$5 - 0 0 -1;
-#X obj 61 233 t l b;
-#X obj 61 257 pack s 0;
-#X obj 61 209 list;
+#X restore 771 173 pd matched-line;
+#X msg 664 454 \; need-reply 0;
+#X obj 73 483 t b b;
+#X obj 74 512 text size connections;
+#X obj 74 537 - 1;
+#X obj 73 565 text get connections;
+#X obj 95 616 s reply;
+#X obj 76 617 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 854 468 loadbang;
+#X obj 797 523 print replying;
+#X obj 244 618 spigot;
+#X obj 304 620 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 330 618 loadbang;
+#X obj 65 163 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 154 17 listen for incoming messages;
+#X msg 116 330 list \$1;
+#X text 626 309 was: call-name ip1 port1 time1 ip2 port2 time2;
+#X text 628 340 new: call-name ip1 port1 id1 time1 ip2 port2 id2 time2;
+#X text 737 357 \$2;
+#X text 767 358 \$3;
+#X text 804 358 \$4;
+#X text 838 358 \$5;
+#X text 879 359 \$6;
+#X text 909 360 \$7;
+#X text 946 360 \$8;
+#X text 980 360 \$9;
+#X text 737 323 \$2;
+#X text 767 324 \$3;
+#X text 804 324 \$4;
+#X text 844 323 \$5;
+#X text 876 324 \$6;
+#X text 913 323 \$7;
+#X msg 166 223 0;
+#X text 203 212 if no ID it's an old client so assume 0, f 14;
+#X msg 74 591 list \$2 \$3 \$5 \$6 \$7 \$9;
+#X text 291 306 call-name \, call-ID \, ipaddr-from \, port-from \, time, f 28;
+#X obj 300 347 pack s 0 s 0 0;
+#X msg 244 554 list \$1 \$3 \$4 \$2 \$5 - 0 0 -1;
+#X obj 98 224 t l b;
+#X obj 98 248 pack s 0;
+#X obj 98 200 list;
+#X obj 28 745 pipe 1000;
 #X connect 1 0 0 0;
 #X connect 2 0 1 1;
 #X connect 3 0 0 0;
@@ -508,9 +468,8 @@ time, f 28;
 #X connect 55 0 5 0;
 #X connect 56 0 55 1;
 #X connect 57 0 62 0;
-#X connect 57 0 6 0;
 #X connect 58 0 57 1;
-#X connect 59 0 60 0;
+#X connect 59 0 110 0;
 #X connect 60 0 38 0;
 #X connect 61 0 41 0;
 #X connect 61 0 57 0;
@@ -527,7 +486,7 @@ time, f 28;
 #X connect 74 0 103 0;
 #X connect 77 0 56 0;
 #X connect 79 0 34 0;
-#X connect 79 0 7 0;
+#X connect 79 0 6 0;
 #X connect 80 0 79 1;
 #X connect 81 0 80 0;
 #X connect 84 0 14 0;
@@ -543,3 +502,4 @@ time, f 28;
 #X connect 108 0 13 0;
 #X connect 108 0 50 0;
 #X connect 109 0 107 0;
+#X connect 110 0 60 0;

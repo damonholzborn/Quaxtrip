@@ -5,9 +5,10 @@ Quaxtrip is a set of Max patches that makes low-latency uncompressed audio and m
 # Installation
 
 1. If you don’t already have Max 8, [download](https://cycling74.com/downloads) and install it. Note that you do not need to purchase Max to use Quaxtrip, it will run in the unregistered version.
-2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.51-2 or later — listed on the download page under **Current Stable Release**).
+2. [Download](http://msp.ucsd.edu/software.html) and install Pure Data (version 0.55-0 or later — listed on the download page under **Current Stable Release**).
 3. If Max is running, quit Max.
-4. [Download](http://msp.ucsd.edu/software.html) PdMax (version 0.54 or greater — listed on the download page under Experimental: pd~ ported to Max/MSP 6,7, and 8 by Puckette & Apel), unzip, and place in the ~/Documents/Max 8/library directory. PdMax contains the Max object that allows you to run Pd patches in Max.
+4. [Download](http://msp.ucsd.edu/software.html) PdMax (version 0.54 or greater — listed on the download page under **Experimental: pd~ ported to Max/MSP 6,7, and 8 by Puckette & Apel**), unzip, and place in the ~/Documents/Max 8/library directory. PdMax contains the Max object that allows you to run Pd patches in Max. *Note:  users of Apple Silicon Macs (M1 processor or later) will need to run Max in Rosetta mode when using PdMax 0.54 (get info on app and check Open Using Rosetta). If you prefer not to run in Rosetta mode, there is a beta version of PdMax on the download page you may try (0.55test1).*
+
 5. [Download](https://github.com/damonholzborn/Quaxtrip/archive/main.zip) the latest release of Quaxtrip, unzip, and place in the ~/Documents/Max 8/library directory.
 
 # Quick Start
